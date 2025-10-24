@@ -1,0 +1,2969 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_54ca5bb6a9027a5f010b1a2ec55db14e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <div style="position: fixed; bottom: 50px; right: 50px; width: 200px;
+                background-color: white; border: 2px solid #1976D2;
+                border-radius: 5px; padding: 10px; z-index: 9999;">
+        <h4 style="margin: 0 0 10px 0; color: #1976D2;">📊 Thống kê</h4>
+        <p style="margin: 5px 0;"><b>Tổng:</b> 43 hiệu thuốc</p>
+        <p style="margin: 5px 0;"><b>Quận:</b> 11 quận</p>
+    </div>
+    
+    
+            <div class="folium-map" id="map_54ca5bb6a9027a5f010b1a2ec55db14e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_54ca5bb6a9027a5f010b1a2ec55db14e = L.map(
+                "map_54ca5bb6a9027a5f010b1a2ec55db14e",
+                {
+                    center: [21.0285, 105.8542],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_07e6240d699fdb6e12e74e63a4f9d6d6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_07e6240d699fdb6e12e74e63a4f9d6d6.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var tile_layer_1a7e6d6f8f92ca442a19d9a6d5eef604 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_1a7e6d6f8f92ca442a19d9a6d5eef604.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var marker_cluster_a1f19512023ab4e33ef2bae79bfd4625 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_3c0912d4bd5ef9ecbda965f935a402c5 = L.marker(
+                [21.0687599, 105.7784391],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_fc93ec33267a34a4437c003bd20f2699 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_3c0912d4bd5ef9ecbda965f935a402c5.setIcon(icon_fc93ec33267a34a4437c003bd20f2699);
+        
+    
+        var popup_b10825abbb6eee36ae900f3379c3df6a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bb2cda5aaac19024f9099d6bf3039eaa = $(`<div id="html_bb2cda5aaac19024f9099d6bf3039eaa" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Không rõ tên</h4>             <p><b>📍 Địa chỉ:</b> Đường Cổ Nhuế, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_b10825abbb6eee36ae900f3379c3df6a.setContent(html_bb2cda5aaac19024f9099d6bf3039eaa);
+            
+        
+
+        marker_3c0912d4bd5ef9ecbda965f935a402c5.bindPopup(popup_b10825abbb6eee36ae900f3379c3df6a)
+        ;
+
+        
+    
+    
+            marker_3c0912d4bd5ef9ecbda965f935a402c5.bindTooltip(
+                `<div>
+                     Không rõ tên
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_542f05ca5e90bb6bcdf2f1e0c6fdadf4 = L.marker(
+                [21.0115935, 105.8484012],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_8c2418ceec1aaa24d3d5c4669bc3fe9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_542f05ca5e90bb6bcdf2f1e0c6fdadf4.setIcon(icon_8c2418ceec1aaa24d3d5c4669bc3fe9d);
+        
+    
+        var popup_247d9418a1c1012626e13c92a9b74fa7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f9e139c981944a3b8606bd2c731211df = $(`<div id="html_f9e139c981944a3b8606bd2c731211df" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hapharco</h4>             <p><b>📍 Địa chỉ:</b> Phố Lê Đại Hành, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_247d9418a1c1012626e13c92a9b74fa7.setContent(html_f9e139c981944a3b8606bd2c731211df);
+            
+        
+
+        marker_542f05ca5e90bb6bcdf2f1e0c6fdadf4.bindPopup(popup_247d9418a1c1012626e13c92a9b74fa7)
+        ;
+
+        
+    
+    
+            marker_542f05ca5e90bb6bcdf2f1e0c6fdadf4.bindTooltip(
+                `<div>
+                     Nhà thuốc Hapharco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f21576b594009e35cae5ec65b3909c5c = L.marker(
+                [21.074301, 105.7766093],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_a5c4bb2ffe1da553af40ea2ecac9b6eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_f21576b594009e35cae5ec65b3909c5c.setIcon(icon_a5c4bb2ffe1da553af40ea2ecac9b6eb);
+        
+    
+        var popup_2ff9cb84c49f827911826d30a3b071af = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ebc8cf227000a5a164a2f32bd95a60b = $(`<div id="html_7ebc8cf227000a5a164a2f32bd95a60b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Quầy thuốc của báo</h4>             <p><b>📍 Địa chỉ:</b> Đường Lê Văn Hiến, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_2ff9cb84c49f827911826d30a3b071af.setContent(html_7ebc8cf227000a5a164a2f32bd95a60b);
+            
+        
+
+        marker_f21576b594009e35cae5ec65b3909c5c.bindPopup(popup_2ff9cb84c49f827911826d30a3b071af)
+        ;
+
+        
+    
+    
+            marker_f21576b594009e35cae5ec65b3909c5c.bindTooltip(
+                `<div>
+                     Quầy thuốc của báo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_776eab02fd087ea4ed0117ebc28dc7ee = L.marker(
+                [21.0414606, 105.8267369],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_21d051e0874eac1cd9210eaf9d212d5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_776eab02fd087ea4ed0117ebc28dc7ee.setIcon(icon_21d051e0874eac1cd9210eaf9d212d5c);
+        
+    
+        var popup_da0584a69a0a8af505deee9bc2c30c6c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b9a06d77d94a513afdd1a0accb228cb9 = $(`<div id="html_b9a06d77d94a513afdd1a0accb228cb9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Đường Thụy Khuê, Tây Hồ</p>             <p><b>🏛️ Quận:</b> Tây Hồ</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_da0584a69a0a8af505deee9bc2c30c6c.setContent(html_b9a06d77d94a513afdd1a0accb228cb9);
+            
+        
+
+        marker_776eab02fd087ea4ed0117ebc28dc7ee.bindPopup(popup_da0584a69a0a8af505deee9bc2c30c6c)
+        ;
+
+        
+    
+    
+            marker_776eab02fd087ea4ed0117ebc28dc7ee.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40608ad712b8864a7c7320d8e335987d = L.marker(
+                [21.0183291, 105.8288463],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_40e74999a710b282db82e34974048fb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_40608ad712b8864a7c7320d8e335987d.setIcon(icon_40e74999a710b282db82e34974048fb5);
+        
+    
+        var popup_e18a881e81552255ec3f8e0cda8d7fa0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_80651aaa62081ccf803dfdf0d9e79223 = $(`<div id="html_80651aaa62081ccf803dfdf0d9e79223" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Ngọc Hân</h4>             <p><b>📍 Địa chỉ:</b> Phố Đông Các, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_e18a881e81552255ec3f8e0cda8d7fa0.setContent(html_80651aaa62081ccf803dfdf0d9e79223);
+            
+        
+
+        marker_40608ad712b8864a7c7320d8e335987d.bindPopup(popup_e18a881e81552255ec3f8e0cda8d7fa0)
+        ;
+
+        
+    
+    
+            marker_40608ad712b8864a7c7320d8e335987d.bindTooltip(
+                `<div>
+                     Nhà thuốc Ngọc Hân
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1afd7cba96e391fc9b6896faf8be7ebf = L.marker(
+                [21.0097797, 105.8508952],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_ac3b0fd65dfc57868905d9ea71e0cfc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1afd7cba96e391fc9b6896faf8be7ebf.setIcon(icon_ac3b0fd65dfc57868905d9ea71e0cfc4);
+        
+    
+        var popup_ab5fd898b1bd84b2e4ca94b0fe57bb4b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_56269ec31762d893f669b5a247f39bb1 = $(`<div id="html_56269ec31762d893f669b5a247f39bb1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Long Châu</h4>             <p><b>📍 Địa chỉ:</b> Phố Mai Hắc Đế, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> +84 1800 6928</p>         </div>         </div>`)[0];
+                popup_ab5fd898b1bd84b2e4ca94b0fe57bb4b.setContent(html_56269ec31762d893f669b5a247f39bb1);
+            
+        
+
+        marker_1afd7cba96e391fc9b6896faf8be7ebf.bindPopup(popup_ab5fd898b1bd84b2e4ca94b0fe57bb4b)
+        ;
+
+        
+    
+    
+            marker_1afd7cba96e391fc9b6896faf8be7ebf.bindTooltip(
+                `<div>
+                     Nhà thuốc Long Châu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72bf3988fa0a7f4e8b6ac9c208fca6f3 = L.marker(
+                [21.0145412, 105.8100527],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_48f501c9c0378250bcaa220bc17e4a1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_72bf3988fa0a7f4e8b6ac9c208fca6f3.setIcon(icon_48f501c9c0378250bcaa220bc17e4a1e);
+        
+    
+        var popup_b03231ee6e52c303fd6095f871bada00 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_52d647240017968fce8d3dc9d84fe7d0 = $(`<div id="html_52d647240017968fce8d3dc9d84fe7d0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Siêu thị thực phẩm chức năng GPCare</h4>             <p><b>📍 Địa chỉ:</b> Phõ Vũ Ngọc Phan, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> +84 0996986666</p>         </div>         </div>`)[0];
+                popup_b03231ee6e52c303fd6095f871bada00.setContent(html_52d647240017968fce8d3dc9d84fe7d0);
+            
+        
+
+        marker_72bf3988fa0a7f4e8b6ac9c208fca6f3.bindPopup(popup_b03231ee6e52c303fd6095f871bada00)
+        ;
+
+        
+    
+    
+            marker_72bf3988fa0a7f4e8b6ac9c208fca6f3.bindTooltip(
+                `<div>
+                     Siêu thị thực phẩm chức năng GPCare
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcafb0640d6606c1fd0d7297f626177b = L.marker(
+                [21.0216211, 105.8494073],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_b1d3ca506d4553ca367a6f773457f955 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dcafb0640d6606c1fd0d7297f626177b.setIcon(icon_b1d3ca506d4553ca367a6f773457f955);
+        
+    
+        var popup_9b0c8f93bd1421cbab6d7dabac5a0c79 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_51f30cd0fa1c894397e95dc00411b727 = $(`<div id="html_51f30cd0fa1c894397e95dc00411b727" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Siêu thị thực phẩm chức năng GPCare - Cơ sở 3 - 65B Trần Hưng Đạo</h4>             <p><b>📍 Địa chỉ:</b> Trần Hưng Đạo, Hoàn Kiếm</p>             <p><b>🏛️ Quận:</b> Hoàn Kiếm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> 0996986666</p>         </div>         </div>`)[0];
+                popup_9b0c8f93bd1421cbab6d7dabac5a0c79.setContent(html_51f30cd0fa1c894397e95dc00411b727);
+            
+        
+
+        marker_dcafb0640d6606c1fd0d7297f626177b.bindPopup(popup_9b0c8f93bd1421cbab6d7dabac5a0c79)
+        ;
+
+        
+    
+    
+            marker_dcafb0640d6606c1fd0d7297f626177b.bindTooltip(
+                `<div>
+                     Siêu thị thực phẩm chức năng GPCare - Cơ sở 3 - 65B Trần Hưng Đạo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27868d027fd0845bfd96cb59383e3141 = L.marker(
+                [21.0380968, 105.7929932],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_e5066e27d6e2b33398ec9c62267675aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_27868d027fd0845bfd96cb59383e3141.setIcon(icon_e5066e27d6e2b33398ec9c62267675aa);
+        
+    
+        var popup_4c2729cf40e08f45037215383e292733 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_75059d9ce646ecdd1db783924343136f = $(`<div id="html_75059d9ce646ecdd1db783924343136f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà Thuốc Tâm An</h4>             <p><b>📍 Địa chỉ:</b> Trần Đăng Ninh, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 08:00-22:00</p>             <p><b>📞 SĐT:</b> +84 24 6283 1975</p>         </div>         </div>`)[0];
+                popup_4c2729cf40e08f45037215383e292733.setContent(html_75059d9ce646ecdd1db783924343136f);
+            
+        
+
+        marker_27868d027fd0845bfd96cb59383e3141.bindPopup(popup_4c2729cf40e08f45037215383e292733)
+        ;
+
+        
+    
+    
+            marker_27868d027fd0845bfd96cb59383e3141.bindTooltip(
+                `<div>
+                     Nhà Thuốc Tâm An
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad26d461bf0c8a7e514d5fb1f061fac5 = L.marker(
+                [21.0268963, 105.8223999],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_06dd8c81701d9936e837c877fdd03515 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ad26d461bf0c8a7e514d5fb1f061fac5.setIcon(icon_06dd8c81701d9936e837c877fdd03515);
+        
+    
+        var popup_659dc2490f8dab690ab9ee07d35d919b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_35b6b25df75b2fc9a6cbea8e2dabfe7a = $(`<div id="html_35b6b25df75b2fc9a6cbea8e2dabfe7a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacy Đức Long</h4>             <p><b>📍 Địa chỉ:</b> Phố Trần Huy Liệu, Ba Đình</p>             <p><b>🏛️ Quận:</b> Ba Đình</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_659dc2490f8dab690ab9ee07d35d919b.setContent(html_35b6b25df75b2fc9a6cbea8e2dabfe7a);
+            
+        
+
+        marker_ad26d461bf0c8a7e514d5fb1f061fac5.bindPopup(popup_659dc2490f8dab690ab9ee07d35d919b)
+        ;
+
+        
+    
+    
+            marker_ad26d461bf0c8a7e514d5fb1f061fac5.bindTooltip(
+                `<div>
+                     Pharmacy Đức Long
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f970d2bef83d79f700ccdf7d035fdde = L.marker(
+                [21.0621946, 105.780551],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_78ad7297410799a9d58fbd5158bb37f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_5f970d2bef83d79f700ccdf7d035fdde.setIcon(icon_78ad7297410799a9d58fbd5158bb37f8);
+        
+    
+        var popup_ed6774d47362eb659dbf595944db9ff6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0cb4f9b3fb56946b7ef5595ce0bb0467 = $(`<div id="html_0cb4f9b3fb56946b7ef5595ce0bb0467" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 V2- Nhà thuốc số 9</h4>             <p><b>📍 Địa chỉ:</b> Đường Cổ Nhuế, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_ed6774d47362eb659dbf595944db9ff6.setContent(html_0cb4f9b3fb56946b7ef5595ce0bb0467);
+            
+        
+
+        marker_5f970d2bef83d79f700ccdf7d035fdde.bindPopup(popup_ed6774d47362eb659dbf595944db9ff6)
+        ;
+
+        
+    
+    
+            marker_5f970d2bef83d79f700ccdf7d035fdde.bindTooltip(
+                `<div>
+                     V2- Nhà thuốc số 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04f80ca99bc2d93b16e50d1474602c40 = L.marker(
+                [21.0635276, 105.7797944],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_5bbbc6cb0087d431157fb81a5991e1e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_04f80ca99bc2d93b16e50d1474602c40.setIcon(icon_5bbbc6cb0087d431157fb81a5991e1e4);
+        
+    
+        var popup_2865640d416dc5df2fee4af474c41096 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1dd5641b88b66893770fccf991646690 = $(`<div id="html_1dd5641b88b66893770fccf991646690" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 V18-Nhà thuốc Đại An 1</h4>             <p><b>📍 Địa chỉ:</b> Đường Cổ Nhuế, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_2865640d416dc5df2fee4af474c41096.setContent(html_1dd5641b88b66893770fccf991646690);
+            
+        
+
+        marker_04f80ca99bc2d93b16e50d1474602c40.bindPopup(popup_2865640d416dc5df2fee4af474c41096)
+        ;
+
+        
+    
+    
+            marker_04f80ca99bc2d93b16e50d1474602c40.bindTooltip(
+                `<div>
+                     V18-Nhà thuốc Đại An 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b260359f5a36670b62d09646709776f = L.marker(
+                [21.0643, 105.7795112],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_4ba701faf2b209a7354bae2a087b05e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_4b260359f5a36670b62d09646709776f.setIcon(icon_4ba701faf2b209a7354bae2a087b05e7);
+        
+    
+        var popup_3593f949e012bbf8e628214b1c634dfe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4510d117088f7b0f5473c6279d40d44d = $(`<div id="html_4510d117088f7b0f5473c6279d40d44d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 V26-Nhà Thuốc Minh Tâm</h4>             <p><b>📍 Địa chỉ:</b> Đường Cổ Nhuế, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_3593f949e012bbf8e628214b1c634dfe.setContent(html_4510d117088f7b0f5473c6279d40d44d);
+            
+        
+
+        marker_4b260359f5a36670b62d09646709776f.bindPopup(popup_3593f949e012bbf8e628214b1c634dfe)
+        ;
+
+        
+    
+    
+            marker_4b260359f5a36670b62d09646709776f.bindTooltip(
+                `<div>
+                     V26-Nhà Thuốc Minh Tâm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5634ea6b30bf9811c6545c5e822860b5 = L.marker(
+                [21.0167687, 105.8358901],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_78cb409436de6af7e8a78dfbda170170 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5634ea6b30bf9811c6545c5e822860b5.setIcon(icon_78cb409436de6af7e8a78dfbda170170);
+        
+    
+        var popup_063fe50aac1974287a8e85ca95415eba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7658163582ac20b93b06dee7436ae9d3 = $(`<div id="html_7658163582ac20b93b06dee7436ae9d3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà Thuốc Anh Quốc</h4>             <p><b>📍 Địa chỉ:</b> Phố Trung Phụng, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_063fe50aac1974287a8e85ca95415eba.setContent(html_7658163582ac20b93b06dee7436ae9d3);
+            
+        
+
+        marker_5634ea6b30bf9811c6545c5e822860b5.bindPopup(popup_063fe50aac1974287a8e85ca95415eba)
+        ;
+
+        
+    
+    
+            marker_5634ea6b30bf9811c6545c5e822860b5.bindTooltip(
+                `<div>
+                     Nhà Thuốc Anh Quốc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fa3f2e3d76996ae0e0cf1a2c73972f5 = L.marker(
+                [20.9995824, 105.8277831],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_944a68d513f078a4e8f872bdfc4ed07d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9fa3f2e3d76996ae0e0cf1a2c73972f5.setIcon(icon_944a68d513f078a4e8f872bdfc4ed07d);
+        
+    
+        var popup_c8862f55c025d14b17e49252a2ad0aae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7365e280c19f0ad767352303dd1be9c9 = $(`<div id="html_7365e280c19f0ad767352303dd1be9c9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Phố Lê Trọng Tấn, Thanh Xuân</p>             <p><b>🏛️ Quận:</b> Thanh Xuân</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 06:00-23:30</p>             <p><b>📞 SĐT:</b> +84 1800 6821</p>         </div>         </div>`)[0];
+                popup_c8862f55c025d14b17e49252a2ad0aae.setContent(html_7365e280c19f0ad767352303dd1be9c9);
+            
+        
+
+        marker_9fa3f2e3d76996ae0e0cf1a2c73972f5.bindPopup(popup_c8862f55c025d14b17e49252a2ad0aae)
+        ;
+
+        
+    
+    
+            marker_9fa3f2e3d76996ae0e0cf1a2c73972f5.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9980edfbb51bbc8c4554194a0ce7fe2 = L.marker(
+                [20.9988127, 105.8201338],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_8f08d06b8da288e8326de096e5bc904e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e9980edfbb51bbc8c4554194a0ce7fe2.setIcon(icon_8f08d06b8da288e8326de096e5bc904e);
+        
+    
+        var popup_c1676c2e009120450dcc7b80259d6372 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_64f9b8abe06be2e1919c634638af5137 = $(`<div id="html_64f9b8abe06be2e1919c634638af5137" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Phố Tô Vĩnh Diện, Thanh Xuân</p>             <p><b>🏛️ Quận:</b> Thanh Xuân</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 06:00-23:30</p>             <p><b>📞 SĐT:</b> +84 1800 6821</p>         </div>         </div>`)[0];
+                popup_c1676c2e009120450dcc7b80259d6372.setContent(html_64f9b8abe06be2e1919c634638af5137);
+            
+        
+
+        marker_e9980edfbb51bbc8c4554194a0ce7fe2.bindPopup(popup_c1676c2e009120450dcc7b80259d6372)
+        ;
+
+        
+    
+    
+            marker_e9980edfbb51bbc8c4554194a0ce7fe2.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3daa6d057124e4016c3b1c7a0487f758 = L.marker(
+                [20.992803, 105.7979595],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_2fca6c801947b3bdf392dd0b625f987d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3daa6d057124e4016c3b1c7a0487f758.setIcon(icon_2fca6c801947b3bdf392dd0b625f987d);
+        
+    
+        var popup_6a4359c2758d8e2ee61c812d10da4225 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_04ab0cb30bdaefdd63ed36752104f302 = $(`<div id="html_04ab0cb30bdaefdd63ed36752104f302" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Nguyễn Quý Đức, Thanh Xuân</p>             <p><b>🏛️ Quận:</b> Thanh Xuân</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 06:00-23:30</p>             <p><b>📞 SĐT:</b> +84 1800 6821</p>         </div>         </div>`)[0];
+                popup_6a4359c2758d8e2ee61c812d10da4225.setContent(html_04ab0cb30bdaefdd63ed36752104f302);
+            
+        
+
+        marker_3daa6d057124e4016c3b1c7a0487f758.bindPopup(popup_6a4359c2758d8e2ee61c812d10da4225)
+        ;
+
+        
+    
+    
+            marker_3daa6d057124e4016c3b1c7a0487f758.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17a26e9294a5b96cc8f372c63106bfd8 = L.marker(
+                [20.9705795, 105.829829],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_849a28235a1c4af8cebf2a30fbfbf962 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_17a26e9294a5b96cc8f372c63106bfd8.setIcon(icon_849a28235a1c4af8cebf2a30fbfbf962);
+        
+    
+        var popup_a256be41087562b58c6408b59ccb52a9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8024a48dd9aa46a4d36c064716db6e96 = $(`<div id="html_8024a48dd9aa46a4d36c064716db6e96" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Đặng Xuân Bảng, Hoàng Mai</p>             <p><b>🏛️ Quận:</b> Hoàng Mai</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 06:00-23:30</p>             <p><b>📞 SĐT:</b> +84 1800 6821</p>         </div>         </div>`)[0];
+                popup_a256be41087562b58c6408b59ccb52a9.setContent(html_8024a48dd9aa46a4d36c064716db6e96);
+            
+        
+
+        marker_17a26e9294a5b96cc8f372c63106bfd8.bindPopup(popup_a256be41087562b58c6408b59ccb52a9)
+        ;
+
+        
+    
+    
+            marker_17a26e9294a5b96cc8f372c63106bfd8.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca4544cfab0ed7f5fbc2dc64d5428694 = L.marker(
+                [20.9904032, 105.8011202],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_a3a12d991f13120315009beb82961150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ca4544cfab0ed7f5fbc2dc64d5428694.setIcon(icon_a3a12d991f13120315009beb82961150);
+        
+    
+        var popup_908b45b53825e99fbd46b16f71589c36 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73ef7710332cabca71698f3c50b8e601 = $(`<div id="html_73ef7710332cabca71698f3c50b8e601" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Minh Tiến</h4>             <p><b>📍 Địa chỉ:</b> Nguyễn Quý Đức, Thanh Xuân</p>             <p><b>🏛️ Quận:</b> Thanh Xuân</p>             <p><b>🕐 Giờ mở:</b> Mo-Sa 07:15-21:00; Su 07:15-18:30</p>             <p><b>📞 SĐT:</b> +84 966 369 299</p>         </div>         </div>`)[0];
+                popup_908b45b53825e99fbd46b16f71589c36.setContent(html_73ef7710332cabca71698f3c50b8e601);
+            
+        
+
+        marker_ca4544cfab0ed7f5fbc2dc64d5428694.bindPopup(popup_908b45b53825e99fbd46b16f71589c36)
+        ;
+
+        
+    
+    
+            marker_ca4544cfab0ed7f5fbc2dc64d5428694.bindTooltip(
+                `<div>
+                     Nhà thuốc Minh Tiến
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d4e62fbe5d4400b98083141ac41cf52 = L.marker(
+                [21.0805879, 105.7732071],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_82bb5dc285e57cddcb7dbc5d3827cd86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_2d4e62fbe5d4400b98083141ac41cf52.setIcon(icon_82bb5dc285e57cddcb7dbc5d3827cd86);
+        
+    
+        var popup_91459d2c9c27fafc11455adc20111738 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ce463b8c7bdec4535274fe2d3cb8d46f = $(`<div id="html_ce463b8c7bdec4535274fe2d3cb8d46f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Đức Huy152</h4>             <p><b>📍 Địa chỉ:</b> Phố Văn Hội, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> 24/7</p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_91459d2c9c27fafc11455adc20111738.setContent(html_ce463b8c7bdec4535274fe2d3cb8d46f);
+            
+        
+
+        marker_2d4e62fbe5d4400b98083141ac41cf52.bindPopup(popup_91459d2c9c27fafc11455adc20111738)
+        ;
+
+        
+    
+    
+            marker_2d4e62fbe5d4400b98083141ac41cf52.bindTooltip(
+                `<div>
+                     Nhà thuốc Đức Huy152
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0954f608bdd7847a808affdff33c623d = L.marker(
+                [21.0416695, 105.7822704],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_5bde57fa3f86ace8c21ecdcbd2489ded = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0954f608bdd7847a808affdff33c623d.setIcon(icon_5bde57fa3f86ace8c21ecdcbd2489ded);
+        
+    
+        var popup_2854ef1a8c1b21d841102b34e2808b52 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1dd592b683a2d342fdf853f803e02fda = $(`<div id="html_1dd592b683a2d342fdf853f803e02fda" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hoàng Minh</h4>             <p><b>📍 Địa chỉ:</b> Phố Trần Quốc Hoàn, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_2854ef1a8c1b21d841102b34e2808b52.setContent(html_1dd592b683a2d342fdf853f803e02fda);
+            
+        
+
+        marker_0954f608bdd7847a808affdff33c623d.bindPopup(popup_2854ef1a8c1b21d841102b34e2808b52)
+        ;
+
+        
+    
+    
+            marker_0954f608bdd7847a808affdff33c623d.bindTooltip(
+                `<div>
+                     Nhà thuốc Hoàng Minh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ab511f642b5cc95a5a79d70aefbfe7b = L.marker(
+                [21.0287756, 105.7936974],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_179d49dac3861936556a67edf9b05723 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_1ab511f642b5cc95a5a79d70aefbfe7b.setIcon(icon_179d49dac3861936556a67edf9b05723);
+        
+    
+        var popup_90ee530ba74649b22b47ec430b8191a4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2db69e74ee6e398a75f5db78673622f1 = $(`<div id="html_2db69e74ee6e398a75f5db78673622f1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Trường Hương</h4>             <p><b>📍 Địa chỉ:</b> Phố Thành Thái, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_90ee530ba74649b22b47ec430b8191a4.setContent(html_2db69e74ee6e398a75f5db78673622f1);
+            
+        
+
+        marker_1ab511f642b5cc95a5a79d70aefbfe7b.bindPopup(popup_90ee530ba74649b22b47ec430b8191a4)
+        ;
+
+        
+    
+    
+            marker_1ab511f642b5cc95a5a79d70aefbfe7b.bindTooltip(
+                `<div>
+                     Nhà thuốc Trường Hương
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f22513cc357c814dbce1fdcd477672a = L.marker(
+                [21.0127084, 105.8323841],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_ed5d53d77bf98252d122b3942596992c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4f22513cc357c814dbce1fdcd477672a.setIcon(icon_ed5d53d77bf98252d122b3942596992c);
+        
+    
+        var popup_a315331f6fccb1076c73a597583ab3ae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_090c7e5ce868c0a9bdd4072f5f93168b = $(`<div id="html_090c7e5ce868c0a9bdd4072f5f93168b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Anh Đức</h4>             <p><b>📍 Địa chỉ:</b> Ngõ Xã Đàn 2, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_a315331f6fccb1076c73a597583ab3ae.setContent(html_090c7e5ce868c0a9bdd4072f5f93168b);
+            
+        
+
+        marker_4f22513cc357c814dbce1fdcd477672a.bindPopup(popup_a315331f6fccb1076c73a597583ab3ae)
+        ;
+
+        
+    
+    
+            marker_4f22513cc357c814dbce1fdcd477672a.bindTooltip(
+                `<div>
+                     Nhà thuốc Anh Đức
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c5060076ed5e567427b13e4df61a06d = L.marker(
+                [21.0098503, 105.8361196],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_a26f50f27abe9bc49b32371b393a9ba0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8c5060076ed5e567427b13e4df61a06d.setIcon(icon_a26f50f27abe9bc49b32371b393a9ba0);
+        
+    
+        var popup_7bd02d54fb453c704de98ad0441bea8c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9593c4cebb716216274940646f1c2acd = $(`<div id="html_9593c4cebb716216274940646f1c2acd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Nam Cường</h4>             <p><b>📍 Địa chỉ:</b> Ngõ 21 Phạm Ngọc Thạch, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_7bd02d54fb453c704de98ad0441bea8c.setContent(html_9593c4cebb716216274940646f1c2acd);
+            
+        
+
+        marker_8c5060076ed5e567427b13e4df61a06d.bindPopup(popup_7bd02d54fb453c704de98ad0441bea8c)
+        ;
+
+        
+    
+    
+            marker_8c5060076ed5e567427b13e4df61a06d.bindTooltip(
+                `<div>
+                     Nhà thuốc Nam Cường
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecec2a53a55c62958fde0e773b07f8ba = L.marker(
+                [21.0471298, 105.7831976],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_45b5579acdb40b9e2a6b02d9778371a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_ecec2a53a55c62958fde0e773b07f8ba.setIcon(icon_45b5579acdb40b9e2a6b02d9778371a4);
+        
+    
+        var popup_e3406f83b19ccb5ab323181728f0600f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_846928864928a9802760eb6d798ddacf = $(`<div id="html_846928864928a9802760eb6d798ddacf" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Quầy thuốc Bảo An số 1</h4>             <p><b>📍 Địa chỉ:</b> Ngõ 238 Hoàng Quốc Việt, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_e3406f83b19ccb5ab323181728f0600f.setContent(html_846928864928a9802760eb6d798ddacf);
+            
+        
+
+        marker_ecec2a53a55c62958fde0e773b07f8ba.bindPopup(popup_e3406f83b19ccb5ab323181728f0600f)
+        ;
+
+        
+    
+    
+            marker_ecec2a53a55c62958fde0e773b07f8ba.bindTooltip(
+                `<div>
+                     Quầy thuốc Bảo An số 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64129115e0580e1a40e5fae60cf197b8 = L.marker(
+                [21.0153155, 105.8316307],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_37c9a591269f990adec32e7dcca3e92c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_64129115e0580e1a40e5fae60cf197b8.setIcon(icon_37c9a591269f990adec32e7dcca3e92c);
+        
+    
+        var popup_d03c4341895d44016733d012e3c2af3b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_518f08cc61175253c7bff394974605c2 = $(`<div id="html_518f08cc61175253c7bff394974605c2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hằng Anh</h4>             <p><b>📍 Địa chỉ:</b> Ngõ Xã Đàn 2, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_d03c4341895d44016733d012e3c2af3b.setContent(html_518f08cc61175253c7bff394974605c2);
+            
+        
+
+        marker_64129115e0580e1a40e5fae60cf197b8.bindPopup(popup_d03c4341895d44016733d012e3c2af3b)
+        ;
+
+        
+    
+    
+            marker_64129115e0580e1a40e5fae60cf197b8.bindTooltip(
+                `<div>
+                     Nhà thuốc Hằng Anh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bd45ad3d2bd1f0445c87d9754a8214d = L.marker(
+                [21.0173423, 105.8315949],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_b98fababb2f4b9073af26e5ae54ba65f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3bd45ad3d2bd1f0445c87d9754a8214d.setIcon(icon_b98fababb2f4b9073af26e5ae54ba65f);
+        
+    
+        var popup_14669c758d5e64f3321778f080ca1a21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e97405f5ebd6bad2dec965c843a6f09d = $(`<div id="html_e97405f5ebd6bad2dec965c843a6f09d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc số 9</h4>             <p><b>📍 Địa chỉ:</b> Đường Đê La Thành, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_14669c758d5e64f3321778f080ca1a21.setContent(html_e97405f5ebd6bad2dec965c843a6f09d);
+            
+        
+
+        marker_3bd45ad3d2bd1f0445c87d9754a8214d.bindPopup(popup_14669c758d5e64f3321778f080ca1a21)
+        ;
+
+        
+    
+    
+            marker_3bd45ad3d2bd1f0445c87d9754a8214d.bindTooltip(
+                `<div>
+                     Nhà thuốc số 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da7b94cf86f5f65ea84a7b5a09b25036 = L.marker(
+                [21.0170633, 105.8318618],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_be456b9eecf97862e96706edfdd8c024 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_da7b94cf86f5f65ea84a7b5a09b25036.setIcon(icon_be456b9eecf97862e96706edfdd8c024);
+        
+    
+        var popup_a7ea868d4c393e5205a5ca29605a9770 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f5e0f2eff5fc86f5e2f1e60fad0b63f3 = $(`<div id="html_f5e0f2eff5fc86f5e2f1e60fad0b63f3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Bảo Phúc II</h4>             <p><b>📍 Địa chỉ:</b> Đường Đê La Thành, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_a7ea868d4c393e5205a5ca29605a9770.setContent(html_f5e0f2eff5fc86f5e2f1e60fad0b63f3);
+            
+        
+
+        marker_da7b94cf86f5f65ea84a7b5a09b25036.bindPopup(popup_a7ea868d4c393e5205a5ca29605a9770)
+        ;
+
+        
+    
+    
+            marker_da7b94cf86f5f65ea84a7b5a09b25036.bindTooltip(
+                `<div>
+                     Nhà thuốc Bảo Phúc II
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_684abbea07325dca80ee5cbc06d30140 = L.marker(
+                [21.01467, 105.8342538],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_782a9e114fe2e26a86494c9fc68b0c93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_684abbea07325dca80ee5cbc06d30140.setIcon(icon_782a9e114fe2e26a86494c9fc68b0c93);
+        
+    
+        var popup_d41723955bb18f74841e237e20ec3d12 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cb3a6007ad6e714db2e0f2f63934ef97 = $(`<div id="html_cb3a6007ad6e714db2e0f2f63934ef97" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hải Anh</h4>             <p><b>📍 Địa chỉ:</b> Phố Xã Đàn, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_d41723955bb18f74841e237e20ec3d12.setContent(html_cb3a6007ad6e714db2e0f2f63934ef97);
+            
+        
+
+        marker_684abbea07325dca80ee5cbc06d30140.bindPopup(popup_d41723955bb18f74841e237e20ec3d12)
+        ;
+
+        
+    
+    
+            marker_684abbea07325dca80ee5cbc06d30140.bindTooltip(
+                `<div>
+                     Nhà thuốc Hải Anh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87893c3d57667e03e618199e10a46993 = L.marker(
+                [21.0149411, 105.8508795],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_26ae4e9564166eec42d9de9561c16aa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_87893c3d57667e03e618199e10a46993.setIcon(icon_26ae4e9564166eec42d9de9561c16aa5);
+        
+    
+        var popup_56f7483f8d06048cd680f9e63989b14d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8acd6ebfffc3a22a99c175d160999bca = $(`<div id="html_8acd6ebfffc3a22a99c175d160999bca" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Phương Chính</h4>             <p><b>📍 Địa chỉ:</b> Phố Mai Hắc Đế, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> +84 1800 6666</p>         </div>         </div>`)[0];
+                popup_56f7483f8d06048cd680f9e63989b14d.setContent(html_8acd6ebfffc3a22a99c175d160999bca);
+            
+        
+
+        marker_87893c3d57667e03e618199e10a46993.bindPopup(popup_56f7483f8d06048cd680f9e63989b14d)
+        ;
+
+        
+    
+    
+            marker_87893c3d57667e03e618199e10a46993.bindTooltip(
+                `<div>
+                     Nhà thuốc Phương Chính
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d6051823703578e4928ee5a8a3d23f0 = L.marker(
+                [21.0139652, 105.8508884],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_7663fd8749c295597c5bbafccf235128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4d6051823703578e4928ee5a8a3d23f0.setIcon(icon_7663fd8749c295597c5bbafccf235128);
+        
+    
+        var popup_e706d27eb2378c704781591d1cdfa3d2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_830d14d4e8fa90cddbfa4dcb2f8ace31 = $(`<div id="html_830d14d4e8fa90cddbfa4dcb2f8ace31" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hồng Đăng 5</h4>             <p><b>📍 Địa chỉ:</b> Phố Mai Hắc Đế, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> +84 978 567 077</p>         </div>         </div>`)[0];
+                popup_e706d27eb2378c704781591d1cdfa3d2.setContent(html_830d14d4e8fa90cddbfa4dcb2f8ace31);
+            
+        
+
+        marker_4d6051823703578e4928ee5a8a3d23f0.bindPopup(popup_e706d27eb2378c704781591d1cdfa3d2)
+        ;
+
+        
+    
+    
+            marker_4d6051823703578e4928ee5a8a3d23f0.bindTooltip(
+                `<div>
+                     Nhà thuốc Hồng Đăng 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb38675b5acd0fa9400136b3eba980b8 = L.marker(
+                [21.0135845, 105.8497577],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_3c2b58506a17550a49b4f53c46c919a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bb38675b5acd0fa9400136b3eba980b8.setIcon(icon_3c2b58506a17550a49b4f53c46c919a4);
+        
+    
+        var popup_f5836da9e3f7635562ddb774ff8fcde5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_286797f4a576981cf65bec3cbf736369 = $(`<div id="html_286797f4a576981cf65bec3cbf736369" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hà Thu</h4>             <p><b>📍 Địa chỉ:</b> Phố Tô Hiến Thành, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_f5836da9e3f7635562ddb774ff8fcde5.setContent(html_286797f4a576981cf65bec3cbf736369);
+            
+        
+
+        marker_bb38675b5acd0fa9400136b3eba980b8.bindPopup(popup_f5836da9e3f7635562ddb774ff8fcde5)
+        ;
+
+        
+    
+    
+            marker_bb38675b5acd0fa9400136b3eba980b8.bindTooltip(
+                `<div>
+                     Nhà thuốc Hà Thu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7162c5d91cd5df7185ccb637092857cd = L.marker(
+                [21.0455098, 105.7844435],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_5ff136f3adb77e474601102d61069df8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_7162c5d91cd5df7185ccb637092857cd.setIcon(icon_5ff136f3adb77e474601102d61069df8);
+        
+    
+        var popup_6d1a21ef6071c16339a0b3bffe8255f8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ccaede94886825274021257a8f77184f = $(`<div id="html_ccaede94886825274021257a8f77184f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hưng Gia</h4>             <p><b>📍 Địa chỉ:</b> Phố Đặng Thùy Trâm, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_6d1a21ef6071c16339a0b3bffe8255f8.setContent(html_ccaede94886825274021257a8f77184f);
+            
+        
+
+        marker_7162c5d91cd5df7185ccb637092857cd.bindPopup(popup_6d1a21ef6071c16339a0b3bffe8255f8)
+        ;
+
+        
+    
+    
+            marker_7162c5d91cd5df7185ccb637092857cd.bindTooltip(
+                `<div>
+                     Nhà thuốc Hưng Gia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b44b85f55aeecf5bbd35cd9681d774b = L.marker(
+                [21.0450689, 105.7845613],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_1fb0bb6727f086ba0150521e9663fa69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_6b44b85f55aeecf5bbd35cd9681d774b.setIcon(icon_1fb0bb6727f086ba0150521e9663fa69);
+        
+    
+        var popup_8daa09a743e843860221c11ad92c6a2d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_687a8b0f03972a770f238b2cd6745266 = $(`<div id="html_687a8b0f03972a770f238b2cd6745266" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Thành Duy</h4>             <p><b>📍 Địa chỉ:</b> Đường Đặng Thùy Trâm, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_8daa09a743e843860221c11ad92c6a2d.setContent(html_687a8b0f03972a770f238b2cd6745266);
+            
+        
+
+        marker_6b44b85f55aeecf5bbd35cd9681d774b.bindPopup(popup_8daa09a743e843860221c11ad92c6a2d)
+        ;
+
+        
+    
+    
+            marker_6b44b85f55aeecf5bbd35cd9681d774b.bindTooltip(
+                `<div>
+                     Nhà thuốc Thành Duy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6429d85693bc55b48ee38bc5db2d8dfa = L.marker(
+                [21.0427024, 105.7860905],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_83f0a96be782b4da597029fab65359e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6429d85693bc55b48ee38bc5db2d8dfa.setIcon(icon_83f0a96be782b4da597029fab65359e3);
+        
+    
+        var popup_d1f9318a2fa2ad78fd5853d55d8900e8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1070672b9e51cc054f0b5e7d99f55c3f = $(`<div id="html_1070672b9e51cc054f0b5e7d99f55c3f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Phố Phạm Tuấn Tài, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_d1f9318a2fa2ad78fd5853d55d8900e8.setContent(html_1070672b9e51cc054f0b5e7d99f55c3f);
+            
+        
+
+        marker_6429d85693bc55b48ee38bc5db2d8dfa.bindPopup(popup_d1f9318a2fa2ad78fd5853d55d8900e8)
+        ;
+
+        
+    
+    
+            marker_6429d85693bc55b48ee38bc5db2d8dfa.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_538b441c49c793e0b999520ff4ad52c9 = L.marker(
+                [21.0433255, 105.7854321],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_978e0de30788a19484d19eaed2d7a276 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_538b441c49c793e0b999520ff4ad52c9.setIcon(icon_978e0de30788a19484d19eaed2d7a276);
+        
+    
+        var popup_bc712ac15b20b7a7d84b42852a12dfd5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d3358621ac3e91941652821a33eb9b91 = $(`<div id="html_d3358621ac3e91941652821a33eb9b91" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 DUO Care</h4>             <p><b>📍 Địa chỉ:</b> Ngõ 3 Phạm Tuấn Tài, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 08:00-22:00</p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_bc712ac15b20b7a7d84b42852a12dfd5.setContent(html_d3358621ac3e91941652821a33eb9b91);
+            
+        
+
+        marker_538b441c49c793e0b999520ff4ad52c9.bindPopup(popup_bc712ac15b20b7a7d84b42852a12dfd5)
+        ;
+
+        
+    
+    
+            marker_538b441c49c793e0b999520ff4ad52c9.bindTooltip(
+                `<div>
+                     DUO Care
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f817de838d5c4e3345b2eb7f5f5d450 = L.marker(
+                [21.043525, 105.7861166],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_2fe02460b0913bb2529cdf7f9a6262b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_8f817de838d5c4e3345b2eb7f5f5d450.setIcon(icon_2fe02460b0913bb2529cdf7f9a6262b2);
+        
+    
+        var popup_89407857b05ad3fc6b9c083f3fa4b39c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7924fe7d272fe61f10534ddbeeaf6c84 = $(`<div id="html_7924fe7d272fe61f10534ddbeeaf6c84" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Triệu Tân</h4>             <p><b>📍 Địa chỉ:</b> Ngõ 62 Đặng Thuỳ Trâm, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_89407857b05ad3fc6b9c083f3fa4b39c.setContent(html_7924fe7d272fe61f10534ddbeeaf6c84);
+            
+        
+
+        marker_8f817de838d5c4e3345b2eb7f5f5d450.bindPopup(popup_89407857b05ad3fc6b9c083f3fa4b39c)
+        ;
+
+        
+    
+    
+            marker_8f817de838d5c4e3345b2eb7f5f5d450.bindTooltip(
+                `<div>
+                     Nhà thuốc Triệu Tân
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1afea17686c5198df0ac88bdf0f0fa10 = L.marker(
+                [21.0016599, 105.7507217],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_e7f4cc776abb75cc3a2169e18ace9a91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_1afea17686c5198df0ac88bdf0f0fa10.setIcon(icon_e7f4cc776abb75cc3a2169e18ace9a91);
+        
+    
+        var popup_af5f6b30b8b6e0bd7f17d9220d38df8c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96009bff4539403f24b1629af0c81ecd = $(`<div id="html_96009bff4539403f24b1629af0c81ecd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Long Châu</h4>             <p><b>📍 Địa chỉ:</b> Đường Tây Mỗ, Nam Từ Liêm</p>             <p><b>🏛️ Quận:</b> Nam Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> 18006928</p>         </div>         </div>`)[0];
+                popup_af5f6b30b8b6e0bd7f17d9220d38df8c.setContent(html_96009bff4539403f24b1629af0c81ecd);
+            
+        
+
+        marker_1afea17686c5198df0ac88bdf0f0fa10.bindPopup(popup_af5f6b30b8b6e0bd7f17d9220d38df8c)
+        ;
+
+        
+    
+    
+            marker_1afea17686c5198df0ac88bdf0f0fa10.bindTooltip(
+                `<div>
+                     Nhà thuốc Long Châu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_099c7ca9c902484c6bb6707ecfb77904 = L.marker(
+                [21.0453505, 105.8687308],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_688509ebcfc28fe229a060d9865b9d15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_099c7ca9c902484c6bb6707ecfb77904.setIcon(icon_688509ebcfc28fe229a060d9865b9d15);
+        
+    
+        var popup_fbbf077525d269f02fd2a4bea78d5e58 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ac86b3732cd52c7e6054fa52411c547 = $(`<div id="html_1ac86b3732cd52c7e6054fa52411c547" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Không rõ tên</h4>             <p><b>📍 Địa chỉ:</b> Phố Ngọc Lâm, Long Biên</p>             <p><b>🏛️ Quận:</b> Long Biên</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_fbbf077525d269f02fd2a4bea78d5e58.setContent(html_1ac86b3732cd52c7e6054fa52411c547);
+            
+        
+
+        marker_099c7ca9c902484c6bb6707ecfb77904.bindPopup(popup_fbbf077525d269f02fd2a4bea78d5e58)
+        ;
+
+        
+    
+    
+            marker_099c7ca9c902484c6bb6707ecfb77904.bindTooltip(
+                `<div>
+                     Không rõ tên
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d711afcd4217ff411419493c9166d15d = L.marker(
+                [21.0451298, 105.8683676],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_5d3ea5b6a06c78f5d75742059152be0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d711afcd4217ff411419493c9166d15d.setIcon(icon_5d3ea5b6a06c78f5d75742059152be0b);
+        
+    
+        var popup_bbc9fe82b99d6cd2d77058c7cb1d2da0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d5208768e4d3172e192734dfdcbef1a4 = $(`<div id="html_d5208768e4d3172e192734dfdcbef1a4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Thiện</h4>             <p><b>📍 Địa chỉ:</b> Phố Ngọc Lâm, Long Biên</p>             <p><b>🏛️ Quận:</b> Long Biên</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_bbc9fe82b99d6cd2d77058c7cb1d2da0.setContent(html_d5208768e4d3172e192734dfdcbef1a4);
+            
+        
+
+        marker_d711afcd4217ff411419493c9166d15d.bindPopup(popup_bbc9fe82b99d6cd2d77058c7cb1d2da0)
+        ;
+
+        
+    
+    
+            marker_d711afcd4217ff411419493c9166d15d.bindTooltip(
+                `<div>
+                     Nhà thuốc Thiện
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16295096e93b12a862e53d0ae231dbc3 = L.marker(
+                [21.0414688, 105.7869775],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_0860af9f413137ef9704bb1a9fbbca78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_16295096e93b12a862e53d0ae231dbc3.setIcon(icon_0860af9f413137ef9704bb1a9fbbca78);
+        
+    
+        var popup_335b445bcd481ea1d43743306a5fc661 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_76df647706e66f1827d2dea6b7a1fc29 = $(`<div id="html_76df647706e66f1827d2dea6b7a1fc29" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Bách Vương Thảo</h4>             <p><b>📍 Địa chỉ:</b> Phố Trần Quốc Hoàn, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_335b445bcd481ea1d43743306a5fc661.setContent(html_76df647706e66f1827d2dea6b7a1fc29);
+            
+        
+
+        marker_16295096e93b12a862e53d0ae231dbc3.bindPopup(popup_335b445bcd481ea1d43743306a5fc661)
+        ;
+
+        
+    
+    
+            marker_16295096e93b12a862e53d0ae231dbc3.bindTooltip(
+                `<div>
+                     Bách Vương Thảo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d349dc699e87733720779b2143ad5b84 = L.marker(
+                [21.0098826, 105.8505521],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_e058e07fbd23beb73e6fde5f90fae329 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d349dc699e87733720779b2143ad5b84.setIcon(icon_e058e07fbd23beb73e6fde5f90fae329);
+        
+    
+        var popup_ceb0c69703d4b9332d5db82d708ae858 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_087e56cd0bb57e1089d9c65b06112534 = $(`<div id="html_087e56cd0bb57e1089d9c65b06112534" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Phương Chính</h4>             <p><b>📍 Địa chỉ:</b> Phố Mai Hắc Đế, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> +84 337 100 588</p>         </div>         </div>`)[0];
+                popup_ceb0c69703d4b9332d5db82d708ae858.setContent(html_087e56cd0bb57e1089d9c65b06112534);
+            
+        
+
+        marker_d349dc699e87733720779b2143ad5b84.bindPopup(popup_ceb0c69703d4b9332d5db82d708ae858)
+        ;
+
+        
+    
+    
+            marker_d349dc699e87733720779b2143ad5b84.bindTooltip(
+                `<div>
+                     Nhà thuốc Phương Chính
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eaedc5df92dac1ad935f4f4a15f3a838 = L.marker(
+                [21.0095477, 105.8508597],
+                {}
+            ).addTo(marker_cluster_a1f19512023ab4e33ef2bae79bfd4625);
+        
+    
+            var icon_8cdf7b66286c90ee32ee4375810b1024 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eaedc5df92dac1ad935f4f4a15f3a838.setIcon(icon_8cdf7b66286c90ee32ee4375810b1024);
+        
+    
+        var popup_d312d4a6bc0e06831777525ed85a8cae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d27e282cae8f9b69a1092b3c0fbea71c = $(`<div id="html_d27e282cae8f9b69a1092b3c0fbea71c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Phương Chính</h4>             <p><b>📍 Địa chỉ:</b> Phố Mai Hắc Đế, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> +84 24 7300 3333</p>         </div>         </div>`)[0];
+                popup_d312d4a6bc0e06831777525ed85a8cae.setContent(html_d27e282cae8f9b69a1092b3c0fbea71c);
+            
+        
+
+        marker_eaedc5df92dac1ad935f4f4a15f3a838.bindPopup(popup_d312d4a6bc0e06831777525ed85a8cae)
+        ;
+
+        
+    
+    
+            marker_eaedc5df92dac1ad935f4f4a15f3a838.bindTooltip(
+                `<div>
+                     Nhà thuốc Phương Chính
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_a1f19512023ab4e33ef2bae79bfd4625.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_561b16651897d4f3ba82c6c2c392422c = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_d2ad3c793efaa77dc8dabb48036a428f = L.circleMarker(
+                [21.0687599, 105.7784391],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_561b16651897d4f3ba82c6c2c392422c);
+        
+    
+        var popup_ba53b3952840ae30b2a540c30566d581 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6bd99969ef9318bd0f6067cfb3618b8d = $(`<div id="html_6bd99969ef9318bd0f6067cfb3618b8d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Không rõ tên</h4>             <p><b>📍 Địa chỉ:</b> Đường Cổ Nhuế, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_ba53b3952840ae30b2a540c30566d581.setContent(html_6bd99969ef9318bd0f6067cfb3618b8d);
+            
+        
+
+        circle_marker_d2ad3c793efaa77dc8dabb48036a428f.bindPopup(popup_ba53b3952840ae30b2a540c30566d581)
+        ;
+
+        
+    
+    
+            circle_marker_d2ad3c793efaa77dc8dabb48036a428f.bindTooltip(
+                `<div>
+                     Không rõ tên
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_807094db3d8c9c2d829fed3ee12c8c29 = L.circleMarker(
+                [21.074301, 105.7766093],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_561b16651897d4f3ba82c6c2c392422c);
+        
+    
+        var popup_a09dabdb03ce946e037221cb9784fb2a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f4cf6d86b1d75d062073bd190faa5e29 = $(`<div id="html_f4cf6d86b1d75d062073bd190faa5e29" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Quầy thuốc của báo</h4>             <p><b>📍 Địa chỉ:</b> Đường Lê Văn Hiến, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_a09dabdb03ce946e037221cb9784fb2a.setContent(html_f4cf6d86b1d75d062073bd190faa5e29);
+            
+        
+
+        circle_marker_807094db3d8c9c2d829fed3ee12c8c29.bindPopup(popup_a09dabdb03ce946e037221cb9784fb2a)
+        ;
+
+        
+    
+    
+            circle_marker_807094db3d8c9c2d829fed3ee12c8c29.bindTooltip(
+                `<div>
+                     Quầy thuốc của báo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9ce2539bfa78dcbeb1d3062e0854bde4 = L.circleMarker(
+                [21.0621946, 105.780551],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_561b16651897d4f3ba82c6c2c392422c);
+        
+    
+        var popup_6fd483fc8ea39b7d544b0776c37eb48c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa60874084c4107a55fffa1f64b7bdf7 = $(`<div id="html_fa60874084c4107a55fffa1f64b7bdf7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 V2- Nhà thuốc số 9</h4>             <p><b>📍 Địa chỉ:</b> Đường Cổ Nhuế, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_6fd483fc8ea39b7d544b0776c37eb48c.setContent(html_fa60874084c4107a55fffa1f64b7bdf7);
+            
+        
+
+        circle_marker_9ce2539bfa78dcbeb1d3062e0854bde4.bindPopup(popup_6fd483fc8ea39b7d544b0776c37eb48c)
+        ;
+
+        
+    
+    
+            circle_marker_9ce2539bfa78dcbeb1d3062e0854bde4.bindTooltip(
+                `<div>
+                     V2- Nhà thuốc số 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1ae4460254491133fb5b08a5044b1295 = L.circleMarker(
+                [21.0635276, 105.7797944],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_561b16651897d4f3ba82c6c2c392422c);
+        
+    
+        var popup_af9074fd11cee8ca70e1cc910ea0fdb8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e7037f272523085e5f96228e9b3dd65 = $(`<div id="html_5e7037f272523085e5f96228e9b3dd65" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 V18-Nhà thuốc Đại An 1</h4>             <p><b>📍 Địa chỉ:</b> Đường Cổ Nhuế, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_af9074fd11cee8ca70e1cc910ea0fdb8.setContent(html_5e7037f272523085e5f96228e9b3dd65);
+            
+        
+
+        circle_marker_1ae4460254491133fb5b08a5044b1295.bindPopup(popup_af9074fd11cee8ca70e1cc910ea0fdb8)
+        ;
+
+        
+    
+    
+            circle_marker_1ae4460254491133fb5b08a5044b1295.bindTooltip(
+                `<div>
+                     V18-Nhà thuốc Đại An 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db143d862bc0b150e50ea90c3dca1ad6 = L.circleMarker(
+                [21.0643, 105.7795112],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_561b16651897d4f3ba82c6c2c392422c);
+        
+    
+        var popup_e2241c1ad0023debead31bb3f4cc14d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9922429a5452a7a13a4efdabbfadcf13 = $(`<div id="html_9922429a5452a7a13a4efdabbfadcf13" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 V26-Nhà Thuốc Minh Tâm</h4>             <p><b>📍 Địa chỉ:</b> Đường Cổ Nhuế, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_e2241c1ad0023debead31bb3f4cc14d3.setContent(html_9922429a5452a7a13a4efdabbfadcf13);
+            
+        
+
+        circle_marker_db143d862bc0b150e50ea90c3dca1ad6.bindPopup(popup_e2241c1ad0023debead31bb3f4cc14d3)
+        ;
+
+        
+    
+    
+            circle_marker_db143d862bc0b150e50ea90c3dca1ad6.bindTooltip(
+                `<div>
+                     V26-Nhà Thuốc Minh Tâm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bbc42bd0478075cbc0123b45a005da56 = L.circleMarker(
+                [21.0805879, 105.7732071],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_561b16651897d4f3ba82c6c2c392422c);
+        
+    
+        var popup_d5e64cbd71383a9e6d46dcf89ab280a7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c4713f7251e7d1591fe9a00849b0d183 = $(`<div id="html_c4713f7251e7d1591fe9a00849b0d183" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Đức Huy152</h4>             <p><b>📍 Địa chỉ:</b> Phố Văn Hội, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> 24/7</p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_d5e64cbd71383a9e6d46dcf89ab280a7.setContent(html_c4713f7251e7d1591fe9a00849b0d183);
+            
+        
+
+        circle_marker_bbc42bd0478075cbc0123b45a005da56.bindPopup(popup_d5e64cbd71383a9e6d46dcf89ab280a7)
+        ;
+
+        
+    
+    
+            circle_marker_bbc42bd0478075cbc0123b45a005da56.bindTooltip(
+                `<div>
+                     Nhà thuốc Đức Huy152
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a7f83900f8f51ecfe0f9ebd4ca91e8fd = L.circleMarker(
+                [21.0471298, 105.7831976],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_561b16651897d4f3ba82c6c2c392422c);
+        
+    
+        var popup_a3d33656a739dbab2d51aa981069b441 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_900af664b4b2d5355d0d8ae6d6b0c84c = $(`<div id="html_900af664b4b2d5355d0d8ae6d6b0c84c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Quầy thuốc Bảo An số 1</h4>             <p><b>📍 Địa chỉ:</b> Ngõ 238 Hoàng Quốc Việt, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_a3d33656a739dbab2d51aa981069b441.setContent(html_900af664b4b2d5355d0d8ae6d6b0c84c);
+            
+        
+
+        circle_marker_a7f83900f8f51ecfe0f9ebd4ca91e8fd.bindPopup(popup_a3d33656a739dbab2d51aa981069b441)
+        ;
+
+        
+    
+    
+            circle_marker_a7f83900f8f51ecfe0f9ebd4ca91e8fd.bindTooltip(
+                `<div>
+                     Quầy thuốc Bảo An số 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a48c9b3c88808f2d0d5d8241a95517e8 = L.circleMarker(
+                [21.0455098, 105.7844435],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_561b16651897d4f3ba82c6c2c392422c);
+        
+    
+        var popup_e5e74ac12846c07c5fad8e1c76d57283 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd2a92525b143c14622cf9b9d0287966 = $(`<div id="html_dd2a92525b143c14622cf9b9d0287966" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hưng Gia</h4>             <p><b>📍 Địa chỉ:</b> Phố Đặng Thùy Trâm, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_e5e74ac12846c07c5fad8e1c76d57283.setContent(html_dd2a92525b143c14622cf9b9d0287966);
+            
+        
+
+        circle_marker_a48c9b3c88808f2d0d5d8241a95517e8.bindPopup(popup_e5e74ac12846c07c5fad8e1c76d57283)
+        ;
+
+        
+    
+    
+            circle_marker_a48c9b3c88808f2d0d5d8241a95517e8.bindTooltip(
+                `<div>
+                     Nhà thuốc Hưng Gia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2837f9190b4b20c3d2103a790052494d = L.circleMarker(
+                [21.0450689, 105.7845613],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_561b16651897d4f3ba82c6c2c392422c);
+        
+    
+        var popup_35db53205eb875bd6ea36c9f8cf7107c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f641bf06b66f4963c8f2031ec187251 = $(`<div id="html_6f641bf06b66f4963c8f2031ec187251" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Thành Duy</h4>             <p><b>📍 Địa chỉ:</b> Đường Đặng Thùy Trâm, Bắc Từ Liêm</p>             <p><b>🏛️ Quận:</b> Bắc Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_35db53205eb875bd6ea36c9f8cf7107c.setContent(html_6f641bf06b66f4963c8f2031ec187251);
+            
+        
+
+        circle_marker_2837f9190b4b20c3d2103a790052494d.bindPopup(popup_35db53205eb875bd6ea36c9f8cf7107c)
+        ;
+
+        
+    
+    
+            circle_marker_2837f9190b4b20c3d2103a790052494d.bindTooltip(
+                `<div>
+                     Nhà thuốc Thành Duy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_561b16651897d4f3ba82c6c2c392422c.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_3a0bfe98959756a31cb59a5c357a4ef5 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_e0bf7aab1d66181544d0433dab4c6bc8 = L.circleMarker(
+                [21.0115935, 105.8484012],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3a0bfe98959756a31cb59a5c357a4ef5);
+        
+    
+        var popup_9b62feca42a8ad249ba95d4603091a21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4ae8ac5fe06cfe25898fc29b70dbd774 = $(`<div id="html_4ae8ac5fe06cfe25898fc29b70dbd774" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hapharco</h4>             <p><b>📍 Địa chỉ:</b> Phố Lê Đại Hành, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_9b62feca42a8ad249ba95d4603091a21.setContent(html_4ae8ac5fe06cfe25898fc29b70dbd774);
+            
+        
+
+        circle_marker_e0bf7aab1d66181544d0433dab4c6bc8.bindPopup(popup_9b62feca42a8ad249ba95d4603091a21)
+        ;
+
+        
+    
+    
+            circle_marker_e0bf7aab1d66181544d0433dab4c6bc8.bindTooltip(
+                `<div>
+                     Nhà thuốc Hapharco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cbb5dcb9e1f6c1384de07b58bb554a75 = L.circleMarker(
+                [21.0097797, 105.8508952],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3a0bfe98959756a31cb59a5c357a4ef5);
+        
+    
+        var popup_c6ec573528cd70c0733f47248d2bc345 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_08b6bbd50561a71f64d3cf389488b4ec = $(`<div id="html_08b6bbd50561a71f64d3cf389488b4ec" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Long Châu</h4>             <p><b>📍 Địa chỉ:</b> Phố Mai Hắc Đế, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> +84 1800 6928</p>         </div>         </div>`)[0];
+                popup_c6ec573528cd70c0733f47248d2bc345.setContent(html_08b6bbd50561a71f64d3cf389488b4ec);
+            
+        
+
+        circle_marker_cbb5dcb9e1f6c1384de07b58bb554a75.bindPopup(popup_c6ec573528cd70c0733f47248d2bc345)
+        ;
+
+        
+    
+    
+            circle_marker_cbb5dcb9e1f6c1384de07b58bb554a75.bindTooltip(
+                `<div>
+                     Nhà thuốc Long Châu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ba0f6940408e087ca55ddeca6430b0c8 = L.circleMarker(
+                [21.0149411, 105.8508795],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3a0bfe98959756a31cb59a5c357a4ef5);
+        
+    
+        var popup_912f680bde6e7b57a94737ff3e75854b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_52f51403381d05e9ba0de8245a1c877b = $(`<div id="html_52f51403381d05e9ba0de8245a1c877b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Phương Chính</h4>             <p><b>📍 Địa chỉ:</b> Phố Mai Hắc Đế, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> +84 1800 6666</p>         </div>         </div>`)[0];
+                popup_912f680bde6e7b57a94737ff3e75854b.setContent(html_52f51403381d05e9ba0de8245a1c877b);
+            
+        
+
+        circle_marker_ba0f6940408e087ca55ddeca6430b0c8.bindPopup(popup_912f680bde6e7b57a94737ff3e75854b)
+        ;
+
+        
+    
+    
+            circle_marker_ba0f6940408e087ca55ddeca6430b0c8.bindTooltip(
+                `<div>
+                     Nhà thuốc Phương Chính
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8bda5573095f4c2c30c3976fa04989b4 = L.circleMarker(
+                [21.0139652, 105.8508884],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3a0bfe98959756a31cb59a5c357a4ef5);
+        
+    
+        var popup_fe600945d33df4d67804c445546e030f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f22d1a56dbdc383b9f7e5af7b0445f4 = $(`<div id="html_8f22d1a56dbdc383b9f7e5af7b0445f4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hồng Đăng 5</h4>             <p><b>📍 Địa chỉ:</b> Phố Mai Hắc Đế, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> +84 978 567 077</p>         </div>         </div>`)[0];
+                popup_fe600945d33df4d67804c445546e030f.setContent(html_8f22d1a56dbdc383b9f7e5af7b0445f4);
+            
+        
+
+        circle_marker_8bda5573095f4c2c30c3976fa04989b4.bindPopup(popup_fe600945d33df4d67804c445546e030f)
+        ;
+
+        
+    
+    
+            circle_marker_8bda5573095f4c2c30c3976fa04989b4.bindTooltip(
+                `<div>
+                     Nhà thuốc Hồng Đăng 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_541ce8e29c3387b0fa4a91c21f2991d2 = L.circleMarker(
+                [21.0135845, 105.8497577],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3a0bfe98959756a31cb59a5c357a4ef5);
+        
+    
+        var popup_3c0c45ff8fb9040d3061917436e97a22 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9625745f2253b7269161bb277e054a2e = $(`<div id="html_9625745f2253b7269161bb277e054a2e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hà Thu</h4>             <p><b>📍 Địa chỉ:</b> Phố Tô Hiến Thành, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_3c0c45ff8fb9040d3061917436e97a22.setContent(html_9625745f2253b7269161bb277e054a2e);
+            
+        
+
+        circle_marker_541ce8e29c3387b0fa4a91c21f2991d2.bindPopup(popup_3c0c45ff8fb9040d3061917436e97a22)
+        ;
+
+        
+    
+    
+            circle_marker_541ce8e29c3387b0fa4a91c21f2991d2.bindTooltip(
+                `<div>
+                     Nhà thuốc Hà Thu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d9a0fe92d83083f5b3e4fd4126804159 = L.circleMarker(
+                [21.0098826, 105.8505521],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3a0bfe98959756a31cb59a5c357a4ef5);
+        
+    
+        var popup_01cfba95a18bb6b98cd336bf3fdfd44a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9dc254b207dc5799e55957fec5990980 = $(`<div id="html_9dc254b207dc5799e55957fec5990980" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Phương Chính</h4>             <p><b>📍 Địa chỉ:</b> Phố Mai Hắc Đế, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> +84 337 100 588</p>         </div>         </div>`)[0];
+                popup_01cfba95a18bb6b98cd336bf3fdfd44a.setContent(html_9dc254b207dc5799e55957fec5990980);
+            
+        
+
+        circle_marker_d9a0fe92d83083f5b3e4fd4126804159.bindPopup(popup_01cfba95a18bb6b98cd336bf3fdfd44a)
+        ;
+
+        
+    
+    
+            circle_marker_d9a0fe92d83083f5b3e4fd4126804159.bindTooltip(
+                `<div>
+                     Nhà thuốc Phương Chính
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_17fb686651f797e953441adb96c0b4ae = L.circleMarker(
+                [21.0095477, 105.8508597],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3a0bfe98959756a31cb59a5c357a4ef5);
+        
+    
+        var popup_f5624df02ef864e16df36fa6e09b93bd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a18dc818428b823c2fc4ddba66389bba = $(`<div id="html_a18dc818428b823c2fc4ddba66389bba" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Phương Chính</h4>             <p><b>📍 Địa chỉ:</b> Phố Mai Hắc Đế, Hai Bà Trưng</p>             <p><b>🏛️ Quận:</b> Hai Bà Trưng</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> +84 24 7300 3333</p>         </div>         </div>`)[0];
+                popup_f5624df02ef864e16df36fa6e09b93bd.setContent(html_a18dc818428b823c2fc4ddba66389bba);
+            
+        
+
+        circle_marker_17fb686651f797e953441adb96c0b4ae.bindPopup(popup_f5624df02ef864e16df36fa6e09b93bd)
+        ;
+
+        
+    
+    
+            circle_marker_17fb686651f797e953441adb96c0b4ae.bindTooltip(
+                `<div>
+                     Nhà thuốc Phương Chính
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_3a0bfe98959756a31cb59a5c357a4ef5.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_3db9403b7396d4a5250f2f97506dc123 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_1e13d049e8ab31a68e61d516bc01d619 = L.circleMarker(
+                [21.0414606, 105.8267369],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3db9403b7396d4a5250f2f97506dc123);
+        
+    
+        var popup_6508937687ec8b5713714699a3fa9484 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ce44cfd5c6e5d4bd40c4dd82fd289023 = $(`<div id="html_ce44cfd5c6e5d4bd40c4dd82fd289023" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Đường Thụy Khuê, Tây Hồ</p>             <p><b>🏛️ Quận:</b> Tây Hồ</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_6508937687ec8b5713714699a3fa9484.setContent(html_ce44cfd5c6e5d4bd40c4dd82fd289023);
+            
+        
+
+        circle_marker_1e13d049e8ab31a68e61d516bc01d619.bindPopup(popup_6508937687ec8b5713714699a3fa9484)
+        ;
+
+        
+    
+    
+            circle_marker_1e13d049e8ab31a68e61d516bc01d619.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_3db9403b7396d4a5250f2f97506dc123.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_2c96427e77ca1cc1d766398741464123 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_f239be4d015450f4faa09ba3d61db1c6 = L.circleMarker(
+                [21.0183291, 105.8288463],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c96427e77ca1cc1d766398741464123);
+        
+    
+        var popup_677260cb57749fd3c32c19459acc8a8d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_08494fe34ce7a8db5caebdc63b933f4e = $(`<div id="html_08494fe34ce7a8db5caebdc63b933f4e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Ngọc Hân</h4>             <p><b>📍 Địa chỉ:</b> Phố Đông Các, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_677260cb57749fd3c32c19459acc8a8d.setContent(html_08494fe34ce7a8db5caebdc63b933f4e);
+            
+        
+
+        circle_marker_f239be4d015450f4faa09ba3d61db1c6.bindPopup(popup_677260cb57749fd3c32c19459acc8a8d)
+        ;
+
+        
+    
+    
+            circle_marker_f239be4d015450f4faa09ba3d61db1c6.bindTooltip(
+                `<div>
+                     Nhà thuốc Ngọc Hân
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_375c697e32236b746e14060a1568463b = L.circleMarker(
+                [21.0145412, 105.8100527],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c96427e77ca1cc1d766398741464123);
+        
+    
+        var popup_398a63ee5b292b7c94fdc7fcc0c2a190 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9f126196d11300a2f78b9d8e6ba90bd9 = $(`<div id="html_9f126196d11300a2f78b9d8e6ba90bd9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Siêu thị thực phẩm chức năng GPCare</h4>             <p><b>📍 Địa chỉ:</b> Phõ Vũ Ngọc Phan, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> +84 0996986666</p>         </div>         </div>`)[0];
+                popup_398a63ee5b292b7c94fdc7fcc0c2a190.setContent(html_9f126196d11300a2f78b9d8e6ba90bd9);
+            
+        
+
+        circle_marker_375c697e32236b746e14060a1568463b.bindPopup(popup_398a63ee5b292b7c94fdc7fcc0c2a190)
+        ;
+
+        
+    
+    
+            circle_marker_375c697e32236b746e14060a1568463b.bindTooltip(
+                `<div>
+                     Siêu thị thực phẩm chức năng GPCare
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_53f6fd9958b3508e3892d515a833b2c3 = L.circleMarker(
+                [21.0167687, 105.8358901],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c96427e77ca1cc1d766398741464123);
+        
+    
+        var popup_5979e2622e4c2853cc399c607b1d4022 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a7c9470d07a5caefaaca3e14d79191f7 = $(`<div id="html_a7c9470d07a5caefaaca3e14d79191f7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà Thuốc Anh Quốc</h4>             <p><b>📍 Địa chỉ:</b> Phố Trung Phụng, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_5979e2622e4c2853cc399c607b1d4022.setContent(html_a7c9470d07a5caefaaca3e14d79191f7);
+            
+        
+
+        circle_marker_53f6fd9958b3508e3892d515a833b2c3.bindPopup(popup_5979e2622e4c2853cc399c607b1d4022)
+        ;
+
+        
+    
+    
+            circle_marker_53f6fd9958b3508e3892d515a833b2c3.bindTooltip(
+                `<div>
+                     Nhà Thuốc Anh Quốc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_93f20dac332867fdaa71c15e143aa19c = L.circleMarker(
+                [21.0127084, 105.8323841],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c96427e77ca1cc1d766398741464123);
+        
+    
+        var popup_9e50b4ceac152d3d55ccadba9a1839a5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c311886104b751a5da7ca1238389d14c = $(`<div id="html_c311886104b751a5da7ca1238389d14c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Anh Đức</h4>             <p><b>📍 Địa chỉ:</b> Ngõ Xã Đàn 2, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_9e50b4ceac152d3d55ccadba9a1839a5.setContent(html_c311886104b751a5da7ca1238389d14c);
+            
+        
+
+        circle_marker_93f20dac332867fdaa71c15e143aa19c.bindPopup(popup_9e50b4ceac152d3d55ccadba9a1839a5)
+        ;
+
+        
+    
+    
+            circle_marker_93f20dac332867fdaa71c15e143aa19c.bindTooltip(
+                `<div>
+                     Nhà thuốc Anh Đức
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_168c681ee97c37175b1fa260d6788cc0 = L.circleMarker(
+                [21.0098503, 105.8361196],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c96427e77ca1cc1d766398741464123);
+        
+    
+        var popup_4734e1bed4c459056021c60e2ea2366b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f30bea8186c7b0572be7c5ef20000411 = $(`<div id="html_f30bea8186c7b0572be7c5ef20000411" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Nam Cường</h4>             <p><b>📍 Địa chỉ:</b> Ngõ 21 Phạm Ngọc Thạch, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_4734e1bed4c459056021c60e2ea2366b.setContent(html_f30bea8186c7b0572be7c5ef20000411);
+            
+        
+
+        circle_marker_168c681ee97c37175b1fa260d6788cc0.bindPopup(popup_4734e1bed4c459056021c60e2ea2366b)
+        ;
+
+        
+    
+    
+            circle_marker_168c681ee97c37175b1fa260d6788cc0.bindTooltip(
+                `<div>
+                     Nhà thuốc Nam Cường
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7376e68cb22a2a2245511f06cf1d4583 = L.circleMarker(
+                [21.0153155, 105.8316307],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c96427e77ca1cc1d766398741464123);
+        
+    
+        var popup_fd5d045053da35057fb91d5bf1fab4d0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b84c913e8fd40c947674a6e6af43d7ec = $(`<div id="html_b84c913e8fd40c947674a6e6af43d7ec" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hằng Anh</h4>             <p><b>📍 Địa chỉ:</b> Ngõ Xã Đàn 2, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_fd5d045053da35057fb91d5bf1fab4d0.setContent(html_b84c913e8fd40c947674a6e6af43d7ec);
+            
+        
+
+        circle_marker_7376e68cb22a2a2245511f06cf1d4583.bindPopup(popup_fd5d045053da35057fb91d5bf1fab4d0)
+        ;
+
+        
+    
+    
+            circle_marker_7376e68cb22a2a2245511f06cf1d4583.bindTooltip(
+                `<div>
+                     Nhà thuốc Hằng Anh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8d2fcbcb4441f86e70770d5cb59efee9 = L.circleMarker(
+                [21.0173423, 105.8315949],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c96427e77ca1cc1d766398741464123);
+        
+    
+        var popup_d3e832467d49f76fa38eab3558b56e1d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc7cb3a9e68e52149c24140304c7daa8 = $(`<div id="html_bc7cb3a9e68e52149c24140304c7daa8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc số 9</h4>             <p><b>📍 Địa chỉ:</b> Đường Đê La Thành, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_d3e832467d49f76fa38eab3558b56e1d.setContent(html_bc7cb3a9e68e52149c24140304c7daa8);
+            
+        
+
+        circle_marker_8d2fcbcb4441f86e70770d5cb59efee9.bindPopup(popup_d3e832467d49f76fa38eab3558b56e1d)
+        ;
+
+        
+    
+    
+            circle_marker_8d2fcbcb4441f86e70770d5cb59efee9.bindTooltip(
+                `<div>
+                     Nhà thuốc số 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ddae87423143080d3b18de5d23b55de8 = L.circleMarker(
+                [21.0170633, 105.8318618],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c96427e77ca1cc1d766398741464123);
+        
+    
+        var popup_2d7d338cb09a7c89d2abed0a301f5bd5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cff40e7ba442af2572feeca6a733d610 = $(`<div id="html_cff40e7ba442af2572feeca6a733d610" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Bảo Phúc II</h4>             <p><b>📍 Địa chỉ:</b> Đường Đê La Thành, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_2d7d338cb09a7c89d2abed0a301f5bd5.setContent(html_cff40e7ba442af2572feeca6a733d610);
+            
+        
+
+        circle_marker_ddae87423143080d3b18de5d23b55de8.bindPopup(popup_2d7d338cb09a7c89d2abed0a301f5bd5)
+        ;
+
+        
+    
+    
+            circle_marker_ddae87423143080d3b18de5d23b55de8.bindTooltip(
+                `<div>
+                     Nhà thuốc Bảo Phúc II
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9fc7a59dfbcd02a19bb9d4079b850acf = L.circleMarker(
+                [21.01467, 105.8342538],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c96427e77ca1cc1d766398741464123);
+        
+    
+        var popup_1b90c55217506ebd13970744aacc8fbb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_423928d32831c4d1264c61cb2425aca8 = $(`<div id="html_423928d32831c4d1264c61cb2425aca8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hải Anh</h4>             <p><b>📍 Địa chỉ:</b> Phố Xã Đàn, Đống Đa</p>             <p><b>🏛️ Quận:</b> Đống Đa</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_1b90c55217506ebd13970744aacc8fbb.setContent(html_423928d32831c4d1264c61cb2425aca8);
+            
+        
+
+        circle_marker_9fc7a59dfbcd02a19bb9d4079b850acf.bindPopup(popup_1b90c55217506ebd13970744aacc8fbb)
+        ;
+
+        
+    
+    
+            circle_marker_9fc7a59dfbcd02a19bb9d4079b850acf.bindTooltip(
+                `<div>
+                     Nhà thuốc Hải Anh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_2c96427e77ca1cc1d766398741464123.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_20caf954f8fd8b0d69b4b82b8ff67d8e = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_32023d1156003a0e1d04dc117f808b50 = L.circleMarker(
+                [21.0216211, 105.8494073],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_20caf954f8fd8b0d69b4b82b8ff67d8e);
+        
+    
+        var popup_327b0b1f07373ba4578e385c84ba41cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1726c067124f5dc0e77a025fa22692d9 = $(`<div id="html_1726c067124f5dc0e77a025fa22692d9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Siêu thị thực phẩm chức năng GPCare - Cơ sở 3 - 65B Trần Hưng Đạo</h4>             <p><b>📍 Địa chỉ:</b> Trần Hưng Đạo, Hoàn Kiếm</p>             <p><b>🏛️ Quận:</b> Hoàn Kiếm</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> 0996986666</p>         </div>         </div>`)[0];
+                popup_327b0b1f07373ba4578e385c84ba41cb.setContent(html_1726c067124f5dc0e77a025fa22692d9);
+            
+        
+
+        circle_marker_32023d1156003a0e1d04dc117f808b50.bindPopup(popup_327b0b1f07373ba4578e385c84ba41cb)
+        ;
+
+        
+    
+    
+            circle_marker_32023d1156003a0e1d04dc117f808b50.bindTooltip(
+                `<div>
+                     Siêu thị thực phẩm chức năng GPCare - Cơ sở 3 - 65B Trần Hưng Đạo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_20caf954f8fd8b0d69b4b82b8ff67d8e.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_378fd0bf285ce2d0382a7b4b5c7e0a7f = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_1e0b5127922f733fece27160fd90f694 = L.circleMarker(
+                [21.0380968, 105.7929932],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_378fd0bf285ce2d0382a7b4b5c7e0a7f);
+        
+    
+        var popup_482fd1b462b59b22d257f68712f23e8f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8fc001620c6a3616cae28bd885546a2f = $(`<div id="html_8fc001620c6a3616cae28bd885546a2f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà Thuốc Tâm An</h4>             <p><b>📍 Địa chỉ:</b> Trần Đăng Ninh, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 08:00-22:00</p>             <p><b>📞 SĐT:</b> +84 24 6283 1975</p>         </div>         </div>`)[0];
+                popup_482fd1b462b59b22d257f68712f23e8f.setContent(html_8fc001620c6a3616cae28bd885546a2f);
+            
+        
+
+        circle_marker_1e0b5127922f733fece27160fd90f694.bindPopup(popup_482fd1b462b59b22d257f68712f23e8f)
+        ;
+
+        
+    
+    
+            circle_marker_1e0b5127922f733fece27160fd90f694.bindTooltip(
+                `<div>
+                     Nhà Thuốc Tâm An
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_16b38498b331e7f35f9b7bae6654dc4d = L.circleMarker(
+                [21.0416695, 105.7822704],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_378fd0bf285ce2d0382a7b4b5c7e0a7f);
+        
+    
+        var popup_44553ec63364bfdebe41e59f6c2449fb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_00feaa061d8b010f7be8438fe889bcdb = $(`<div id="html_00feaa061d8b010f7be8438fe889bcdb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Hoàng Minh</h4>             <p><b>📍 Địa chỉ:</b> Phố Trần Quốc Hoàn, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_44553ec63364bfdebe41e59f6c2449fb.setContent(html_00feaa061d8b010f7be8438fe889bcdb);
+            
+        
+
+        circle_marker_16b38498b331e7f35f9b7bae6654dc4d.bindPopup(popup_44553ec63364bfdebe41e59f6c2449fb)
+        ;
+
+        
+    
+    
+            circle_marker_16b38498b331e7f35f9b7bae6654dc4d.bindTooltip(
+                `<div>
+                     Nhà thuốc Hoàng Minh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_faa15c2b09cfe514f51db8f972226f88 = L.circleMarker(
+                [21.0287756, 105.7936974],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_378fd0bf285ce2d0382a7b4b5c7e0a7f);
+        
+    
+        var popup_58615fef0e3f0395b367475d17f71986 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5530db3b3d302cefe91b2a06d868405f = $(`<div id="html_5530db3b3d302cefe91b2a06d868405f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Trường Hương</h4>             <p><b>📍 Địa chỉ:</b> Phố Thành Thái, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_58615fef0e3f0395b367475d17f71986.setContent(html_5530db3b3d302cefe91b2a06d868405f);
+            
+        
+
+        circle_marker_faa15c2b09cfe514f51db8f972226f88.bindPopup(popup_58615fef0e3f0395b367475d17f71986)
+        ;
+
+        
+    
+    
+            circle_marker_faa15c2b09cfe514f51db8f972226f88.bindTooltip(
+                `<div>
+                     Nhà thuốc Trường Hương
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6ab311debec9abe0a9ee1dfa92358d10 = L.circleMarker(
+                [21.0427024, 105.7860905],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_378fd0bf285ce2d0382a7b4b5c7e0a7f);
+        
+    
+        var popup_bb437bb467e83ff5a9d02a7a262c8440 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e30714ed22d646fabaed27fdf8937455 = $(`<div id="html_e30714ed22d646fabaed27fdf8937455" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Phố Phạm Tuấn Tài, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_bb437bb467e83ff5a9d02a7a262c8440.setContent(html_e30714ed22d646fabaed27fdf8937455);
+            
+        
+
+        circle_marker_6ab311debec9abe0a9ee1dfa92358d10.bindPopup(popup_bb437bb467e83ff5a9d02a7a262c8440)
+        ;
+
+        
+    
+    
+            circle_marker_6ab311debec9abe0a9ee1dfa92358d10.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_33030ad0499bd9f4d4f78f1d61d23edc = L.circleMarker(
+                [21.0433255, 105.7854321],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_378fd0bf285ce2d0382a7b4b5c7e0a7f);
+        
+    
+        var popup_4b83f233f2df58119fcbed778d3582d7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2d074b3d4d8c519141248a0ef81483cc = $(`<div id="html_2d074b3d4d8c519141248a0ef81483cc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 DUO Care</h4>             <p><b>📍 Địa chỉ:</b> Ngõ 3 Phạm Tuấn Tài, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 08:00-22:00</p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_4b83f233f2df58119fcbed778d3582d7.setContent(html_2d074b3d4d8c519141248a0ef81483cc);
+            
+        
+
+        circle_marker_33030ad0499bd9f4d4f78f1d61d23edc.bindPopup(popup_4b83f233f2df58119fcbed778d3582d7)
+        ;
+
+        
+    
+    
+            circle_marker_33030ad0499bd9f4d4f78f1d61d23edc.bindTooltip(
+                `<div>
+                     DUO Care
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9907156fc078013700a3362f3c27a12a = L.circleMarker(
+                [21.043525, 105.7861166],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_378fd0bf285ce2d0382a7b4b5c7e0a7f);
+        
+    
+        var popup_556cb0e6633d9f19162d8cbad24503ae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4109cae04cb9f01a1793fb4818a7e0fa = $(`<div id="html_4109cae04cb9f01a1793fb4818a7e0fa" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Triệu Tân</h4>             <p><b>📍 Địa chỉ:</b> Ngõ 62 Đặng Thuỳ Trâm, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_556cb0e6633d9f19162d8cbad24503ae.setContent(html_4109cae04cb9f01a1793fb4818a7e0fa);
+            
+        
+
+        circle_marker_9907156fc078013700a3362f3c27a12a.bindPopup(popup_556cb0e6633d9f19162d8cbad24503ae)
+        ;
+
+        
+    
+    
+            circle_marker_9907156fc078013700a3362f3c27a12a.bindTooltip(
+                `<div>
+                     Nhà thuốc Triệu Tân
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3aad435a262e0a83dc16f3b84fe1346e = L.circleMarker(
+                [21.0414688, 105.7869775],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_378fd0bf285ce2d0382a7b4b5c7e0a7f);
+        
+    
+        var popup_345cabfb739796e3f628691178dda364 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_55dfe39f5471f1a4b4f5b1a80c6e399f = $(`<div id="html_55dfe39f5471f1a4b4f5b1a80c6e399f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Bách Vương Thảo</h4>             <p><b>📍 Địa chỉ:</b> Phố Trần Quốc Hoàn, Cầu Giấy</p>             <p><b>🏛️ Quận:</b> Cầu Giấy</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_345cabfb739796e3f628691178dda364.setContent(html_55dfe39f5471f1a4b4f5b1a80c6e399f);
+            
+        
+
+        circle_marker_3aad435a262e0a83dc16f3b84fe1346e.bindPopup(popup_345cabfb739796e3f628691178dda364)
+        ;
+
+        
+    
+    
+            circle_marker_3aad435a262e0a83dc16f3b84fe1346e.bindTooltip(
+                `<div>
+                     Bách Vương Thảo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_378fd0bf285ce2d0382a7b4b5c7e0a7f.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_6f0b68b1feaa7a960d8dbf9e56e15d81 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_040ce68d459ff592784704ce5a862c64 = L.circleMarker(
+                [21.0268963, 105.8223999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6f0b68b1feaa7a960d8dbf9e56e15d81);
+        
+    
+        var popup_c4c3f016df1c596983fc47b7e29f0516 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_513230bbc464570ca2148b12c105b7bb = $(`<div id="html_513230bbc464570ca2148b12c105b7bb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacy Đức Long</h4>             <p><b>📍 Địa chỉ:</b> Phố Trần Huy Liệu, Ba Đình</p>             <p><b>🏛️ Quận:</b> Ba Đình</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_c4c3f016df1c596983fc47b7e29f0516.setContent(html_513230bbc464570ca2148b12c105b7bb);
+            
+        
+
+        circle_marker_040ce68d459ff592784704ce5a862c64.bindPopup(popup_c4c3f016df1c596983fc47b7e29f0516)
+        ;
+
+        
+    
+    
+            circle_marker_040ce68d459ff592784704ce5a862c64.bindTooltip(
+                `<div>
+                     Pharmacy Đức Long
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_6f0b68b1feaa7a960d8dbf9e56e15d81.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_2ac50455e9e9cd2824345b4fff8cddfa = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_fe85968967af530e210ea3ec88d72f69 = L.circleMarker(
+                [20.9995824, 105.8277831],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ac50455e9e9cd2824345b4fff8cddfa);
+        
+    
+        var popup_81f21f425e585ea76e95a601ac10ed75 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5db714858c8f5f4ff3822e140aca1184 = $(`<div id="html_5db714858c8f5f4ff3822e140aca1184" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Phố Lê Trọng Tấn, Thanh Xuân</p>             <p><b>🏛️ Quận:</b> Thanh Xuân</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 06:00-23:30</p>             <p><b>📞 SĐT:</b> +84 1800 6821</p>         </div>         </div>`)[0];
+                popup_81f21f425e585ea76e95a601ac10ed75.setContent(html_5db714858c8f5f4ff3822e140aca1184);
+            
+        
+
+        circle_marker_fe85968967af530e210ea3ec88d72f69.bindPopup(popup_81f21f425e585ea76e95a601ac10ed75)
+        ;
+
+        
+    
+    
+            circle_marker_fe85968967af530e210ea3ec88d72f69.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a5555f597df51eadc57ab203f719003 = L.circleMarker(
+                [20.9988127, 105.8201338],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ac50455e9e9cd2824345b4fff8cddfa);
+        
+    
+        var popup_a798f7fae5eef4debef89ada21cf2051 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_630292e4512e6ccbfc8c43a97b68126a = $(`<div id="html_630292e4512e6ccbfc8c43a97b68126a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Phố Tô Vĩnh Diện, Thanh Xuân</p>             <p><b>🏛️ Quận:</b> Thanh Xuân</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 06:00-23:30</p>             <p><b>📞 SĐT:</b> +84 1800 6821</p>         </div>         </div>`)[0];
+                popup_a798f7fae5eef4debef89ada21cf2051.setContent(html_630292e4512e6ccbfc8c43a97b68126a);
+            
+        
+
+        circle_marker_1a5555f597df51eadc57ab203f719003.bindPopup(popup_a798f7fae5eef4debef89ada21cf2051)
+        ;
+
+        
+    
+    
+            circle_marker_1a5555f597df51eadc57ab203f719003.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7086a57df3202536ca2c35e34278f950 = L.circleMarker(
+                [20.992803, 105.7979595],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ac50455e9e9cd2824345b4fff8cddfa);
+        
+    
+        var popup_a7cb4edd6fa176ab5ed5a3da0c801dcd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5dcc6688702c35f0c60b89356584b058 = $(`<div id="html_5dcc6688702c35f0c60b89356584b058" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Nguyễn Quý Đức, Thanh Xuân</p>             <p><b>🏛️ Quận:</b> Thanh Xuân</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 06:00-23:30</p>             <p><b>📞 SĐT:</b> +84 1800 6821</p>         </div>         </div>`)[0];
+                popup_a7cb4edd6fa176ab5ed5a3da0c801dcd.setContent(html_5dcc6688702c35f0c60b89356584b058);
+            
+        
+
+        circle_marker_7086a57df3202536ca2c35e34278f950.bindPopup(popup_a7cb4edd6fa176ab5ed5a3da0c801dcd)
+        ;
+
+        
+    
+    
+            circle_marker_7086a57df3202536ca2c35e34278f950.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d27f2f3b09b754eec945d5e7d356b6d8 = L.circleMarker(
+                [20.9904032, 105.8011202],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ac50455e9e9cd2824345b4fff8cddfa);
+        
+    
+        var popup_73a517d16c9f06b87b86554c9ed0df1c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_54583423c73012c6b51271d9b0367efd = $(`<div id="html_54583423c73012c6b51271d9b0367efd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Minh Tiến</h4>             <p><b>📍 Địa chỉ:</b> Nguyễn Quý Đức, Thanh Xuân</p>             <p><b>🏛️ Quận:</b> Thanh Xuân</p>             <p><b>🕐 Giờ mở:</b> Mo-Sa 07:15-21:00; Su 07:15-18:30</p>             <p><b>📞 SĐT:</b> +84 966 369 299</p>         </div>         </div>`)[0];
+                popup_73a517d16c9f06b87b86554c9ed0df1c.setContent(html_54583423c73012c6b51271d9b0367efd);
+            
+        
+
+        circle_marker_d27f2f3b09b754eec945d5e7d356b6d8.bindPopup(popup_73a517d16c9f06b87b86554c9ed0df1c)
+        ;
+
+        
+    
+    
+            circle_marker_d27f2f3b09b754eec945d5e7d356b6d8.bindTooltip(
+                `<div>
+                     Nhà thuốc Minh Tiến
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_2ac50455e9e9cd2824345b4fff8cddfa.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_57d1ccb591e761b31123d8f2930863e7 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_19de35ee2bda190a2a496e3f18134743 = L.circleMarker(
+                [20.9705795, 105.829829],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57d1ccb591e761b31123d8f2930863e7);
+        
+    
+        var popup_f4564d6527cae2bce0cf8591c93d2a0d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79bbaf08452985f4db976ac700c8fb8e = $(`<div id="html_79bbaf08452985f4db976ac700c8fb8e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Pharmacity</h4>             <p><b>📍 Địa chỉ:</b> Đặng Xuân Bảng, Hoàng Mai</p>             <p><b>🏛️ Quận:</b> Hoàng Mai</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 06:00-23:30</p>             <p><b>📞 SĐT:</b> +84 1800 6821</p>         </div>         </div>`)[0];
+                popup_f4564d6527cae2bce0cf8591c93d2a0d.setContent(html_79bbaf08452985f4db976ac700c8fb8e);
+            
+        
+
+        circle_marker_19de35ee2bda190a2a496e3f18134743.bindPopup(popup_f4564d6527cae2bce0cf8591c93d2a0d)
+        ;
+
+        
+    
+    
+            circle_marker_19de35ee2bda190a2a496e3f18134743.bindTooltip(
+                `<div>
+                     Pharmacity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_57d1ccb591e761b31123d8f2930863e7.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_c330e6d546fda66e51777d4f9a32e3a4 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_8a0e92f40514896b57e2500f34b83ec4 = L.circleMarker(
+                [21.0016599, 105.7507217],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c330e6d546fda66e51777d4f9a32e3a4);
+        
+    
+        var popup_34a03220f09c21f66b3137888f308dd9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_137a3fced02957de79ea579670b3dea4 = $(`<div id="html_137a3fced02957de79ea579670b3dea4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Long Châu</h4>             <p><b>📍 Địa chỉ:</b> Đường Tây Mỗ, Nam Từ Liêm</p>             <p><b>🏛️ Quận:</b> Nam Từ Liêm</p>             <p><b>🕐 Giờ mở:</b> Mo-Su 07:00-22:00</p>             <p><b>📞 SĐT:</b> 18006928</p>         </div>         </div>`)[0];
+                popup_34a03220f09c21f66b3137888f308dd9.setContent(html_137a3fced02957de79ea579670b3dea4);
+            
+        
+
+        circle_marker_8a0e92f40514896b57e2500f34b83ec4.bindPopup(popup_34a03220f09c21f66b3137888f308dd9)
+        ;
+
+        
+    
+    
+            circle_marker_8a0e92f40514896b57e2500f34b83ec4.bindTooltip(
+                `<div>
+                     Nhà thuốc Long Châu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_c330e6d546fda66e51777d4f9a32e3a4.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var feature_group_e1d03fde011335908b9077c2626e6a73 = L.featureGroup(
+                {}
+            );
+        
+    
+            var circle_marker_9e51542c9ddcf223d343053a0068cdba = L.circleMarker(
+                [21.0453505, 105.8687308],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e1d03fde011335908b9077c2626e6a73);
+        
+    
+        var popup_bad08af0f8e084bca2e01a29bb4242ef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a4828e0491bc121d71a1666a759d4d60 = $(`<div id="html_a4828e0491bc121d71a1666a759d4d60" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Không rõ tên</h4>             <p><b>📍 Địa chỉ:</b> Phố Ngọc Lâm, Long Biên</p>             <p><b>🏛️ Quận:</b> Long Biên</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_bad08af0f8e084bca2e01a29bb4242ef.setContent(html_a4828e0491bc121d71a1666a759d4d60);
+            
+        
+
+        circle_marker_9e51542c9ddcf223d343053a0068cdba.bindPopup(popup_bad08af0f8e084bca2e01a29bb4242ef)
+        ;
+
+        
+    
+    
+            circle_marker_9e51542c9ddcf223d343053a0068cdba.bindTooltip(
+                `<div>
+                     Không rõ tên
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9d99693a52e5dace5440aacd6b51ba5c = L.circleMarker(
+                [21.0451298, 105.8683676],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e1d03fde011335908b9077c2626e6a73);
+        
+    
+        var popup_0cd65367cb95822c9977cdd346ff8107 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_38c0def577094ce8065fc02b45a44951 = $(`<div id="html_38c0def577094ce8065fc02b45a44951" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 Nhà thuốc Thiện</h4>             <p><b>📍 Địa chỉ:</b> Phố Ngọc Lâm, Long Biên</p>             <p><b>🏛️ Quận:</b> Long Biên</p>             <p><b>🕐 Giờ mở:</b> </p>             <p><b>📞 SĐT:</b> </p>         </div>         </div>`)[0];
+                popup_0cd65367cb95822c9977cdd346ff8107.setContent(html_38c0def577094ce8065fc02b45a44951);
+            
+        
+
+        circle_marker_9d99693a52e5dace5440aacd6b51ba5c.bindPopup(popup_0cd65367cb95822c9977cdd346ff8107)
+        ;
+
+        
+    
+    
+            circle_marker_9d99693a52e5dace5440aacd6b51ba5c.bindTooltip(
+                `<div>
+                     Nhà thuốc Thiện
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_e1d03fde011335908b9077c2626e6a73.addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+        
+    
+            var layer_control_e016fd25ef7b009bbe079858fd1c8916_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_07e6240d699fdb6e12e74e63a4f9d6d6,
+                    "Light Map" : tile_layer_1a7e6d6f8f92ca442a19d9a6d5eef604,
+                },
+                overlays :  {
+                    "T\u1ea5t c\u1ea3 hi\u1ec7u thu\u1ed1c" : marker_cluster_a1f19512023ab4e33ef2bae79bfd4625,
+                    "\ud83d\udccd B\u1eafc T\u1eeb Li\u00eam" : feature_group_561b16651897d4f3ba82c6c2c392422c,
+                    "\ud83d\udccd Hai B\u00e0 Tr\u01b0ng" : feature_group_3a0bfe98959756a31cb59a5c357a4ef5,
+                    "\ud83d\udccd T\u00e2y H\u1ed3" : feature_group_3db9403b7396d4a5250f2f97506dc123,
+                    "\ud83d\udccd \u0110\u1ed1ng \u0110a" : feature_group_2c96427e77ca1cc1d766398741464123,
+                    "\ud83d\udccd Ho\u00e0n Ki\u1ebfm" : feature_group_20caf954f8fd8b0d69b4b82b8ff67d8e,
+                    "\ud83d\udccd C\u1ea7u Gi\u1ea5y" : feature_group_378fd0bf285ce2d0382a7b4b5c7e0a7f,
+                    "\ud83d\udccd Ba \u0110\u00ecnh" : feature_group_6f0b68b1feaa7a960d8dbf9e56e15d81,
+                    "\ud83d\udccd Thanh Xu\u00e2n" : feature_group_2ac50455e9e9cd2824345b4fff8cddfa,
+                    "\ud83d\udccd Ho\u00e0ng Mai" : feature_group_57d1ccb591e761b31123d8f2930863e7,
+                    "\ud83d\udccd Nam T\u1eeb Li\u00eam" : feature_group_c330e6d546fda66e51777d4f9a32e3a4,
+                    "\ud83d\udccd Long Bi\u00ean" : feature_group_e1d03fde011335908b9077c2626e6a73,
+                },
+            };
+            let layer_control_e016fd25ef7b009bbe079858fd1c8916 = L.control.layers(
+                layer_control_e016fd25ef7b009bbe079858fd1c8916_layers.base_layers,
+                layer_control_e016fd25ef7b009bbe079858fd1c8916_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_54ca5bb6a9027a5f010b1a2ec55db14e);
+
+        
+</script>
+</html>

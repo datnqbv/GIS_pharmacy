@@ -1,0 +1,12 @@
+# Thư viện cần thiết cho dự án Phân tích hiệu thuốc Hà Nội
+
+# Xử lý dữ liệu
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Vẽ biểu đồ
+matplotlib>=3.7.0
+
+# Xử lý GeoJSON và bản đồ
+folium>=0.14.0
+

@@ -1,0 +1,4108 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-10-24T11:52:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/733355005",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8027129,
+          21.0403345
+        ]
+      },
+      "id": "node/733355005"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/898226389",
+        "addr:housenumber": "Sông nhuệ p đức thắng",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "tiệm thuốc phúc hải",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7719829,
+          21.0755685
+        ]
+      },
+      "id": "way/898226389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/898226397",
+        "addr:housenumber": "20 Sông nhuệ p đức thắng",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "thuốc tùng anh",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7721345,
+          21.0756588
+        ]
+      },
+      "id": "way/898226397"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/899332861",
+        "addr:city": "Hà Nội",
+        "addr:district": "Bắc Từ Liêm",
+        "addr:housenumber": "469",
+        "addr:street": "Đường Cổ Nhuế",
+        "addr:subdistrict": "Cổ Nhuế",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7784391,
+          21.0687599
+        ]
+      },
+      "id": "way/899332861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/904729837",
+        "addr:city": "Hà Nội",
+        "addr:district": "Hai Bà Trưng",
+        "addr:housenumber": "44",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Lê Đại Hành",
+        "addr:subdistrict": "Lê Đại Hành",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "building:levels": "3",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Hapharco",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8484012,
+          21.0115935
+        ]
+      },
+      "id": "way/904729837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/933680040",
+        "addr:street": "Đường Lê Văn Hiến",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7742642,
+          21.0741477
+        ]
+      },
+      "id": "way/933680040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/933680065",
+        "addr:housenumber": "25",
+        "addr:street": "Đường Lê Văn Hiến",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7752773,
+          21.0741234
+        ]
+      },
+      "id": "way/933680065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/933968153",
+        "addr:city": "Hà Nội",
+        "addr:district": "Bắc Từ Liêm",
+        "addr:housenumber": "18",
+        "addr:street": "Đường Lê Văn Hiến",
+        "addr:subdistrict": "Đức Thắng",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Quầy thuốc của báo",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7766093,
+          21.074301
+        ]
+      },
+      "id": "way/933968153"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/933968181",
+        "addr:street": "Đường Lê Văn Hiến",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7747677,
+          21.0742344
+        ]
+      },
+      "id": "way/933968181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/934948240",
+        "addr:housenumber": "138/Hoàng Tăng Bí",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Quầy thuốc",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7718037,
+          21.0833658
+        ]
+      },
+      "id": "way/934948240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/934950870",
+        "addr:housenumber": "437/Hoàng Tăng Bí",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "nhà thuốc Thúy",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7722773,
+          21.0832837
+        ]
+      },
+      "id": "way/934950870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/977668016",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8492864,
+          21.0312946
+        ]
+      },
+      "id": "node/977668016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/993037761",
+        "addr:country": "VN",
+        "addr:housenumber": "83",
+        "addr:street": "Phố Phủ Doãn",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8478432,
+          21.0282092
+        ]
+      },
+      "id": "node/993037761"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1000087196",
+        "addr:country": "VN",
+        "addr:housenumber": "53",
+        "addr:street": "Phố Quốc Tử Giám",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "note": "recent construction may have removed all POIs - local please review and update"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8359532,
+          21.0269865
+        ]
+      },
+      "id": "node/1000087196"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1000087314",
+        "addr:country": "VN",
+        "addr:housenumber": "45",
+        "addr:street": "Phố Quốc Tử Giám",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "note": "recent construction may have removed all POIs - local please review and update"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8361952,
+          21.0268873
+        ]
+      },
+      "id": "node/1000087314"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1163864494",
+        "addr:city": "Hà Nội",
+        "addr:district": "Tây Hồ",
+        "addr:housenumber": "70",
+        "addr:province": "Hà Nội",
+        "addr:street": "Đường Thụy Khuê",
+        "addr:subdistrict": "Thụy Khuê",
+        "amenity": "pharmacy",
+        "brand": "Pharmacity",
+        "brand:wikidata": "Q115324413",
+        "building": "yes",
+        "building:levels": "5",
+        "healthcare": "pharmacy",
+        "name": "Pharmacity",
+        "operator": "Phamacity",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8267369,
+          21.0414606
+        ]
+      },
+      "id": "way/1163864494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1210089645",
+        "addr:city": "Hà Nội",
+        "addr:district": "Đống Đa",
+        "addr:housenumber": "24",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Đông Các",
+        "addr:subdistrict": "Ô Chợ Dừa",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "building:levels": "3",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Ngọc Hân",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8288463,
+          21.0183291
+        ]
+      },
+      "id": "way/1210089645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1256907124",
+        "addr:city": "Hà Nội",
+        "addr:district": "Hai Bà Trưng",
+        "addr:housenumber": "161",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Mai Hắc Đế",
+        "addr:subdistrict": "Lê Đại Hành",
+        "amenity": "pharmacy",
+        "building": "yes",
+        "building:levels": "1",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Long Châu",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+84 1800 6928",
+        "website": "https://nhathuoclongchau.com.vn/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8508952,
+          21.0097797
+        ]
+      },
+      "id": "way/1256907124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1329845842",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "indoor": "room",
+        "level": "0",
+        "name": "OmiPharma",
+        "ref": "L1-02B",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7537708,
+          21.006278
+        ]
+      },
+      "id": "way/1329845842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1331638474",
+        "amenity": "pharmacy",
+        "brand": "Guardian",
+        "brand:wikidata": "Q63371124",
+        "healthcare": "pharmacy",
+        "indoor": "area",
+        "level": "-1",
+        "name": "Guardian",
+        "ref": "TN-K2M",
+        "shop": "chemist",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8692689,
+          20.9943849
+        ]
+      },
+      "id": "way/1331638474"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1331876554",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "indoor": "room",
+        "level": "-1",
+        "name": "Omipharma",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8690478,
+          20.9941593
+        ]
+      },
+      "id": "way/1331876554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2366843089",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8485752,
+          21.0173388
+        ]
+      },
+      "id": "node/2366843089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3471347685",
+        "addr:country": "VN",
+        "addr:housenumber": "2",
+        "addr:street": "Hoàng Sâm",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Hương Sen",
+        "opening_hours": "10:00-22:00",
+        "operator": "Nguyễn Hoàng Tuấn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7994239,
+          21.0453082
+        ]
+      },
+      "id": "node/3471347685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3541820070",
+        "addr:city": "Hà nội",
+        "addr:country": "VN",
+        "addr:district": "Đống Đa",
+        "addr:housenumber": "47",
+        "addr:street": "Phõ Vũ Ngọc Phan",
+        "addr:subdistrict": "Láng Hạ",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Siêu thị thực phẩm chức năng GPCare",
+        "name:en": "GPCare - Health Supplement Supermarket",
+        "note": "We specialize in health supplements representing world famous brands like Life Extension, Puritan's Pride, Nutrasal, New Chapter, Doctor Best etc. You can have a wide selection of products that best fit your need. We are welcome all inquiries",
+        "phone": "+84 0996986666",
+        "website": "https://www.gpcare.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8100527,
+          21.0145412
+        ]
+      },
+      "id": "node/3541820070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3541976046",
+        "addr:city": "Hà nội",
+        "addr:country": "VN",
+        "addr:housenumber": "Tầng hầm B1 - Siêu thị Vinmart - Tòa nhà N05",
+        "addr:street": "Hoàng Đạo Thúy",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Siêu thị thực phẩm chức năng GPCare",
+        "note": "Siêu thị thực phẩm chức năng GPCare cơ sở 2 tại tầng hầm B1, tòa nhà No5 Hoàng Đạo Thúy cung cấp hàng trăm sản phẩm chức năng từ các thương hiệu danh tiếng hàng đầu thế giới như Life Extension, Puritan's Pride, Nutrasal, New Chapter....",
+        "operator": "Công ty cổ phần dinh dưỡng thiên nhiên GP Hoa Kỳ",
+        "phone": "0996986666",
+        "website": "https://www.gpcare.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8009261,
+          21.0084204
+        ]
+      },
+      "id": "node/3541976046"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3541989300",
+        "addr:city": "Hà Nội",
+        "addr:country": "VN",
+        "addr:district": "Hoàn Kiếm",
+        "addr:housenumber": "65B",
+        "addr:street": "Trần Hưng Đạo",
+        "amenity": "pharmacy",
+        "description": "Siêu thi thực phẩm chức năng GPCare - Cơ sở 3 - tại 65B Trần Hưng Đạo cung cấp hàng trăm sản phẩm từ các thương hiệu danh tiếng thế giới như Life Extension, Puritan's Pride, Nutrasal, New Chapter,... mang lại sự lựa chọn tốt nhất cho sức khỏa của bạn",
+        "dispensing": "yes",
+        "emergency": "no",
+        "healthcare": "pharmacy",
+        "name": "Siêu thị thực phẩm chức năng GPCare - Cơ sở 3 - 65B Trần Hưng Đạo",
+        "operator": "Công ty cổ phần dinh dưỡng thiên nhiên GP Hoa Kỳ",
+        "phone": "0996986666",
+        "website": "https://www.gpcare.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8494073,
+          21.0216211
+        ]
+      },
+      "id": "node/3541989300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3565070799",
+        "addr:country": "VN",
+        "addr:housenumber": "115",
+        "addr:street": "Phố Phủ Doãn",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8478418,
+          21.0276048
+        ]
+      },
+      "id": "node/3565070799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3565070800",
+        "addr:country": "VN",
+        "addr:housenumber": "38",
+        "addr:street": "Phố Quán Thánh",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8461148,
+          21.0404144
+        ]
+      },
+      "id": "node/3565070800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3565070802",
+        "addr:country": "VN",
+        "addr:housenumber": "99",
+        "addr:street": "Phố Phủ Doãn",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8478496,
+          21.0279398
+        ]
+      },
+      "id": "node/3565070802"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3565070810",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8477637,
+          21.0266628
+        ]
+      },
+      "id": "node/3565070810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3565070813",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.847816,
+          21.0268223
+        ]
+      },
+      "id": "node/3565070813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3565070815",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.847825,
+          21.0299202
+        ]
+      },
+      "id": "node/3565070815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3975723726",
+        "addr:country": "VN",
+        "addr:street": "Phố Trần Phú",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8416558,
+          21.03066
+        ]
+      },
+      "id": "node/3975723726"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4275610311",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nha Thuoc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8516586,
+          21.0357843
+        ]
+      },
+      "id": "node/4275610311"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4738219029",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.847097,
+          21.0338951
+        ]
+      },
+      "id": "node/4738219029"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4749008081",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8507863,
+          21.073398
+        ]
+      },
+      "id": "node/4749008081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4749011233",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8393776,
+          21.0208852
+        ]
+      },
+      "id": "node/4749011233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4749012340",
+        "addr:housenumber": "188",
+        "addr:street": "Phố Huế",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8516059,
+          21.0143095
+        ]
+      },
+      "id": "node/4749012340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5015817621",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.851923,
+          21.0354104
+        ]
+      },
+      "id": "node/5015817621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5114631122",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.852076,
+          21.0355167
+        ]
+      },
+      "id": "node/5114631122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5373998023",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8545743,
+          21.0321283
+        ]
+      },
+      "id": "node/5373998023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5398647622",
+        "addr:housenumber": "65",
+        "addr:street": "Mã Mây",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nha Thuoc Pharmacy",
+        "opening_hours": "Mo-Su 07:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8535176,
+          21.0348341
+        ]
+      },
+      "id": "node/5398647622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5485756824",
+        "addr:city": "Hanoi",
+        "addr:housenumber": "113",
+        "addr:province": "Hanoi",
+        "addr:street": "Phố Mai Dịch",
+        "addr:subdistrict": "Mai Dịch",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "fixme": "location",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Đức Đạt",
+        "payment:cash": "yes",
+        "source": "grab_hanoi_2018_t4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7755461,
+          21.0420383
+        ]
+      },
+      "id": "node/5485756824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5485810868",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Long Tâm",
+        "source": "grab_hanoi_2018_t2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8414979,
+          21.0020573
+        ]
+      },
+      "id": "node/5485810868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5485850258",
+        "addr:city": "Hà Nội",
+        "addr:district": "Cầu Giấy",
+        "addr:housenumber": "145",
+        "addr:postcode": "100000",
+        "addr:province": "Hà Nội",
+        "addr:street": "Trần Đăng Ninh",
+        "addr:subdistrict": "Dịch Vọng",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Tâm An",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "payment:cash": "yes",
+        "phone": "+84 24 6283 1975",
+        "source": "grab_hanoi_2018_t4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7929932,
+          21.0380968
+        ]
+      },
+      "id": "node/5485850258"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719055431",
+        "addr:housenumber": "35B - Ngõ 160",
+        "addr:street": "Đường tỉnh 87A",
+        "amenity": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.4353058,
+          21.1060193
+        ]
+      },
+      "id": "node/5719055431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6533984894",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name:en": "Nha Thuoc Viet Duc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8063185,
+          21.0108295
+        ]
+      },
+      "id": "node/6533984894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6587191996",
+        "addr:housenumber": "6",
+        "addr:street": "Phố An Dương",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.840941,
+          21.0513387
+        ]
+      },
+      "id": "node/6587191996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6591599725",
+        "addr:housenumber": "20",
+        "addr:street": "Phố An Dương",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8409155,
+          21.0510808
+        ]
+      },
+      "id": "node/6591599725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6602744796",
+        "addr:housenumber": "72",
+        "addr:street": "Ngõ 445 Lạc Long Quân",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8053377,
+          21.0562301
+        ]
+      },
+      "id": "node/6602744796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6606208319",
+        "addr:housenumber": "89",
+        "addr:street": "Phố Định Công Thượng",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8206417,
+          20.9823606
+        ]
+      },
+      "id": "node/6606208319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6610502448",
+        "addr:housenumber": "103",
+        "addr:street": "Phố Trịnh Công Sơn",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.81827,
+          21.0784341
+        ]
+      },
+      "id": "node/6610502448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6617292922",
+        "addr:housenumber": "16",
+        "addr:street": "Phố Lê Trọng Tấn",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8281016,
+          21.0004641
+        ]
+      },
+      "id": "node/6617292922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6617476315",
+        "addr:housenumber": "93",
+        "addr:street": "Ngõ 192 Lê Trọng Tấn",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8291557,
+          20.9928265
+        ]
+      },
+      "id": "node/6617476315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6617524041",
+        "addr:housenumber": "24",
+        "addr:street": "Ngõ 192 Lê Trọng Tấn",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8308234,
+          20.9939121
+        ]
+      },
+      "id": "node/6617524041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6617524044",
+        "addr:housenumber": "57",
+        "addr:street": "Ngõ 192 Lê Trọng Tấn",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.829884,
+          20.9932522
+        ]
+      },
+      "id": "node/6617524044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6617524050",
+        "addr:housenumber": "116",
+        "addr:street": "Ngõ 192 Lê Trọng Tấn",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8286662,
+          20.9922844
+        ]
+      },
+      "id": "node/6617524050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6617783879",
+        "addr:housenumber": "71",
+        "addr:street": "Ngõ 124 Âu Cơ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8345972,
+          21.0648287
+        ]
+      },
+      "id": "node/6617783879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6617783883",
+        "addr:housenumber": "89",
+        "addr:street": "Ngõ 124 Âu Cơ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8353275,
+          21.0653574
+        ]
+      },
+      "id": "node/6617783883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6617816054",
+        "addr:housenumber": "2",
+        "addr:street": "Ngõ 464 Âu Cơ",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8191283,
+          21.0812864
+        ]
+      },
+      "id": "node/6617816054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6617816055",
+        "addr:housenumber": "466",
+        "addr:street": "Đường Âu Cơ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8189104,
+          21.0803156
+        ]
+      },
+      "id": "node/6617816055"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6620581355",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8321652,
+          20.9887346
+        ]
+      },
+      "id": "node/6620581355"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6621112642",
+        "addr:housenumber": "174",
+        "addr:street": "Phó Nguyễn Lân",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8371481,
+          20.9891904
+        ]
+      },
+      "id": "node/6621112642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6621395573",
+        "addr:housenumber": "75",
+        "addr:street": "Phố Yên Phụ",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8378012,
+          21.0524622
+        ]
+      },
+      "id": "node/6621395573"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6624622117",
+        "addr:housenumber": "180",
+        "addr:street": "Đường Xuân Diệu",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8261493,
+          21.0677174
+        ]
+      },
+      "id": "node/6624622117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6624906079",
+        "addr:housenumber": "2",
+        "addr:street": "Đường Tô Ngọc Vân",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8259975,
+          21.0679774
+        ]
+      },
+      "id": "node/6624906079"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6638268503",
+        "addr:housenumber": "74",
+        "addr:street": "Phố An Dương",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8399543,
+          21.0541519
+        ]
+      },
+      "id": "node/6638268503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6638268521",
+        "addr:housenumber": "37",
+        "addr:street": "Phố An Dương",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8405075,
+          21.0524028
+        ]
+      },
+      "id": "node/6638268521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6638268530",
+        "addr:housenumber": "17",
+        "addr:street": "Phố An Dương",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8407402,
+          21.051844
+        ]
+      },
+      "id": "node/6638268530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6638638930",
+        "addr:housenumber": "69",
+        "addr:street": "Ngõ 124 Âu Cơ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8344558,
+          21.0647161
+        ]
+      },
+      "id": "node/6638638930"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6638683464",
+        "addr:housenumber": "77",
+        "addr:street": "Ngõ 172 Âu Cơ",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8324629,
+          21.0669944
+        ]
+      },
+      "id": "node/6638683464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6638909106",
+        "addr:housenumber": "8",
+        "addr:street": "Ngõ 612 Lạc Long Quân",
+        "addr:unit": "A",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8153584,
+          21.076248
+        ]
+      },
+      "id": "node/6638909106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6638973770",
+        "addr:housenumber": "19",
+        "addr:street": "Ngõ 294/2 Kim Mã",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8210984,
+          21.0325347
+        ]
+      },
+      "id": "node/6638973770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6641564947",
+        "addr:street": "Trần Điền",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8311057,
+          20.9908369
+        ]
+      },
+      "id": "node/6641564947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6644157934",
+        "addr:street": "Ngõ 328 Lê Trọng Tấn",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8344082,
+          20.9852481
+        ]
+      },
+      "id": "node/6644157934"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6644607980",
+        "addr:housenumber": "7",
+        "addr:street": "Ngõ 464 Âu Cơ",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.819021,
+          21.0814337
+        ]
+      },
+      "id": "node/6644607980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6644607982",
+        "addr:housenumber": "466",
+        "addr:street": "Ngõ 464 Âu Cơ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8186321,
+          21.0809876
+        ]
+      },
+      "id": "node/6644607982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6644860767",
+        "addr:street": "Phố Đường Khuê",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.772602,
+          21.0343632
+        ]
+      },
+      "id": "node/6644860767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6647336773",
+        "addr:housenumber": "25",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Ngọc Thiệp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7388303,
+          20.9916427
+        ]
+      },
+      "id": "node/6647336773"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6647646643",
+        "addr:housenumber": "6",
+        "addr:street": "Đường La Dương",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc La Dương"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7379593,
+          20.9910936
+        ]
+      },
+      "id": "node/6647646643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6648357897",
+        "addr:housenumber": "64",
+        "addr:street": "Ngõ 180 Tây Mỗ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Quang Minh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7475878,
+          21.0016698
+        ]
+      },
+      "id": "node/6648357897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6651304041",
+        "addr:housenumber": "180",
+        "addr:street": "Đường Tây Mỗ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Thu Hà"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7508004,
+          21.0013799
+        ]
+      },
+      "id": "node/6651304041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6651424324",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc GPP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7466805,
+          21.001522
+        ]
+      },
+      "id": "node/6651424324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6651744844",
+        "addr:housenumber": "135",
+        "addr:street": "Đường Hữu Hưng",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Phong Phú"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7463519,
+          20.9957338
+        ]
+      },
+      "id": "node/6651744844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6651744845",
+        "addr:street": "Đường Hữu Hưng",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Yên Long"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7473658,
+          20.9958403
+        ]
+      },
+      "id": "node/6651744845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6651779534",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Minh Hòa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.74682,
+          20.9964287
+        ]
+      },
+      "id": "node/6651779534"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6658324644",
+        "addr:housenumber": "159",
+        "addr:street": "Đường Trần Phú",
+        "amenity": "pharmacy",
+        "name": "Quang Trung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8413638,
+          20.8686529
+        ]
+      },
+      "id": "node/6658324644"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6661596868",
+        "addr:housenumber": "67",
+        "addr:street": "Ngõ 200 Âu Cơ",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8320606,
+          21.0668104
+        ]
+      },
+      "id": "node/6661596868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6666485218",
+        "addr:housenumber": "38",
+        "addr:street": "Ngách 124/22 Âu Cơ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8347388,
+          21.0620497
+        ]
+      },
+      "id": "node/6666485218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6666518590",
+        "addr:housenumber": "44",
+        "addr:street": "Ngách 124/22 Âu Cơ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8349439,
+          21.0618044
+        ]
+      },
+      "id": "node/6666518590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6667986240",
+        "addr:housenumber": "1",
+        "addr:street": "Ngõ 76 An Dương",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8394936,
+          21.0550417
+        ]
+      },
+      "id": "node/6667986240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6668012730",
+        "addr:housenumber": "70",
+        "addr:street": "Phố An Dương",
+        "addr:unit": "B",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8403017,
+          21.0533146
+        ]
+      },
+      "id": "node/6668012730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6668027758",
+        "addr:street": "Phố An Dương",
+        "amenity": "pharmacy",
+        "fixme": "addr:housenumber",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8394031,
+          21.0549385
+        ]
+      },
+      "id": "node/6668027758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6670313470",
+        "addr:housenumber": "48",
+        "addr:street": "Phố Hàng Than",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8473706,
+          21.0409754
+        ]
+      },
+      "id": "node/6670313470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6672693226",
+        "addr:housenumber": "113",
+        "addr:street": "Phố Doãn Kế Thiện",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7777373,
+          21.0413385
+        ]
+      },
+      "id": "node/6672693226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6672721649",
+        "addr:street": "Phố Doãn Kế Thiện",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7765687,
+          21.0416722
+        ]
+      },
+      "id": "node/6672721649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6677255983",
+        "addr:housenumber": "219",
+        "addr:street": "Phố Mai Dịch",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7748584,
+          21.0415993
+        ]
+      },
+      "id": "node/6677255983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6677277095",
+        "addr:housenumber": "189",
+        "addr:street": "Phố Mai Dịch",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7747136,
+          21.0409854
+        ]
+      },
+      "id": "node/6677277095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6677277096",
+        "addr:housenumber": "66",
+        "addr:street": "Phố Mai Dịch",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7748263,
+          21.0409904
+        ]
+      },
+      "id": "node/6677277096"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6677449287",
+        "addr:housenumber": "81",
+        "addr:street": "Đường La Thành",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8285885,
+          21.0196752
+        ]
+      },
+      "id": "node/6677449287"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6677814758",
+        "addr:housenumber": "109",
+        "addr:street": "Phố Quan Nhân",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Quan Nhân"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8115531,
+          21.0053541
+        ]
+      },
+      "id": "node/6677814758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6684667804",
+        "addr:street": "Đường Trần Khát Chân",
+        "amenity": "pharmacy",
+        "fixme": "name",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8517674,
+          21.0089169
+        ]
+      },
+      "id": "node/6684667804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6689533993",
+        "addr:street": "Phố Ngụy Như Kon Tum",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Y Dược MPH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8029174,
+          21.0007545
+        ]
+      },
+      "id": "node/6689533993"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6689709221",
+        "addr:housenumber": "2",
+        "addr:street": "Phố Quan Nhân",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8131309,
+          21.0084743
+        ]
+      },
+      "id": "node/6689709221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6742138877",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nha Thuoc Nhan Dan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8430685,
+          21.0445477
+        ]
+      },
+      "id": "node/6742138877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6742139186",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nha Thuoc Tam Khang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8421963,
+          21.0463829
+        ]
+      },
+      "id": "node/6742139186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6818298688",
+        "addr:city": "Hà Nội",
+        "addr:district": "Quận Ba Đình",
+        "addr:housenumber": "107D1",
+        "addr:street": "Phố Trần Huy Liệu",
+        "addr:subdistrict": "Giảng Võ",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Pharmacy Đức Long"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8223999,
+          21.0268963
+        ]
+      },
+      "id": "node/6818298688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832269393",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "nha thuoc Hai Linh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8427877,
+          21.0430265
+        ]
+      },
+      "id": "node/6832269393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6844634886",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name:zh": "美眉药房"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8470922,
+          21.0339977
+        ]
+      },
+      "id": "node/6844634886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6917933671",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.911482,
+          21.0555088
+        ]
+      },
+      "id": "node/6917933671"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6917941503",
+        "addr:housenumber": "D68",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9113028,
+          21.0632092
+        ]
+      },
+      "id": "node/6917941503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6924044054",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9110041,
+          21.06402
+        ]
+      },
+      "id": "node/6924044054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6932043361",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.9071312,
+          21.0668866
+        ]
+      },
+      "id": "node/6932043361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7003675089",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.847784,
+          21.0368217
+        ]
+      },
+      "id": "node/7003675089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7162770779",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8629404,
+          21.0133229
+        ]
+      },
+      "id": "node/7162770779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7178804578",
+        "amenity": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8766169,
+          21.1120875
+        ]
+      },
+      "id": "node/7178804578"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7178806298",
+        "amenity": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8761871,
+          21.1120328
+        ]
+      },
+      "id": "node/7178806298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7252086136",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Sương Mai"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7807459,
+          21.0621348
+        ]
+      },
+      "id": "node/7252086136"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7924687012",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Quầy thuốc Hải Yến"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.5517295,
+          21.0190818
+        ]
+      },
+      "id": "node/7924687012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8212608053",
+        "addr:housenumber": "197-199",
+        "addr:street": "Đường Giải Phóng",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc số 5 Long Tâm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8415217,
+          21.0007712
+        ]
+      },
+      "id": "node/8212608053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8333089557",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7724663,
+          21.0712023
+        ]
+      },
+      "id": "node/8333089557"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8353950521",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Khánh Linh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.772888,
+          21.0720356
+        ]
+      },
+      "id": "node/8353950521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8353977344",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Thu Hương",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7727994,
+          21.0716341
+        ]
+      },
+      "id": "node/8353977344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8360592553",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Tâm Đức"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7626155,
+          21.0666562
+        ]
+      },
+      "id": "node/8360592553"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8360897983",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Anh Phương"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7855397,
+          21.0895474
+        ]
+      },
+      "id": "node/8360897983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8361075490",
+        "addr:district": "Từ Liêm",
+        "addr:housenumber": "54",
+        "addr:province": "Hà Nội",
+        "addr:street": "Đường Hoàng Tăng Bí",
+        "addr:subdistrict": "Thụy Phương",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Minh Tâm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7759047,
+          21.083634
+        ]
+      },
+      "id": "node/8361075490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8363303881",
+        "addr:street": "Đường Cổ Nhuế",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7778531,
+          21.0701293
+        ]
+      },
+      "id": "node/8363303881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8442194667",
+        "addr:city": "Hà Nội",
+        "addr:district": "Bắc Từ Liêm",
+        "addr:housenumber": "149",
+        "addr:street": "Đường Cổ Nhuế",
+        "addr:subdistrict": "Cổ Nhuế 2",
+        "amenity": "pharmacy",
+        "building:levels": "3 tầng",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "V2- Nhà thuốc số 9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.780551,
+          21.0621946
+        ]
+      },
+      "id": "node/8442194667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8446491627",
+        "addr:city": "Hà Nội",
+        "addr:district": "Bắc Từ Liêm",
+        "addr:housenumber": "227",
+        "addr:street": "Đường Cổ Nhuế",
+        "addr:subdistrict": "Cổ Nhuế 2",
+        "amenity": "pharmacy",
+        "building:levels": "3 tầng",
+        "healthcare": "pharmacy",
+        "name": "V18-Nhà thuốc Đại An 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7797944,
+          21.0635276
+        ]
+      },
+      "id": "node/8446491627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8447602002",
+        "addr:city": "Hà Nội",
+        "addr:district": "Bắc Từ Liêm",
+        "addr:housenumber": "273",
+        "addr:street": "Đường Cổ Nhuế",
+        "addr:subdistrict": "Cổ Nhuế 2",
+        "amenity": "pharmacy",
+        "building:levels": "4 tầng",
+        "healthcare": "pharmacy",
+        "name": "V26-Nhà Thuốc Minh Tâm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7795112,
+          21.0643
+        ]
+      },
+      "id": "node/8447602002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8535593117",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Hùng cao - 64A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8199822,
+          21.0328677
+        ]
+      },
+      "id": "node/8535593117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8934731542",
+        "addr:city": "Hà Nội",
+        "addr:district": "Đống Đa",
+        "addr:housenumber": "115",
+        "addr:postcode": "10000",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Trung Phụng",
+        "addr:subdistrict": "Thổ Quan",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Anh Quốc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8358901,
+          21.0167687
+        ]
+      },
+      "id": "node/8934731542"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8937618770",
+        "addr:city": "Hà Nội",
+        "addr:district": "Thanh Xuân",
+        "addr:housenumber": "52",
+        "addr:postcode": "100000",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Lê Trọng Tấn",
+        "addr:subdistrict": "Khương Mai",
+        "amenity": "pharmacy",
+        "brand": "Pharmacity",
+        "brand:wikidata": "Q115324413",
+        "healthcare": "pharmacy",
+        "name": "Pharmacity",
+        "opening_hours": "Mo-Su 06:00-23:30",
+        "operator": "Pharmacity",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+84 1800 6821",
+        "shop": "chemist",
+        "website": "https://www.pharmacity.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8277831,
+          20.9995824
+        ]
+      },
+      "id": "node/8937618770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8957577167",
+        "addr:city": "Hà Nội",
+        "addr:district": "Thanh Xuân",
+        "addr:housenumber": "94",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Tô Vĩnh Diện",
+        "addr:subdistrict": "Khương Trung",
+        "amenity": "pharmacy",
+        "brand": "Pharmacity",
+        "brand:wikidata": "Q115324413",
+        "healthcare": "pharmacy",
+        "name": "Pharmacity",
+        "opening_hours": "Mo-Su 06:00-23:30",
+        "operator": "Pharmacity",
+        "payment:QR_Pay": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+84 1800 6821",
+        "shop": "chemist",
+        "website": "https://www.pharmacity.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8201338,
+          20.9988127
+        ]
+      },
+      "id": "node/8957577167"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9237323781",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Quầy thuốc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8887908,
+          21.0312284
+        ]
+      },
+      "id": "node/9237323781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9555611949",
+        "addr:city": "Hà Nội",
+        "addr:district": "Thanh Xuân",
+        "addr:housenumber": "29",
+        "addr:province": "Hà Nội",
+        "addr:street": "Nguyễn Quý Đức",
+        "addr:subdistrict": "Thanh Xuân Bắc",
+        "amenity": "pharmacy",
+        "brand": "Pharmacity",
+        "brand:wikidata": "Q115324413",
+        "healthcare": "pharmacy",
+        "name": "Pharmacity",
+        "opening_hours": "Mo-Su 06:00-23:30",
+        "operator": "Pharmacity",
+        "payment:QR_Pay": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+84 1800 6821",
+        "shop": "chemist",
+        "website": "https://www.pharmacity.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7979595,
+          20.992803
+        ]
+      },
+      "id": "node/9555611949"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9625606922",
+        "addr:street": "Ngõ 15 Ngọc Hồi",
+        "amenity": "pharmacy",
+        "check_date:opening_hours": "2024-05-27",
+        "healthcare": "pharmacy",
+        "name": "Nhà máy Hoàng Liệt - Công ty Cổ phần Traphaco",
+        "opening_hours": "Mo-Fr 07:30-16:30",
+        "website": "https://traphaco.com.vb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8451038,
+          20.9614121
+        ]
+      },
+      "id": "node/9625606922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9931481408",
+        "amenity": "pharmacy",
+        "brand": "Pharmacity",
+        "brand:wikidata": "Q115324413",
+        "healthcare": "pharmacy",
+        "name": "Pharmacity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8495065,
+          21.0352028
+        ]
+      },
+      "id": "node/9931481408"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9931504436",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8485622,
+          21.0311148
+        ]
+      },
+      "id": "node/9931504436"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9931523211",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8415399,
+          21.001014
+        ]
+      },
+      "id": "node/9931523211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9931530762",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8415923,
+          21.0031938
+        ]
+      },
+      "id": "node/9931530762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10081741321",
+        "addr:city": "Hà Nội",
+        "addr:district": "Hoàng Mai",
+        "addr:housenumber": "3 Bắc Linh Đàm",
+        "addr:province": "Hà Nội",
+        "addr:street": "Đặng Xuân Bảng",
+        "addr:subdistrict": "Đại Kim",
+        "amenity": "pharmacy",
+        "brand": "Pharmacity",
+        "brand:wikidata": "Q115324413",
+        "healthcare": "pharmacy",
+        "name": "Pharmacity",
+        "opening_hours": "Mo-Su 06:00-23:30",
+        "payment:QR_Pay": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+84 1800 6821",
+        "shop": "chemist",
+        "website": "https://www.pharmacity.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.829829,
+          20.9705795
+        ]
+      },
+      "id": "node/10081741321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10086502383",
+        "addr:city": "Hà Nội",
+        "addr:district": "Thanh Xuân",
+        "addr:housenumber": "C15",
+        "addr:province": "Hà Nội",
+        "addr:street": "Nguyễn Quý Đức",
+        "addr:subdistrict": "Thanh Xuân Bắc",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Minh Tiến",
+        "name:en": "Minh Tien Pharmacy",
+        "opening_hours": "Mo-Sa 07:15-21:00; Su 07:15-18:30",
+        "phone": "+84 966 369 299"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8011202,
+          20.9904032
+        ]
+      },
+      "id": "node/10086502383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10114776476",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Long Châu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8270963,
+          21.0132962
+        ]
+      },
+      "id": "node/10114776476"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10114776477",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8279915,
+          21.0127934
+        ]
+      },
+      "id": "node/10114776477"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10114776478",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8287076,
+          21.0124492
+        ]
+      },
+      "id": "node/10114776478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10166537644",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7617077,
+          21.067189
+        ]
+      },
+      "id": "node/10166537644"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10166537646",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7623933,
+          21.0668185
+        ]
+      },
+      "id": "node/10166537646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10213962935",
+        "addr:city": "Phường Đức Thắng",
+        "addr:district": "Bắc Từ Liêm",
+        "addr:housenumber": "152",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Văn Hội",
+        "addr:subdistrict": "Đức Thắng",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Đức Huy152",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7732071,
+          21.0805879
+        ]
+      },
+      "id": "node/10213962935"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10223164765",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7240109,
+          21.0161255
+        ]
+      },
+      "id": "node/10223164765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10248628295",
+        "addr:city": "Hà Nội",
+        "addr:district": "Quận Cầu Giấy",
+        "addr:housenumber": "237",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Trần Quốc Hoàn",
+        "addr:subdistrict": "Phường Dịch Vọng Hậu",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Hoàng Minh",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7822704,
+          21.0416695
+        ]
+      },
+      "id": "node/10248628295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10255177791",
+        "addr:housenumber": "9 P. Lê Văn Hiến, Đông Ngạc, Bắc Từ Liêm, Hà Nội 10000, Việt Nam",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc 24/7",
+        "opening_hours": "Mo-Sun 07:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7751798,
+          21.0741716
+        ]
+      },
+      "id": "node/10255177791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10255708072",
+        "addr:housenumber": "3QGF+9MW, Đông Ngạc, Bắc Từ Liêm, Hà Nội, Việt Nam",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "thuốc sâu răng",
+        "opening_hours": "Mo-Su 05:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7729866,
+          21.0718892
+        ]
+      },
+      "id": "node/10255708072"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10255708089",
+        "addr:housenumber": "152-Phố Văn Hội-Đức Thắng-Bắc Từ Liêm-HN",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Đức Huy 152",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7770491,
+          21.0709063
+        ]
+      },
+      "id": "node/10255708089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10257020096",
+        "addr:housenumber": "3QCC+XXQ, Ng. 32 P. Viên, Đông Ngạc, Bắc Từ Liêm, Hà Nội, Việt Nam",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Lá nam Acnes",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7741767,
+          21.0774119
+        ]
+      },
+      "id": "node/10257020096"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10258564238",
+        "addr:housenumber": "152-Phố Văn Hội-Đức Thắng-Bắc Từ Liêm-HN",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Đức Huy 152",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7729043,
+          21.0727342
+        ]
+      },
+      "id": "node/10258564238"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10262933711",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Thuốc Trị nám sau sinh",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7736738,
+          21.0743589
+        ]
+      },
+      "id": "node/10262933711"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10262933712",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Linh Lan",
+        "opening_hours": "Mo-Su 07:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7738155,
+          21.0741407
+        ]
+      },
+      "id": "node/10262933712"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10262933713",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Trinh Tâm",
+        "opening_hours": "Mo-Su 07:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7737146,
+          21.0741607
+        ]
+      },
+      "id": "node/10262933713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10728950805",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8428799,
+          21.0432388
+        ]
+      },
+      "id": "node/10728950805"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10846785313",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8072874,
+          21.0485786
+        ]
+      },
+      "id": "node/10846785313"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10848069827",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Đức Huy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8084693,
+          21.048355
+        ]
+      },
+      "id": "node/10848069827"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10950095905",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "132 Bà Triệu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8500518,
+          21.0171371
+        ]
+      },
+      "id": "node/10950095905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10969246205",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8493886,
+          21.0175857
+        ]
+      },
+      "id": "node/10969246205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11167471086",
+        "addr:city": "Hà Nội",
+        "addr:district": "Cầu Giấy",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Thành Thái",
+        "addr:subdistrict": "Dịch Vọng",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "level": "1",
+        "name": "Nhà thuốc Trường Hương"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7936974,
+          21.0287756
+        ]
+      },
+      "id": "node/11167471086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11211915128",
+        "addr:city": "Hà Nội",
+        "addr:district": "Đống Đa",
+        "addr:housenumber": "214",
+        "addr:province": "Hà Nội",
+        "addr:street": "Ngõ Xã Đàn 2",
+        "addr:subdistrict": "Nam Đồng",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Anh Đức"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8323841,
+          21.0127084
+        ]
+      },
+      "id": "node/11211915128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11212149495",
+        "addr:city": "Hà Nội",
+        "addr:district": "Đống Đa",
+        "addr:housenumber": "25B4",
+        "addr:province": "Hà Nội",
+        "addr:street": "Ngõ 21 Phạm Ngọc Thạch",
+        "addr:subdistrict": "Kim Liên",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Nam Cường"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8361196,
+          21.0098503
+        ]
+      },
+      "id": "node/11212149495"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11226865498",
+        "addr:city": "Hà Nội",
+        "addr:district": "Quận Bắc Từ Liêm",
+        "addr:housenumber": "15",
+        "addr:province": "Hà Nội",
+        "addr:street": "Ngõ 238 Hoàng Quốc Việt",
+        "addr:subdistrict": "Phường Cổ Nhuế 1",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Quầy thuốc Bảo An số 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7831976,
+          21.0471298
+        ]
+      },
+      "id": "node/11226865498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11227192940",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Bắc Thu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7840464,
+          21.0491115
+        ]
+      },
+      "id": "node/11227192940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11281683476",
+        "addr:city": "Hà Nội",
+        "addr:district": "Đống Đa",
+        "addr:housenumber": "125",
+        "addr:province": "Hà Nội",
+        "addr:street": "Ngõ Xã Đàn 2",
+        "addr:subdistrict": "Nam Đồng",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Hằng Anh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8316307,
+          21.0153155
+        ]
+      },
+      "id": "node/11281683476"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11286510046",
+        "addr:city": "Hà Nội",
+        "addr:district": "Đống Đa",
+        "addr:housenumber": "145",
+        "addr:province": "Hà Nội",
+        "addr:street": "Đường Đê La Thành",
+        "addr:subdistrict": "Nam Đồng",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc số 9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8315949,
+          21.0173423
+        ]
+      },
+      "id": "node/11286510046"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11295778637",
+        "addr:city": "Hà Nội",
+        "addr:district": "Đống Đa",
+        "addr:housenumber": "135",
+        "addr:province": "Hà Nội",
+        "addr:street": "Đường Đê La Thành",
+        "addr:subdistrict": "Nam Đồng",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Bảo Phúc II"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8318618,
+          21.0170633
+        ]
+      },
+      "id": "node/11295778637"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11301620141",
+        "addr:city": "Hà Nội",
+        "addr:district": "Đống Đa",
+        "addr:housenumber": "362C",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Xã Đàn",
+        "addr:subdistrict": "Nam Đồng",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Hải Anh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8342538,
+          21.01467
+        ]
+      },
+      "id": "node/11301620141"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11389436631",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Hải Phương"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7396842,
+          21.0047947
+        ]
+      },
+      "id": "node/11389436631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11500070707",
+        "addr:city": "Hà Nội",
+        "addr:district": "Hai Bà Trưng",
+        "addr:housenumber": "38",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Mai Hắc Đế",
+        "addr:subdistrict": "Nguyễn Du",
+        "amenity": "pharmacy",
+        "contact:facebook": "https://www.facebook.com/NhaThuocPhuongChinh",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Phương Chính",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+84 1800 6666",
+        "website": "https://nhathuocphuongchinh.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8508795,
+          21.0149411
+        ]
+      },
+      "id": "node/11500070707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11505669794",
+        "addr:city": "Hà Nội",
+        "addr:district": "Hai Bà Trưng",
+        "addr:housenumber": "72",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Mai Hắc Đế",
+        "addr:subdistrict": "Nguyễn Du",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Hồng Đăng 5",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+84 978 567 077"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8508884,
+          21.0139652
+        ]
+      },
+      "id": "node/11505669794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11513441569",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Vaccination Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8325824,
+          21.0250692
+        ]
+      },
+      "id": "node/11513441569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11521920509",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc An Pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8105443,
+          21.0350276
+        ]
+      },
+      "id": "node/11521920509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11521920522",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Hiệp Oanh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8127952,
+          21.0346799
+        ]
+      },
+      "id": "node/11521920522"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11521920523",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Đức Hạnh",
+        "name:en": "Duc Hanh Pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8130038,
+          21.0357856
+        ]
+      },
+      "id": "node/11521920523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11534643042",
+        "addr:city": "Hà Nội",
+        "addr:district": "Hai Bà Trưng",
+        "addr:housenumber": "62",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Tô Hiến Thành",
+        "addr:subdistrict": "Nguyễn Du",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Hà Thu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8497577,
+          21.0135845
+        ]
+      },
+      "id": "node/11534643042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11563448508",
+        "addr:city": "Hà Nội",
+        "addr:district": "Quận Bắc Từ Liêm",
+        "addr:housenumber": "9",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Đặng Thùy Trâm",
+        "addr:subdistrict": "Phường Cổ Nhuế 1",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Hưng Gia",
+        "source": "mapillary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7844435,
+          21.0455098
+        ]
+      },
+      "id": "node/11563448508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11564316622",
+        "addr:city": "Hà Nội",
+        "addr:district": "Quận Bắc Từ Liêm",
+        "addr:housenumber": "17",
+        "addr:province": "Hà Nội",
+        "addr:street": "Đường Đặng Thùy Trâm",
+        "addr:subdistrict": "Phường Cổ Nhuế 1",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Thành Duy",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7845613,
+          21.0450689
+        ]
+      },
+      "id": "node/11564316622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11568935719",
+        "addr:city": "Hà Nội",
+        "addr:district": "Quận Cầu Giấy",
+        "addr:housenumber": "1",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Phạm Tuấn Tài",
+        "addr:subdistrict": "Phường Dịch Vọng Hậu",
+        "amenity": "pharmacy",
+        "brand": "Pharmacity",
+        "brand:wikidata": "Q115324413",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Pharmacity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7860905,
+          21.0427024
+        ]
+      },
+      "id": "node/11568935719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11571556932",
+        "addr:city": "Hà Nội",
+        "addr:district": "Quận Cầu Giấy",
+        "addr:housenumber": "23",
+        "addr:province": "Hà Nội",
+        "addr:street": "Ngõ 3 Phạm Tuấn Tài",
+        "addr:subdistrict": "Phường Dịch Vọng Hậu",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "DUO Care",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7854321,
+          21.0433255
+        ]
+      },
+      "id": "node/11571556932"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11586911185",
+        "addr:city": "Hà Nội",
+        "addr:district": "Quận Cầu Giấy",
+        "addr:housenumber": "2",
+        "addr:province": "Hà Nội",
+        "addr:street": "Ngõ 62 Đặng Thuỳ Trâm",
+        "addr:subdistrict": "Phường Dịch Vọng Hậu",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Triệu Tân"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7861166,
+          21.043525
+        ]
+      },
+      "id": "node/11586911185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11591859671",
+        "addr:city": "Phường Tây Mỗ",
+        "addr:district": "Quận Nam Từ Liêm",
+        "addr:housenumber": "33",
+        "addr:province": "Thành phố Hà Nội",
+        "addr:street": "Đường Tây Mỗ",
+        "addr:subdistrict": "Phường Tây Mỗ",
+        "amenity": "pharmacy",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Long Châu",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "18006928",
+        "website": "https://nhathuoclongchau.com.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7507217,
+          21.0016599
+        ]
+      },
+      "id": "node/11591859671"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11633344434",
+        "addr:city": "Hà Nội",
+        "addr:district": "Long Biên",
+        "addr:housenumber": "129",
+        "addr:street": "Phố Ngọc Lâm",
+        "addr:subdistrict": "Ngọc Lâm",
+        "amenity": "pharmacy",
+        "description": "Nhà màu vàng, của gỗ, tầng 1 cửa nhôm kính, bên ngoài cửa cuốn, mái tôn đỏ",
+        "healthcare": "pharmacy",
+        "level": "3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8687308,
+          21.0453505
+        ]
+      },
+      "id": "node/11633344434"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11633344443",
+        "addr:city": "Hà Nội",
+        "addr:district": "Long Biên",
+        "addr:housenumber": "103",
+        "addr:street": "Phố Ngọc Lâm",
+        "addr:subdistrict": "Ngọc Lâm",
+        "amenity": "pharmacy",
+        "description": "Nhà màu ghi và đỏ, cửa kính, tầng 1 có cửa cuốn",
+        "healthcare": "pharmacy",
+        "level": "3",
+        "name": "Nhà thuốc Thiện"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8683676,
+          21.0451298
+        ]
+      },
+      "id": "node/11633344443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11655061819",
+        "addr:city": "Hà Nội",
+        "addr:district": "Cầu Giấy",
+        "addr:street": "Phố Trần Quốc Hoàn",
+        "addr:subdistrict": "Dịch Vọng Hậu",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Bách Vương Thảo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7869775,
+          21.0414688
+        ]
+      },
+      "id": "node/11655061819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11655143936",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Pharmacy Hong Dang 5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8516154,
+          21.037204
+        ]
+      },
+      "id": "node/11655143936"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11672849009",
+        "addr:city": "Hà Nội",
+        "addr:district": "Hai Bà Trưng",
+        "addr:housenumber": "124",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Mai Hắc Đế",
+        "addr:subdistrict": "Lê Đại Hành",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Phương Chính",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+84 337 100 588",
+        "website": "https://nhathuocphuongchinh.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8505521,
+          21.0098826
+        ]
+      },
+      "id": "node/11672849009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11685045539",
+        "addr:city": "Hà Nội",
+        "addr:district": "Hai Bà Trưng",
+        "addr:housenumber": "169A",
+        "addr:province": "Hà Nội",
+        "addr:street": "Phố Mai Hắc Đế",
+        "addr:subdistrict": "Lê Đại Hành",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc Phương Chính",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+84 24 7300 3333",
+        "website": "https://nhathuocphuongchinh.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8508597,
+          21.0095477
+        ]
+      },
+      "id": "node/11685045539"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11772806569",
+        "addr:housenumber": "52 B",
+        "addr:street": "Phố Quán Sứ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Thu hương",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "02438249076"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.845955,
+          21.0276281
+        ]
+      },
+      "id": "node/11772806569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11829544970",
+        "addr:housenumber": "56",
+        "addr:street": "Phố Quán Thánh",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc giao phong",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "0981316603"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8455292,
+          21.040574
+        ]
+      },
+      "id": "node/11829544970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11846880571",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Dược Lào Cai"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7878122,
+          21.0324825
+        ]
+      },
+      "id": "node/11846880571"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11864413515",
+        "addr:housenumber": "93",
+        "addr:street": "Phố Nguyễn Trường Tộ",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc An Tâm",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "0933523282",
+        "website": "http://antammed.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8442912,
+          21.0427278
+        ]
+      },
+      "id": "node/11864413515"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11929783369",
+        "addr:housenumber": "91E",
+        "addr:street": "Phố Hàng Mã",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc Đức",
+        "phone": "0437186769"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8466192,
+          21.0365517
+        ]
+      },
+      "id": "node/11929783369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12050985875",
+        "addr:housenumber": "1",
+        "addr:street": "Phố Hàng Bún",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Chuyên bán lẻ thuốc thành phẩm",
+        "phone": "0983111112"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8460037,
+          21.0443011
+        ]
+      },
+      "id": "node/12050985875"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12091542206",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8346229,
+          21.0310711
+        ]
+      },
+      "id": "node/12091542206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12129452073",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc số 3 Bệnh viện Đại học Y Hà Nội"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8297194,
+          21.0020378
+        ]
+      },
+      "id": "node/12129452073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12129452074",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nhà thuốc số 5 Bệnh viện Đại học Y Hà Nội"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.829947,
+          21.002588
+        ]
+      },
+      "id": "node/12129452074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12188220613",
+        "amenity": "pharmacy",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "name": "Nhà Thuốc An Bình Số 8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7924232,
+          21.0295835
+        ]
+      },
+      "id": "node/12188220613"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12434838530",
+        "amenity": "pharmacy",
+        "brand": "Guardian",
+        "brand:wikidata": "Q63371124",
+        "healthcare": "pharmacy",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "level": "0",
+        "name": "Guardian",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8441673,
+          21.0286071
+        ]
+      },
+      "id": "node/12434838530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12533006070",
+        "amenity": "pharmacy",
+        "brand": "Pharmacity",
+        "brand:wikidata": "Q115324413",
+        "healthcare": "pharmacy",
+        "name": "Pharmacity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8471177,
+          21.0303792
+        ]
+      },
+      "id": "node/12533006070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12550977801",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name:en": "Long Chau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8407884,
+          21.0511717
+        ]
+      },
+      "id": "node/12550977801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12585048508",
+        "amenity": "pharmacy",
+        "brand": "Pharmacity",
+        "brand:wikidata": "Q115324413",
+        "healthcare": "pharmacy",
+        "name": "Pharmacity",
+        "name:en": "Pharmacity",
+        "opening_hours": "Su-Sa 07:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8201954,
+          21.0352504
+        ]
+      },
+      "id": "node/12585048508"
+    }
+  ]
+}

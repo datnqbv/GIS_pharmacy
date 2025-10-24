@@ -1,0 +1,865 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Không rõ tên",
+        "district": "Bắc Từ Liêm",
+        "district_raw": "Bắc Từ Liêm",
+        "street": "Đường Cổ Nhuế",
+        "housenumber": "469",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7784391,
+          21.0687599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Hapharco",
+        "district": "Hai Bà Trưng",
+        "district_raw": "Hai Bà Trưng",
+        "street": "Phố Lê Đại Hành",
+        "housenumber": "44",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8484012,
+          21.0115935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quầy thuốc của báo",
+        "district": "Bắc Từ Liêm",
+        "district_raw": "Bắc Từ Liêm",
+        "street": "Đường Lê Văn Hiến",
+        "housenumber": "18",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7766093,
+          21.074301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pharmacity",
+        "district": "Tây Hồ",
+        "district_raw": "Tây Hồ",
+        "street": "Đường Thụy Khuê",
+        "housenumber": "70",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8267369,
+          21.0414606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Ngọc Hân",
+        "district": "Đống Đa",
+        "district_raw": "Đống Đa",
+        "street": "Phố Đông Các",
+        "housenumber": "24",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8288463,
+          21.0183291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Long Châu",
+        "district": "Hai Bà Trưng",
+        "district_raw": "Hai Bà Trưng",
+        "street": "Phố Mai Hắc Đế",
+        "housenumber": "161",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+84 1800 6928",
+        "website": "https://nhathuoclongchau.com.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8508952,
+          21.0097797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Siêu thị thực phẩm chức năng GPCare",
+        "district": "Đống Đa",
+        "district_raw": "Đống Đa",
+        "street": "Phõ Vũ Ngọc Phan",
+        "housenumber": "47",
+        "opening_hours": "",
+        "phone": "+84 0996986666",
+        "website": "https://www.gpcare.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8100527,
+          21.0145412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Siêu thị thực phẩm chức năng GPCare - Cơ sở 3 - 65B Trần Hưng Đạo",
+        "district": "Hoàn Kiếm",
+        "district_raw": "Hoàn Kiếm",
+        "street": "Trần Hưng Đạo",
+        "housenumber": "65B",
+        "opening_hours": "",
+        "phone": "0996986666",
+        "website": "https://www.gpcare.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8494073,
+          21.0216211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà Thuốc Tâm An",
+        "district": "Cầu Giấy",
+        "district_raw": "Cầu Giấy",
+        "street": "Trần Đăng Ninh",
+        "housenumber": "145",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+84 24 6283 1975",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7929932,
+          21.0380968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pharmacy Đức Long",
+        "district": "Ba Đình",
+        "district_raw": "Quận Ba Đình",
+        "street": "Phố Trần Huy Liệu",
+        "housenumber": "107D1",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8223999,
+          21.0268963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "V2- Nhà thuốc số 9",
+        "district": "Bắc Từ Liêm",
+        "district_raw": "Bắc Từ Liêm",
+        "street": "Đường Cổ Nhuế",
+        "housenumber": "149",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.780551,
+          21.0621946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "V18-Nhà thuốc Đại An 1",
+        "district": "Bắc Từ Liêm",
+        "district_raw": "Bắc Từ Liêm",
+        "street": "Đường Cổ Nhuế",
+        "housenumber": "227",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7797944,
+          21.0635276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "V26-Nhà Thuốc Minh Tâm",
+        "district": "Bắc Từ Liêm",
+        "district_raw": "Bắc Từ Liêm",
+        "street": "Đường Cổ Nhuế",
+        "housenumber": "273",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7795112,
+          21.0643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà Thuốc Anh Quốc",
+        "district": "Đống Đa",
+        "district_raw": "Đống Đa",
+        "street": "Phố Trung Phụng",
+        "housenumber": "115",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8358901,
+          21.0167687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pharmacity",
+        "district": "Thanh Xuân",
+        "district_raw": "Thanh Xuân",
+        "street": "Phố Lê Trọng Tấn",
+        "housenumber": "52",
+        "opening_hours": "Mo-Su 06:00-23:30",
+        "phone": "+84 1800 6821",
+        "website": "https://www.pharmacity.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8277831,
+          20.9995824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pharmacity",
+        "district": "Thanh Xuân",
+        "district_raw": "Thanh Xuân",
+        "street": "Phố Tô Vĩnh Diện",
+        "housenumber": "94",
+        "opening_hours": "Mo-Su 06:00-23:30",
+        "phone": "+84 1800 6821",
+        "website": "https://www.pharmacity.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8201338,
+          20.9988127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pharmacity",
+        "district": "Thanh Xuân",
+        "district_raw": "Thanh Xuân",
+        "street": "Nguyễn Quý Đức",
+        "housenumber": "29",
+        "opening_hours": "Mo-Su 06:00-23:30",
+        "phone": "+84 1800 6821",
+        "website": "https://www.pharmacity.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7979595,
+          20.992803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pharmacity",
+        "district": "Hoàng Mai",
+        "district_raw": "Hoàng Mai",
+        "street": "Đặng Xuân Bảng",
+        "housenumber": "3 Bắc Linh Đàm",
+        "opening_hours": "Mo-Su 06:00-23:30",
+        "phone": "+84 1800 6821",
+        "website": "https://www.pharmacity.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.829829,
+          20.9705795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Minh Tiến",
+        "district": "Thanh Xuân",
+        "district_raw": "Thanh Xuân",
+        "street": "Nguyễn Quý Đức",
+        "housenumber": "C15",
+        "opening_hours": "Mo-Sa 07:15-21:00; Su 07:15-18:30",
+        "phone": "+84 966 369 299",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8011202,
+          20.9904032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Đức Huy152",
+        "district": "Bắc Từ Liêm",
+        "district_raw": "Bắc Từ Liêm",
+        "street": "Phố Văn Hội",
+        "housenumber": "152",
+        "opening_hours": "24/7",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7732071,
+          21.0805879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Hoàng Minh",
+        "district": "Cầu Giấy",
+        "district_raw": "Quận Cầu Giấy",
+        "street": "Phố Trần Quốc Hoàn",
+        "housenumber": "237",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7822704,
+          21.0416695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Trường Hương",
+        "district": "Cầu Giấy",
+        "district_raw": "Cầu Giấy",
+        "street": "Phố Thành Thái",
+        "housenumber": "",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7936974,
+          21.0287756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Anh Đức",
+        "district": "Đống Đa",
+        "district_raw": "Đống Đa",
+        "street": "Ngõ Xã Đàn 2",
+        "housenumber": "214",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8323841,
+          21.0127084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Nam Cường",
+        "district": "Đống Đa",
+        "district_raw": "Đống Đa",
+        "street": "Ngõ 21 Phạm Ngọc Thạch",
+        "housenumber": "25B4",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8361196,
+          21.0098503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quầy thuốc Bảo An số 1",
+        "district": "Bắc Từ Liêm",
+        "district_raw": "Quận Bắc Từ Liêm",
+        "street": "Ngõ 238 Hoàng Quốc Việt",
+        "housenumber": "15",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7831976,
+          21.0471298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Hằng Anh",
+        "district": "Đống Đa",
+        "district_raw": "Đống Đa",
+        "street": "Ngõ Xã Đàn 2",
+        "housenumber": "125",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8316307,
+          21.0153155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc số 9",
+        "district": "Đống Đa",
+        "district_raw": "Đống Đa",
+        "street": "Đường Đê La Thành",
+        "housenumber": "145",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8315949,
+          21.0173423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Bảo Phúc II",
+        "district": "Đống Đa",
+        "district_raw": "Đống Đa",
+        "street": "Đường Đê La Thành",
+        "housenumber": "135",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8318618,
+          21.0170633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Hải Anh",
+        "district": "Đống Đa",
+        "district_raw": "Đống Đa",
+        "street": "Phố Xã Đàn",
+        "housenumber": "362C",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8342538,
+          21.01467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Phương Chính",
+        "district": "Hai Bà Trưng",
+        "district_raw": "Hai Bà Trưng",
+        "street": "Phố Mai Hắc Đế",
+        "housenumber": "38",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+84 1800 6666",
+        "website": "https://nhathuocphuongchinh.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8508795,
+          21.0149411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Hồng Đăng 5",
+        "district": "Hai Bà Trưng",
+        "district_raw": "Hai Bà Trưng",
+        "street": "Phố Mai Hắc Đế",
+        "housenumber": "72",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+84 978 567 077",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8508884,
+          21.0139652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Hà Thu",
+        "district": "Hai Bà Trưng",
+        "district_raw": "Hai Bà Trưng",
+        "street": "Phố Tô Hiến Thành",
+        "housenumber": "62",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8497577,
+          21.0135845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Hưng Gia",
+        "district": "Bắc Từ Liêm",
+        "district_raw": "Quận Bắc Từ Liêm",
+        "street": "Phố Đặng Thùy Trâm",
+        "housenumber": "9",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7844435,
+          21.0455098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Thành Duy",
+        "district": "Bắc Từ Liêm",
+        "district_raw": "Quận Bắc Từ Liêm",
+        "street": "Đường Đặng Thùy Trâm",
+        "housenumber": "17",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7845613,
+          21.0450689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pharmacity",
+        "district": "Cầu Giấy",
+        "district_raw": "Quận Cầu Giấy",
+        "street": "Phố Phạm Tuấn Tài",
+        "housenumber": "1",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7860905,
+          21.0427024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DUO Care",
+        "district": "Cầu Giấy",
+        "district_raw": "Quận Cầu Giấy",
+        "street": "Ngõ 3 Phạm Tuấn Tài",
+        "housenumber": "23",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7854321,
+          21.0433255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Triệu Tân",
+        "district": "Cầu Giấy",
+        "district_raw": "Quận Cầu Giấy",
+        "street": "Ngõ 62 Đặng Thuỳ Trâm",
+        "housenumber": "2",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7861166,
+          21.043525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Long Châu",
+        "district": "Nam Từ Liêm",
+        "district_raw": "Quận Nam Từ Liêm",
+        "street": "Đường Tây Mỗ",
+        "housenumber": "33",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "18006928",
+        "website": "https://nhathuoclongchau.com.vn/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7507217,
+          21.0016599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Không rõ tên",
+        "district": "Long Biên",
+        "district_raw": "Long Biên",
+        "street": "Phố Ngọc Lâm",
+        "housenumber": "129",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8687308,
+          21.0453505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Thiện",
+        "district": "Long Biên",
+        "district_raw": "Long Biên",
+        "street": "Phố Ngọc Lâm",
+        "housenumber": "103",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8683676,
+          21.0451298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bách Vương Thảo",
+        "district": "Cầu Giấy",
+        "district_raw": "Cầu Giấy",
+        "street": "Phố Trần Quốc Hoàn",
+        "housenumber": "",
+        "opening_hours": "",
+        "phone": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.7869775,
+          21.0414688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Phương Chính",
+        "district": "Hai Bà Trưng",
+        "district_raw": "Hai Bà Trưng",
+        "street": "Phố Mai Hắc Đế",
+        "housenumber": "124",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+84 337 100 588",
+        "website": "https://nhathuocphuongchinh.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8505521,
+          21.0098826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nhà thuốc Phương Chính",
+        "district": "Hai Bà Trưng",
+        "district_raw": "Hai Bà Trưng",
+        "street": "Phố Mai Hắc Đế",
+        "housenumber": "169A",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+84 24 7300 3333",
+        "website": "https://nhathuocphuongchinh.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8508597,
+          21.0095477
+        ]
+      }
+    }
+  ]
+}
