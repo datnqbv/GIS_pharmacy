@@ -145,13 +145,13 @@ def extract_pharmacy_info(feature):
 
 def clean_pharmacy_data():
     """Hàm chính để làm sạch dữ liệu"""
-    print("🔄 Đang đọc file dữ liệu gốc...")
+    print(" Đang đọc file dữ liệu gốc...")
     
     # Đọc file GeoJSON
     with open(INPUT_FILE, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    print(f"✅ Tổng số features: {len(data['features'])}")
+    print(f" Tổng số features: {len(data['features'])}")
     
     # Lọc và làm sạch dữ liệu
     clean_pharmacies = []
@@ -168,8 +168,8 @@ def clean_pharmacy_data():
                 has_district_count += 1
                 clean_pharmacies.append(clean_feature)
     
-    print(f"✅ Số hiệu thuốc tìm thấy: {pharmacy_count}")
-    print(f"✅ Số hiệu thuốc có thông tin quận hợp lệ: {has_district_count}")
+    print(f" Số hiệu thuốc tìm thấy: {pharmacy_count}")
+    print(f" Số hiệu thuốc có thông tin quận hợp lệ: {has_district_count}")
     
     # Thống kê các quận
     district_count = {}
@@ -177,7 +177,7 @@ def clean_pharmacy_data():
         district = pharmacy['properties']['district']
         district_count[district] = district_count.get(district, 0) + 1
     
-    print("\n📊 Thống kê theo quận/huyện:")
+    print("\n Thống kê theo quận/huyện:")
     for district in sorted(district_count.keys()):
         print(f"   {district}: {district_count[district]} hiệu thuốc")
     
@@ -188,12 +188,12 @@ def clean_pharmacy_data():
     }
     
     # Lưu file
-    print(f"\n💾 Đang lưu file clean_pharmacy.geojson...")
+    print(f"\n Đang lưu file clean_pharmacy.geojson...")
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(clean_geojson, f, ensure_ascii=False, indent=2)
     
-    print(f"✅ Hoàn thành! File đã được lưu tại: {OUTPUT_FILE}")
-    print(f"📈 Tổng số hiệu thuốc sau khi làm sạch: {len(clean_pharmacies)}")
+    print(f" Hoàn thành! File đã được lưu tại: {OUTPUT_FILE}")
+    print(f" Tổng số hiệu thuốc sau khi làm sạch: {len(clean_pharmacies)}")
 
 
 if __name__ == "__main__":

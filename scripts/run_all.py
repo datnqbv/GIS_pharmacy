@@ -10,7 +10,7 @@ from pathlib import Path
 def run_script(script_name, description):
     """Chạy một script Python"""
     print("\n" + "="*60)
-    print(f"🚀 {description}")
+    print(f" {description}")
     print("="*60)
     
     script_path = Path(__file__).parent / script_name
@@ -21,13 +21,13 @@ def run_script(script_name, description):
             check=True,
             capture_output=False
         )
-        print(f"✅ {description} - HOÀN THÀNH!")
+        print(f" {description} - HOÀN THÀNH!")
         return True
     except subprocess.CalledProcessError as e:
-        print(f"❌ Lỗi khi chạy {script_name}: {e}")
+        print(f" Lỗi khi chạy {script_name}: {e}")
         return False
     except Exception as e:
-        print(f"❌ Lỗi không xác định: {e}")
+        print(f" Lỗi không xác định: {e}")
         return False
 
 
@@ -35,7 +35,7 @@ def main():
     """Hàm chính - chạy toàn bộ pipeline"""
     print("╔" + "="*58 + "╗")
     print("║" + " "*58 + "║")
-    print("║" + "  🏥 PHÂN TÍCH HỆ THỐNG HIỆU THUỐC HÀ NỘI  ".center(58) + "║")
+    print("║" + "   PHÂN TÍCH HỆ THỐNG HIỆU THUỐC HÀ NỘI  ".center(58) + "║")
     print("║" + "  Pipeline tự động - Chạy tất cả các bước  ".center(58) + "║")
     print("║" + " "*58 + "║")
     print("╚" + "="*58 + "╝")
@@ -55,25 +55,25 @@ def main():
         if run_script(script_name, description):
             success_count += 1
         else:
-            print(f"\n⚠️  Pipeline dừng tại: {description}")
+            print(f"\n  Pipeline dừng tại: {description}")
             break
     
     # Tổng kết
     print("\n" + "="*60)
-    print("📊 TỔNG KẾT")
+    print(" TỔNG KẾT")
     print("="*60)
-    print(f"✅ Hoàn thành: {success_count}/{total_steps} bước")
+    print(f" Hoàn thành: {success_count}/{total_steps} bước")
     
     if success_count == total_steps:
-        print("\n🎉 Pipeline hoàn thành thành công!")
-        print("\n📁 Các file kết quả:")
+        print("\n Pipeline hoàn thành thành công!")
+        print("\n Các file kết quả:")
         print("   • data/clean_pharmacy.geojson - Dữ liệu đã làm sạch")
         print("   • results/pharmacy_by_district.csv - Thống kê CSV")
         print("   • results/chart_district.png - Biểu đồ phân tích")
         print("   • results/pharmacies_map.html - Bản đồ tương tác")
-        print("\n💡 Mở file pharmacies_map.html để xem bản đồ!")
+        print("\n Mở file pharmacies_map.html để xem bản đồ!")
     else:
-        print("\n❌ Pipeline chưa hoàn thành. Vui lòng kiểm tra lỗi ở trên.")
+        print("\n Pipeline chưa hoàn thành. Vui lòng kiểm tra lỗi ở trên.")
         sys.exit(1)
 
 

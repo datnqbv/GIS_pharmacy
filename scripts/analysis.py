@@ -22,7 +22,7 @@ OUTPUT_CHART = Path(__file__).parent.parent / "results" / "chart_district.png"
 
 def load_pharmacy_data():
     """Đọc dữ liệu từ file clean_pharmacy.geojson"""
-    print("🔄 Đang đọc dữ liệu hiệu thuốc...")
+    print(" Đang đọc dữ liệu hiệu thuốc...")
     
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -43,7 +43,7 @@ def load_pharmacy_data():
 
 def analyze_by_district(df):
     """Phân tích số lượng hiệu thuốc theo quận/huyện"""
-    print("\n📊 Đang thống kê theo quận/huyện...")
+    print("\n Đang thống kê theo quận/huyện...")
     
     # Đếm số lượng theo quận
     district_counts = df['district'].value_counts()
@@ -57,7 +57,7 @@ def analyze_by_district(df):
     
     # Lưu ra CSV
     analysis_df.to_csv(OUTPUT_CSV, index=False, encoding='utf-8-sig')
-    print(f"✅ Đã lưu file CSV: {OUTPUT_CSV}")
+    print(f" Đã lưu file CSV: {OUTPUT_CSV}")
     
     # In ra thống kê
     print("\n" + "="*60)
@@ -74,18 +74,18 @@ def analyze_by_district(df):
     print("\n" + "="*60)
     print("PHÂN TÍCH")
     print("="*60)
-    print(f"🏆 Quận có NHIỀU hiệu thuốc nhất: {max_district} ({max_count} hiệu thuốc)")
-    print(f"📉 Quận có ÍT hiệu thuốc nhất: {min_district} ({min_count} hiệu thuốc)")
-    print(f"📊 Tổng số hiệu thuốc: {district_counts.sum()}")
-    print(f"📍 Số quận/huyện có hiệu thuốc: {len(district_counts)}")
-    print(f"📈 Trung bình: {district_counts.mean():.1f} hiệu thuốc/quận")
+    print(f" Quận có NHIỀU hiệu thuốc nhất: {max_district} ({max_count} hiệu thuốc)")
+    print(f" Quận có ÍT hiệu thuốc nhất: {min_district} ({min_count} hiệu thuốc)")
+    print(f" Tổng số hiệu thuốc: {district_counts.sum()}")
+    print(f" Số quận/huyện có hiệu thuốc: {len(district_counts)}")
+    print(f" Trung bình: {district_counts.mean():.1f} hiệu thuốc/quận")
     
     return analysis_df
 
 
 def plot_charts(analysis_df):
     """Vẽ các biểu đồ thống kê"""
-    print("\n🎨 Đang vẽ biểu đồ...")
+    print("\n Đang vẽ biểu đồ...")
     
     # Sắp xếp dữ liệu theo số lượng giảm dần
     sorted_df = analysis_df.sort_values('Số lượng hiệu thuốc', ascending=False)
@@ -97,7 +97,7 @@ def plot_charts(analysis_df):
     chart_horizontal = output_dir / "chart_horizontal.png"
     
     # 1. Biểu đồ cột (riêng)
-    print("  📊 Đang vẽ biểu đồ cột...")
+    print("   Đang vẽ biểu đồ cột...")
     fig1, ax1 = plt.subplots(figsize=(12, 6))
     bars = ax1.bar(range(len(sorted_df)), sorted_df['Số lượng hiệu thuốc'], 
                    color='steelblue', alpha=0.8, edgecolor='navy')
@@ -119,10 +119,10 @@ def plot_charts(analysis_df):
     plt.tight_layout()
     plt.savefig(chart_bar, dpi=300, bbox_inches='tight')
     plt.close()
-    print(f"  ✅ Đã lưu: {chart_bar.name}")
+    print(f"   Đã lưu: {chart_bar.name}")
     
     # 2. Biểu đồ tròn (riêng)
-    print("  🍰 Đang vẽ biểu đồ tròn...")
+    print("   Đang vẽ biểu đồ tròn...")
     fig2, ax2 = plt.subplots(figsize=(10, 8))
     top_n = 10
     if len(sorted_df) > top_n:
@@ -145,10 +145,10 @@ def plot_charts(analysis_df):
     plt.tight_layout()
     plt.savefig(chart_pie, dpi=300, bbox_inches='tight')
     plt.close()
-    print(f"  ✅ Đã lưu: {chart_pie.name}")
+    print(f"   Đã lưu: {chart_pie.name}")
     
     # 3. Biểu đồ ngang (riêng)
-    print("  📊 Đang vẽ biểu đồ ngang...")
+    print("   Đang vẽ biểu đồ ngang...")
     fig3, ax3 = plt.subplots(figsize=(10, 8))
     top_15 = sorted_df.head(15)
     y_pos = range(len(top_15))
@@ -169,10 +169,10 @@ def plot_charts(analysis_df):
     plt.tight_layout()
     plt.savefig(chart_horizontal, dpi=300, bbox_inches='tight')
     plt.close()
-    print(f"  ✅ Đã lưu: {chart_horizontal.name}")
+    print(f"   Đã lưu: {chart_horizontal.name}")
     
     # Vẽ biểu đồ tổng hợp (giữ lại file gốc)
-    print("  📊 Đang vẽ biểu đồ tổng hợp...")
+    print("   Đang vẽ biểu đồ tổng hợp...")
     fig = plt.figure(figsize=(18, 6))
     
     # Subplot 1: Biểu đồ cột
@@ -216,7 +216,7 @@ def plot_charts(analysis_df):
     plt.tight_layout()
     plt.savefig(OUTPUT_CHART, dpi=300, bbox_inches='tight')
     plt.close()
-    print(f"  ✅ Đã lưu biểu đồ tổng hợp: {OUTPUT_CHART.name}")
+    print(f"   Đã lưu biểu đồ tổng hợp: {OUTPUT_CHART.name}")
     
     print("\n🎉 Hoàn thành! Đã tạo 4 file biểu đồ:")
     print(f"   1. {chart_bar.name} - Biểu đồ cột")
@@ -240,7 +240,7 @@ def main():
     # Vẽ biểu đồ
     plot_charts(analysis_df)
     
-    print("\n✅ Hoàn thành phân tích!")
+    print("\n Hoàn thành phân tích!")
 
 
 if __name__ == "__main__":

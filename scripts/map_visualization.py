@@ -1,6 +1,16 @@
 """
-Người 3 - Trực quan hóa bản đồ (Phiên bản đơn giản)
-Hiển thị bản đồ hiệu thuốc bằng Folium
+File này dùng để trực quan hóa dữ liệu hiệu thuốc Hà Nội trên bản đồ.
+
+Chức năng chính:
+- Đọc dữ liệu hiệu thuốc từ file GeoJSON đã làm sạch.
+- Hiển thị tất cả hiệu thuốc lên bản đồ với marker, popup thông tin chi tiết.
+- Gom cụm marker (MarkerCluster) để bản đồ không bị rối, hiển thị số lượng hiệu thuốc ở từng khu vực.
+- Phân lớp theo quận, mỗi quận một màu khác nhau.
+- Thêm chức năng tìm kiếm hiện đại: tìm theo tên, địa chỉ, zoom vào vị trí hiệu thuốc.
+- Thêm thống kê tổng số hiệu thuốc, số quận.
+- Xuất ra file HTML để mở trên trình duyệt và tương tác trực tiếp.
+
+Đây là bước cuối cùng để trình bày, tra cứu và phân tích dữ liệu hiệu thuốc một cách trực quan.
 """
 
 import json
@@ -24,14 +34,14 @@ COLORS = {
 
 def create_map():
     """Tạo bản đồ hiệu thuốc"""
-    print("🗺️  Đang tạo bản đồ...")
+    print("  Đang tạo bản đồ...")
     
     # Đọc dữ liệu
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     pharmacies = data['features']
-    print(f"📍 Tìm thấy {len(pharmacies)} hiệu thuốc")
+    print(f" Tìm thấy {len(pharmacies)} hiệu thuốc")
     
     # Tạo bản đồ
     m = folium.Map(location=HANOI_CENTER, zoom_start=11, tiles='OpenStreetMap')
@@ -67,11 +77,11 @@ def create_map():
         # Popup HTML đơn giản
         popup_html = f"""
         <div style="font-family: Arial; width: 250px;">
-            <h4 style="color: #1976D2; margin: 0 0 10px 0;">🏥 {name}</h4>
-            <p><b>📍 Địa chỉ:</b> {address}</p>
-            <p><b>🏛️ Quận:</b> {district}</p>
-            <p><b>🕐 Giờ mở:</b> {hours}</p>
-            <p><b>📞 SĐT:</b> {phone}</p>
+            <h4 style="color: #1976D2; margin: 0 0 10px 0;"> {name}</h4>
+            <p><b> Địa chỉ:</b> {address}</p>
+            <p><b> Quận:</b> {district}</p>
+            <p><b> Giờ mở:</b> {hours}</p>
+            <p><b> SĐT:</b> {phone}</p>
         </div>
         """
         
@@ -83,14 +93,14 @@ def create_map():
             district_groups[district] = folium.FeatureGroup(name=f'📍 {district}')
             district_groups[district].add_to(m)
         
-        # Thêm vào cluster
+        # Thêm vào cluster ,  nó sẽ tự động gom các marker gần nhau và hiện thị số lượng
         marker = folium.Marker(
             location=[lat, lon],
             popup=folium.Popup(popup_html, max_width=300),
             tooltip=name,
             icon=folium.Icon(color=color, icon='plus-sign', prefix='glyphicon')
         )
-        marker.add_to(marker_cluster)
+        marker.add_to(marker_cluster) 
         search_markers.append({'marker': marker, 'name': name, 'address': address})
         
         # Thêm vào group quận
@@ -261,7 +271,7 @@ def create_map():
     <div style="position: fixed; bottom: 50px; right: 50px; width: 200px;
                 background-color: white; border: 2px solid #1976D2;
                 border-radius: 5px; padding: 10px; z-index: 9999;">
-        <h4 style="margin: 0 0 10px 0; color: #1976D2;">📊 Thống kê</h4>
+        <h4 style="margin: 0 0 10px 0; color: #1976D2;"> Thống kê</h4>
         <p style="margin: 5px 0;"><b>Tổng:</b> {len(pharmacies)} hiệu thuốc</p>
         <p style="margin: 5px 0;"><b>Quận:</b> {len(district_groups)} quận</p>
     </div>
@@ -270,7 +280,7 @@ def create_map():
     
     # Lưu
     m.save(str(OUTPUT_MAP))
-    print(f"✅ Đã lưu: {OUTPUT_MAP}")
+    print(f" Đã lưu: {OUTPUT_MAP}")
 
 
 if __name__ == "__main__":
@@ -278,4 +288,4 @@ if __name__ == "__main__":
     print("TRỰC QUAN HÓA BẢN ĐỒ HIỆU THUỐC HÀ NỘI")
     print("="*60)
     create_map()
-    print("\n✅ Hoàn thành!")
+    print("\n Hoàn thành!")
