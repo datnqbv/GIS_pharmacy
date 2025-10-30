@@ -4,26 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Không rõ tên",
-        "district": "Bắc Từ Liêm",
-        "district_raw": "Bắc Từ Liêm",
-        "street": "Đường Cổ Nhuế",
-        "housenumber": "469",
-        "opening_hours": "",
-        "phone": "",
-        "website": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.7784391,
-          21.0687599
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Nhà thuốc Hapharco",
         "district": "Hai Bà Trưng",
         "district_raw": "Hai Bà Trưng",
@@ -758,26 +738,6 @@
         "coordinates": [
           105.7507217,
           21.0016599
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Không rõ tên",
-        "district": "Long Biên",
-        "district_raw": "Long Biên",
-        "street": "Phố Ngọc Lâm",
-        "housenumber": "129",
-        "opening_hours": "",
-        "phone": "",
-        "website": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.8687308,
-          21.0453505
         ]
       }
     },

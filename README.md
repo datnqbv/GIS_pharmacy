@@ -20,13 +20,15 @@ GIS-Pharmacy-Hanoi/
 │   └── clean_pharmacy.geojson   # Dữ liệu đã được làm sạch
 │
 ├── scripts/
-│   ├── data_cleaning.py        
-│   ├── analysis.py             
-│   └── map_visualization.py    
+│   ├── data_cleaning.py        # Làm sạch dữ liệu hiệu thuốc
+│   ├── analysis.py             # Thống kê, xuất biểu đồ, CSV
+│   ├── map_visualization.py    # Tạo bản đồ tương tác
+│   └── pharmacy_buffer_analysis.py # Phân tích hiệu thuốc trong bán kính, vẽ buffer
 │
 ├── results/
-│   ├── pharmacies_map.html      # Bản đồ tương tác
+│   ├── pharmacies_map.html      # Bản đồ tương tác tổng thể
 │   ├── chart_district.png       # Biểu đồ thống kê
+│   ├── pharmacies_buffer_map.html # Bản đồ hiệu thuốc trong bán kính
 │   └── pharmacy_by_district.csv # File CSV thống kê
 │
 ├── requirements.txt             # Các thư viện cần thiết
@@ -57,6 +59,7 @@ pip install -r requirements.txt
 
 ##  Chạy toàn bộ dự án
 
+
 ### Cách 1: Chạy từng script theo thứ tự
 
 ```bash
@@ -67,18 +70,35 @@ python data_cleaning.py
 # Bước 2: Phân tích và thống kê
 python analysis.py
 
+
 # Bước 3: Tạo bản đồ
 python map_visualization.py
+
+# (Tùy chọn nâng cao) Phân tích hiệu thuốc trong bán kính X mét quanh một điểm:
+python pharmacy_buffer_analysis.py
 ```
 
-### Cách 2: Chạy tất cả một lần
+
+### Cách 2: Chạy tất cả một lần (không bao gồm buffer analysis)
 
 ```bash
 cd scripts
 python data_cleaning.py && python analysis.py && python map_visualization.py
 ```
 
-##  Kết quả mong đợi
+##  Phân chia công việc nhóm
+
+Dự án phù hợp cho nhóm 3 người, mỗi người phụ trách một mảng chính:
+
+1. **Làm sạch dữ liệu** (data_cleaning.py): Chuẩn hóa, loại bỏ bản ghi lỗi, chuẩn hóa tên quận/huyện, xuất GeoJSON sạch.
+2. **Phân tích & Thống kê** (analysis.py): Thống kê số lượng hiệu thuốc theo quận, xuất CSV, vẽ biểu đồ.
+3. **Bản đồ & Trực quan hóa** (map_visualization.py, pharmacy_buffer_analysis.py): Tạo bản đồ tổng thể, bản đồ buffer, thêm các tính năng tìm kiếm, phân cụm, popup, v.v.
+
+##  Tính năng nâng cao
+
+- **Tìm kiếm hiện đại trên bản đồ**: Tìm hiệu thuốc theo tên, tự động gợi ý, zoom và highlight.
+- **Phân tích buffer (bán kính)**: Tìm và trực quan hóa các hiệu thuốc nằm trong bán kính X mét quanh một điểm bất kỳ (ví dụ quanh Bệnh viện Bạch Mai), sử dụng công thức Haversine.
+- **Vẽ buffer trên bản đồ**: Vòng tròn bán kính, marker trung tâm, phân biệt hiệu thuốc trong/ngoài vùng buffer.
 
 ### 1. Dữ liệu đã làm sạch
 - File `data/clean_pharmacy.geojson` với dữ liệu chuẩn hóa
@@ -127,13 +147,30 @@ Chỉnh sửa `DISTRICT_COLORS` trong `scripts/map_visualization.py`
 ### Thêm chuỗi hiệu thuốc
 Chỉnh sửa logic trong hàm `create_map()` của `scripts/map_visualization.py`
 
-##  Công nghệ sử dụng
+
+##  Công nghệ & thư viện sử dụng
 
 - **Python 3.x**: Ngôn ngữ lập trình chính
 - **Pandas**: Xử lý và phân tích dữ liệu
 - **Matplotlib**: Vẽ biểu đồ thống kê
 - **Folium**: Tạo bản đồ tương tác (dựa trên Leaflet.js)
 - **JSON**: Xử lý dữ liệu GeoJSON
+- **math**: Tính toán khoảng cách (Haversine)
+- **requests**: (nếu dùng geocoding tự động)
+# ---
+#
+# **Tóm tắt quy trình thực hiện dự án:**
+#
+# 1. Thu thập dữ liệu hiệu thuốc từ OpenStreetMap (file export.geojson)
+# 2. Làm sạch và chuẩn hóa dữ liệu (data_cleaning.py)
+# 3. Thống kê, xuất biểu đồ, CSV (analysis.py)
+# 4. Tạo bản đồ tương tác tổng thể (map_visualization.py)
+# 5. (Nâng cao) Phân tích và trực quan hóa hiệu thuốc trong bán kính (pharmacy_buffer_analysis.py)
+#
+# **Kết quả:**
+# - Dữ liệu sạch, thống kê chi tiết, bản đồ HTML tương tác, bản đồ buffer, biểu đồ, CSV.
+#
+# **Phù hợp cho báo cáo, thuyết trình, hoặc nộp bài tập môn GIS.**
 
 
 

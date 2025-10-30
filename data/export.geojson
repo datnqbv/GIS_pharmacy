@@ -62,30 +62,7 @@
       },
       "id": "way/898226397"
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/899332861",
-        "addr:city": "Hà Nội",
-        "addr:district": "Bắc Từ Liêm",
-        "addr:housenumber": "469",
-        "addr:street": "Đường Cổ Nhuế",
-        "addr:subdistrict": "Cổ Nhuế",
-        "amenity": "pharmacy",
-        "building": "yes",
-        "dispensing": "yes",
-        "healthcare": "pharmacy",
-        "@geometry": "center"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.7784391,
-          21.0687599
-        ]
-      },
-      "id": "way/899332861"
-    },
+    
     {
       "type": "Feature",
       "properties": {
@@ -3698,29 +3675,7 @@
       },
       "id": "node/11591859671"
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/11633344434",
-        "addr:city": "Hà Nội",
-        "addr:district": "Long Biên",
-        "addr:housenumber": "129",
-        "addr:street": "Phố Ngọc Lâm",
-        "addr:subdistrict": "Ngọc Lâm",
-        "amenity": "pharmacy",
-        "description": "Nhà màu vàng, của gỗ, tầng 1 cửa nhôm kính, bên ngoài cửa cuốn, mái tôn đỏ",
-        "healthcare": "pharmacy",
-        "level": "3"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.8687308,
-          21.0453505
-        ]
-      },
-      "id": "node/11633344434"
-    },
+    
     {
       "type": "Feature",
       "properties": {

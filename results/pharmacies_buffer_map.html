@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09c8094028d5585844da0df57c93b2a7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_09c8094028d5585844da0df57c93b2a7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_09c8094028d5585844da0df57c93b2a7 = L.map(
+                "map_09c8094028d5585844da0df57c93b2a7",
+                {
+                    center: [21.0021, 105.852],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1ef3f0650cd2403c2bec99fd6e65a1b0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1ef3f0650cd2403c2bec99fd6e65a1b0.addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+            var circle_c0dfbed0bd7cc3aa231a5953d08d9967 = L.circle(
+                [21.0021, 105.852],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_e65abed157dc58253d2814a5595bb83a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7149d8a7e0e4c83f5655eea80ea451d = $(`<div id="html_c7149d8a7e0e4c83f5655eea80ea451d" style="width: 100.0%; height: 100.0%;">Bán kính 1000m</div>`)[0];
+                popup_e65abed157dc58253d2814a5595bb83a.setContent(html_c7149d8a7e0e4c83f5655eea80ea451d);
+            
+        
+
+        circle_c0dfbed0bd7cc3aa231a5953d08d9967.bindPopup(popup_e65abed157dc58253d2814a5595bb83a)
+        ;
+
+        
+    
+    
+            var marker_c2c17ce7ca5d8fd65c34695f5dc37cb2 = L.marker(
+                [21.0021, 105.852],
+                {}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+            var icon_1f8b669ad77f1d93ba0504b5467427b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c2c17ce7ca5d8fd65c34695f5dc37cb2.setIcon(icon_1f8b669ad77f1d93ba0504b5467427b0);
+        
+    
+        var popup_c8eb2d84413f08a152354073a1f70aab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d25de710a7e373f4e274b036d7121240 = $(`<div id="html_d25de710a7e373f4e274b036d7121240" style="width: 100.0%; height: 100.0%;">Điểm trung tâm</div>`)[0];
+                popup_c8eb2d84413f08a152354073a1f70aab.setContent(html_d25de710a7e373f4e274b036d7121240);
+            
+        
+
+        marker_c2c17ce7ca5d8fd65c34695f5dc37cb2.bindPopup(popup_c8eb2d84413f08a152354073a1f70aab)
+        ;
+
+        
+    
+    
+            var marker_982b75fb03e664990056a71b7859ac80 = L.marker(
+                [21.0097797, 105.8508952],
+                {}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+            var icon_f341ec445f4267d5c8725966b606b87f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_982b75fb03e664990056a71b7859ac80.setIcon(icon_f341ec445f4267d5c8725966b606b87f);
+        
+    
+        var popup_e494bc322c97ae4b6084e009d5ec84c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ccda1b48aaec4209a17b956b5d61b02 = $(`<div id="html_4ccda1b48aaec4209a17b956b5d61b02" style="width: 100.0%; height: 100.0%;"> Nhà thuốc Long Châu<br> Phố Mai Hắc Đế, Hai Bà Trưng<br> 861.6m</div>`)[0];
+                popup_e494bc322c97ae4b6084e009d5ec84c0.setContent(html_4ccda1b48aaec4209a17b956b5d61b02);
+            
+        
+
+        marker_982b75fb03e664990056a71b7859ac80.bindPopup(popup_e494bc322c97ae4b6084e009d5ec84c0)
+        ;
+
+        
+    
+    
+            var marker_7cecaf7d6a366b05504da581de40bb46 = L.marker(
+                [21.0098826, 105.8505521],
+                {}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+            var icon_80f005edc177f7a942cdb3483d053716 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7cecaf7d6a366b05504da581de40bb46.setIcon(icon_80f005edc177f7a942cdb3483d053716);
+        
+    
+        var popup_9b0c1149acf60e322dff8c59c6ad6fae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73a9f96516c1ec49e91574178bc45819 = $(`<div id="html_73a9f96516c1ec49e91574178bc45819" style="width: 100.0%; height: 100.0%;"> Nhà thuốc Phương Chính<br> Phố Mai Hắc Đế, Hai Bà Trưng<br> 878.3m</div>`)[0];
+                popup_9b0c1149acf60e322dff8c59c6ad6fae.setContent(html_73a9f96516c1ec49e91574178bc45819);
+            
+        
+
+        marker_7cecaf7d6a366b05504da581de40bb46.bindPopup(popup_9b0c1149acf60e322dff8c59c6ad6fae)
+        ;
+
+        
+    
+    
+            var marker_967b2a3f9f21e2127026c92e55119c5e = L.marker(
+                [21.0095477, 105.8508597],
+                {}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+            var icon_9ec392599b9c827c1bac56b4125d85d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_967b2a3f9f21e2127026c92e55119c5e.setIcon(icon_9ec392599b9c827c1bac56b4125d85d8);
+        
+    
+        var popup_5979a9ee1d551452cb54d50fc87392be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f974b6654384ce21066982adac0a8f6 = $(`<div id="html_2f974b6654384ce21066982adac0a8f6" style="width: 100.0%; height: 100.0%;"> Nhà thuốc Phương Chính<br> Phố Mai Hắc Đế, Hai Bà Trưng<br> 836.6m</div>`)[0];
+                popup_5979a9ee1d551452cb54d50fc87392be.setContent(html_2f974b6654384ce21066982adac0a8f6);
+            
+        
+
+        marker_967b2a3f9f21e2127026c92e55119c5e.bindPopup(popup_5979a9ee1d551452cb54d50fc87392be)
+        ;
+
+        
+    
+    
+            var circle_marker_969749a0632764f87ba5fc1fe6556472 = L.circleMarker(
+                [21.0115935, 105.8484012],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_a4e562e77e9af3bc976efbb78d0ac353 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f188b37212429f45eec4fe10d15f2c6 = $(`<div id="html_9f188b37212429f45eec4fe10d15f2c6" style="width: 100.0%; height: 100.0%;">Nhà thuốc Hapharco</div>`)[0];
+                popup_a4e562e77e9af3bc976efbb78d0ac353.setContent(html_9f188b37212429f45eec4fe10d15f2c6);
+            
+        
+
+        circle_marker_969749a0632764f87ba5fc1fe6556472.bindPopup(popup_a4e562e77e9af3bc976efbb78d0ac353)
+        ;
+
+        
+    
+    
+            var circle_marker_6df95e91627072a1397182e6dd92bc8a = L.circleMarker(
+                [21.074301, 105.7766093],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_120e788a39c9281e8f787bcd0c2e6672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c72d97f8bed2068a6f9e3815b6ff8159 = $(`<div id="html_c72d97f8bed2068a6f9e3815b6ff8159" style="width: 100.0%; height: 100.0%;">Quầy thuốc của báo</div>`)[0];
+                popup_120e788a39c9281e8f787bcd0c2e6672.setContent(html_c72d97f8bed2068a6f9e3815b6ff8159);
+            
+        
+
+        circle_marker_6df95e91627072a1397182e6dd92bc8a.bindPopup(popup_120e788a39c9281e8f787bcd0c2e6672)
+        ;
+
+        
+    
+    
+            var circle_marker_a14da7b843b14df5c0dd2ac671d3f366 = L.circleMarker(
+                [21.0414606, 105.8267369],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_00040a3402d836f66c41936af2e1bfb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f22ca8bad186f8a210de9f5d9127fd04 = $(`<div id="html_f22ca8bad186f8a210de9f5d9127fd04" style="width: 100.0%; height: 100.0%;">Pharmacity</div>`)[0];
+                popup_00040a3402d836f66c41936af2e1bfb7.setContent(html_f22ca8bad186f8a210de9f5d9127fd04);
+            
+        
+
+        circle_marker_a14da7b843b14df5c0dd2ac671d3f366.bindPopup(popup_00040a3402d836f66c41936af2e1bfb7)
+        ;
+
+        
+    
+    
+            var circle_marker_43c2e68ebd72841b1e1e582a7eea8e9b = L.circleMarker(
+                [21.0183291, 105.8288463],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_bec226084599bd5a57f0b3bc1fdb2e9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c12422bf9775f4f070d486016035ae8 = $(`<div id="html_5c12422bf9775f4f070d486016035ae8" style="width: 100.0%; height: 100.0%;">Nhà thuốc Ngọc Hân</div>`)[0];
+                popup_bec226084599bd5a57f0b3bc1fdb2e9c.setContent(html_5c12422bf9775f4f070d486016035ae8);
+            
+        
+
+        circle_marker_43c2e68ebd72841b1e1e582a7eea8e9b.bindPopup(popup_bec226084599bd5a57f0b3bc1fdb2e9c)
+        ;
+
+        
+    
+    
+            var circle_marker_459f27f8f9cead79d3733fe682bb9a95 = L.circleMarker(
+                [21.0145412, 105.8100527],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_bcddc0bdca2677a35521091e2da8987a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5659fc6df0c7e11ecdf8e761d93dec6d = $(`<div id="html_5659fc6df0c7e11ecdf8e761d93dec6d" style="width: 100.0%; height: 100.0%;">Siêu thị thực phẩm chức năng GPCare</div>`)[0];
+                popup_bcddc0bdca2677a35521091e2da8987a.setContent(html_5659fc6df0c7e11ecdf8e761d93dec6d);
+            
+        
+
+        circle_marker_459f27f8f9cead79d3733fe682bb9a95.bindPopup(popup_bcddc0bdca2677a35521091e2da8987a)
+        ;
+
+        
+    
+    
+            var circle_marker_62f70f8e3206c436687e1592fb4203c5 = L.circleMarker(
+                [21.0216211, 105.8494073],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_4556cce94a36b6c06abc9899e9a45a19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d608cba04f9224607842220243a5856 = $(`<div id="html_6d608cba04f9224607842220243a5856" style="width: 100.0%; height: 100.0%;">Siêu thị thực phẩm chức năng GPCare - Cơ sở 3 - 65B Trần Hưng Đạo</div>`)[0];
+                popup_4556cce94a36b6c06abc9899e9a45a19.setContent(html_6d608cba04f9224607842220243a5856);
+            
+        
+
+        circle_marker_62f70f8e3206c436687e1592fb4203c5.bindPopup(popup_4556cce94a36b6c06abc9899e9a45a19)
+        ;
+
+        
+    
+    
+            var circle_marker_23e5be4580c447c72c08f68efcabc607 = L.circleMarker(
+                [21.0380968, 105.7929932],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_a4858d0e3f49a46f7ba7267b453c10b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e208abeaf67d9a615566084d6dba1d1 = $(`<div id="html_8e208abeaf67d9a615566084d6dba1d1" style="width: 100.0%; height: 100.0%;">Nhà Thuốc Tâm An</div>`)[0];
+                popup_a4858d0e3f49a46f7ba7267b453c10b4.setContent(html_8e208abeaf67d9a615566084d6dba1d1);
+            
+        
+
+        circle_marker_23e5be4580c447c72c08f68efcabc607.bindPopup(popup_a4858d0e3f49a46f7ba7267b453c10b4)
+        ;
+
+        
+    
+    
+            var circle_marker_0cbd7740fb096d450d3562be70b9b297 = L.circleMarker(
+                [21.0268963, 105.8223999],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_31ca5355cb8805b65e4d79262a02049a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d148c28c5ecd31b475fba02d90aa4f7 = $(`<div id="html_9d148c28c5ecd31b475fba02d90aa4f7" style="width: 100.0%; height: 100.0%;">Pharmacy Đức Long</div>`)[0];
+                popup_31ca5355cb8805b65e4d79262a02049a.setContent(html_9d148c28c5ecd31b475fba02d90aa4f7);
+            
+        
+
+        circle_marker_0cbd7740fb096d450d3562be70b9b297.bindPopup(popup_31ca5355cb8805b65e4d79262a02049a)
+        ;
+
+        
+    
+    
+            var circle_marker_399b2f1dc4bda34c35c0b4d22069a694 = L.circleMarker(
+                [21.0621946, 105.780551],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_e5a84861cda95d47a4b3c7260b45bebc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c503892f90615077cc3f6935e9b3054 = $(`<div id="html_4c503892f90615077cc3f6935e9b3054" style="width: 100.0%; height: 100.0%;">V2- Nhà thuốc số 9</div>`)[0];
+                popup_e5a84861cda95d47a4b3c7260b45bebc.setContent(html_4c503892f90615077cc3f6935e9b3054);
+            
+        
+
+        circle_marker_399b2f1dc4bda34c35c0b4d22069a694.bindPopup(popup_e5a84861cda95d47a4b3c7260b45bebc)
+        ;
+
+        
+    
+    
+            var circle_marker_146729e99f7f90dd3a1d44cdf6178985 = L.circleMarker(
+                [21.0635276, 105.7797944],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_ae30f40d69e1d0080a641d3832047de6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9de42c354b1b1be6c6625dd7c6d2c6b5 = $(`<div id="html_9de42c354b1b1be6c6625dd7c6d2c6b5" style="width: 100.0%; height: 100.0%;">V18-Nhà thuốc Đại An 1</div>`)[0];
+                popup_ae30f40d69e1d0080a641d3832047de6.setContent(html_9de42c354b1b1be6c6625dd7c6d2c6b5);
+            
+        
+
+        circle_marker_146729e99f7f90dd3a1d44cdf6178985.bindPopup(popup_ae30f40d69e1d0080a641d3832047de6)
+        ;
+
+        
+    
+    
+            var circle_marker_dda2871f3f0489218fa7eba7e7c3be6f = L.circleMarker(
+                [21.0643, 105.7795112],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_304261ed5980fccb77c634666eb74413 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c74a961b9c84faf33626ba8fa68db32c = $(`<div id="html_c74a961b9c84faf33626ba8fa68db32c" style="width: 100.0%; height: 100.0%;">V26-Nhà Thuốc Minh Tâm</div>`)[0];
+                popup_304261ed5980fccb77c634666eb74413.setContent(html_c74a961b9c84faf33626ba8fa68db32c);
+            
+        
+
+        circle_marker_dda2871f3f0489218fa7eba7e7c3be6f.bindPopup(popup_304261ed5980fccb77c634666eb74413)
+        ;
+
+        
+    
+    
+            var circle_marker_3ceea9d7db81f37191f5f98f8b1f81a8 = L.circleMarker(
+                [21.0167687, 105.8358901],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_e6202b1a475729e1aedac6845976384d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0091c8cd341ecfc843160746e1444ddc = $(`<div id="html_0091c8cd341ecfc843160746e1444ddc" style="width: 100.0%; height: 100.0%;">Nhà Thuốc Anh Quốc</div>`)[0];
+                popup_e6202b1a475729e1aedac6845976384d.setContent(html_0091c8cd341ecfc843160746e1444ddc);
+            
+        
+
+        circle_marker_3ceea9d7db81f37191f5f98f8b1f81a8.bindPopup(popup_e6202b1a475729e1aedac6845976384d)
+        ;
+
+        
+    
+    
+            var circle_marker_836718eb924bacb20a1d5fa2b865b47a = L.circleMarker(
+                [20.9995824, 105.8277831],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_c33e7af8e14e45e19481dac6eb19c2e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c9adb4fbba2071c1191b9c2e5568ca2 = $(`<div id="html_0c9adb4fbba2071c1191b9c2e5568ca2" style="width: 100.0%; height: 100.0%;">Pharmacity</div>`)[0];
+                popup_c33e7af8e14e45e19481dac6eb19c2e2.setContent(html_0c9adb4fbba2071c1191b9c2e5568ca2);
+            
+        
+
+        circle_marker_836718eb924bacb20a1d5fa2b865b47a.bindPopup(popup_c33e7af8e14e45e19481dac6eb19c2e2)
+        ;
+
+        
+    
+    
+            var circle_marker_7d63b0a418dd688e94da5bbf77551ce1 = L.circleMarker(
+                [20.9988127, 105.8201338],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_da77653f029e6ec92c1c90aef52490e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32a0f3c679a43d9ea4647bdc01b13cea = $(`<div id="html_32a0f3c679a43d9ea4647bdc01b13cea" style="width: 100.0%; height: 100.0%;">Pharmacity</div>`)[0];
+                popup_da77653f029e6ec92c1c90aef52490e2.setContent(html_32a0f3c679a43d9ea4647bdc01b13cea);
+            
+        
+
+        circle_marker_7d63b0a418dd688e94da5bbf77551ce1.bindPopup(popup_da77653f029e6ec92c1c90aef52490e2)
+        ;
+
+        
+    
+    
+            var circle_marker_885f101931ccb519e43033f48c7fcadd = L.circleMarker(
+                [20.992803, 105.7979595],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_530829bd8ef23a0e9e02e2021e017a7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a00960411926187ec22a0fa7898a24b = $(`<div id="html_1a00960411926187ec22a0fa7898a24b" style="width: 100.0%; height: 100.0%;">Pharmacity</div>`)[0];
+                popup_530829bd8ef23a0e9e02e2021e017a7f.setContent(html_1a00960411926187ec22a0fa7898a24b);
+            
+        
+
+        circle_marker_885f101931ccb519e43033f48c7fcadd.bindPopup(popup_530829bd8ef23a0e9e02e2021e017a7f)
+        ;
+
+        
+    
+    
+            var circle_marker_a85e8d178c0cefbddf3687a8534a0a79 = L.circleMarker(
+                [20.9705795, 105.829829],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_99aaf7307736c70bc5bd7040f435535d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c8ceb3bc499a52e4d2b42bb3c6d11e2 = $(`<div id="html_0c8ceb3bc499a52e4d2b42bb3c6d11e2" style="width: 100.0%; height: 100.0%;">Pharmacity</div>`)[0];
+                popup_99aaf7307736c70bc5bd7040f435535d.setContent(html_0c8ceb3bc499a52e4d2b42bb3c6d11e2);
+            
+        
+
+        circle_marker_a85e8d178c0cefbddf3687a8534a0a79.bindPopup(popup_99aaf7307736c70bc5bd7040f435535d)
+        ;
+
+        
+    
+    
+            var circle_marker_796455d6400f3df19db1ae2a6df824bb = L.circleMarker(
+                [20.9904032, 105.8011202],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_d1935af97a11e50228ab1bb286028dee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b50843f5ee986e71a2a5f6990cc4525 = $(`<div id="html_2b50843f5ee986e71a2a5f6990cc4525" style="width: 100.0%; height: 100.0%;">Nhà thuốc Minh Tiến</div>`)[0];
+                popup_d1935af97a11e50228ab1bb286028dee.setContent(html_2b50843f5ee986e71a2a5f6990cc4525);
+            
+        
+
+        circle_marker_796455d6400f3df19db1ae2a6df824bb.bindPopup(popup_d1935af97a11e50228ab1bb286028dee)
+        ;
+
+        
+    
+    
+            var circle_marker_e70b7d08002ceda4046d5abc797b7175 = L.circleMarker(
+                [21.0805879, 105.7732071],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_d5f43b3166b46f477c685b130e4f4d83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_826c4c418503e3cd3f49d8ffcfec78fd = $(`<div id="html_826c4c418503e3cd3f49d8ffcfec78fd" style="width: 100.0%; height: 100.0%;">Nhà thuốc Đức Huy152</div>`)[0];
+                popup_d5f43b3166b46f477c685b130e4f4d83.setContent(html_826c4c418503e3cd3f49d8ffcfec78fd);
+            
+        
+
+        circle_marker_e70b7d08002ceda4046d5abc797b7175.bindPopup(popup_d5f43b3166b46f477c685b130e4f4d83)
+        ;
+
+        
+    
+    
+            var circle_marker_913e42160d8037d2fc17e0cf4df86b3b = L.circleMarker(
+                [21.0416695, 105.7822704],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_0dec3db28b2ac87f64ef95fccbcabede = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dba553a319b9aea06a8a5f9163397fae = $(`<div id="html_dba553a319b9aea06a8a5f9163397fae" style="width: 100.0%; height: 100.0%;">Nhà thuốc Hoàng Minh</div>`)[0];
+                popup_0dec3db28b2ac87f64ef95fccbcabede.setContent(html_dba553a319b9aea06a8a5f9163397fae);
+            
+        
+
+        circle_marker_913e42160d8037d2fc17e0cf4df86b3b.bindPopup(popup_0dec3db28b2ac87f64ef95fccbcabede)
+        ;
+
+        
+    
+    
+            var circle_marker_e0b00c76609576c31c7290f8d780737b = L.circleMarker(
+                [21.0287756, 105.7936974],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_acf513c521c7abb5af2cf49c98b377ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8579bc0b2e57618264692eb992e441b6 = $(`<div id="html_8579bc0b2e57618264692eb992e441b6" style="width: 100.0%; height: 100.0%;">Nhà thuốc Trường Hương</div>`)[0];
+                popup_acf513c521c7abb5af2cf49c98b377ac.setContent(html_8579bc0b2e57618264692eb992e441b6);
+            
+        
+
+        circle_marker_e0b00c76609576c31c7290f8d780737b.bindPopup(popup_acf513c521c7abb5af2cf49c98b377ac)
+        ;
+
+        
+    
+    
+            var circle_marker_cec2a9c9672c6d5999e4d76f661d049b = L.circleMarker(
+                [21.0127084, 105.8323841],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_068534ac69e77d432b921bcf7e6b7383 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_983fc8a74a6da2d1d6aec98e66bef1ef = $(`<div id="html_983fc8a74a6da2d1d6aec98e66bef1ef" style="width: 100.0%; height: 100.0%;">Nhà thuốc Anh Đức</div>`)[0];
+                popup_068534ac69e77d432b921bcf7e6b7383.setContent(html_983fc8a74a6da2d1d6aec98e66bef1ef);
+            
+        
+
+        circle_marker_cec2a9c9672c6d5999e4d76f661d049b.bindPopup(popup_068534ac69e77d432b921bcf7e6b7383)
+        ;
+
+        
+    
+    
+            var circle_marker_4c7e0c88e66a9b50b26eaaf2439ec4f8 = L.circleMarker(
+                [21.0098503, 105.8361196],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_f1f6c8c8a99ce9013ff99bb62747cbd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f85ab2142092ecf7b479e947a481a0c6 = $(`<div id="html_f85ab2142092ecf7b479e947a481a0c6" style="width: 100.0%; height: 100.0%;">Nhà thuốc Nam Cường</div>`)[0];
+                popup_f1f6c8c8a99ce9013ff99bb62747cbd5.setContent(html_f85ab2142092ecf7b479e947a481a0c6);
+            
+        
+
+        circle_marker_4c7e0c88e66a9b50b26eaaf2439ec4f8.bindPopup(popup_f1f6c8c8a99ce9013ff99bb62747cbd5)
+        ;
+
+        
+    
+    
+            var circle_marker_f2674fcbcb8edf817d499105590b1eee = L.circleMarker(
+                [21.0471298, 105.7831976],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_8e8f9345c236268c93bc6eb289833f06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09ef40be2b992a0c631c674d330bb9be = $(`<div id="html_09ef40be2b992a0c631c674d330bb9be" style="width: 100.0%; height: 100.0%;">Quầy thuốc Bảo An số 1</div>`)[0];
+                popup_8e8f9345c236268c93bc6eb289833f06.setContent(html_09ef40be2b992a0c631c674d330bb9be);
+            
+        
+
+        circle_marker_f2674fcbcb8edf817d499105590b1eee.bindPopup(popup_8e8f9345c236268c93bc6eb289833f06)
+        ;
+
+        
+    
+    
+            var circle_marker_2aee588a6645a76a1326e6fe4c46b1df = L.circleMarker(
+                [21.0153155, 105.8316307],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_a783d330205179176ff1ed3c62a1cab7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c285934c948f1f234bfd0e974cc9887 = $(`<div id="html_1c285934c948f1f234bfd0e974cc9887" style="width: 100.0%; height: 100.0%;">Nhà thuốc Hằng Anh</div>`)[0];
+                popup_a783d330205179176ff1ed3c62a1cab7.setContent(html_1c285934c948f1f234bfd0e974cc9887);
+            
+        
+
+        circle_marker_2aee588a6645a76a1326e6fe4c46b1df.bindPopup(popup_a783d330205179176ff1ed3c62a1cab7)
+        ;
+
+        
+    
+    
+            var circle_marker_bdd337545ee5999689e94179893dc003 = L.circleMarker(
+                [21.0173423, 105.8315949],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_1d0acc75e69ab6634c4867f0a7e6348e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e446bf8085f59c9287f4d4f1e06143a = $(`<div id="html_5e446bf8085f59c9287f4d4f1e06143a" style="width: 100.0%; height: 100.0%;">Nhà thuốc số 9</div>`)[0];
+                popup_1d0acc75e69ab6634c4867f0a7e6348e.setContent(html_5e446bf8085f59c9287f4d4f1e06143a);
+            
+        
+
+        circle_marker_bdd337545ee5999689e94179893dc003.bindPopup(popup_1d0acc75e69ab6634c4867f0a7e6348e)
+        ;
+
+        
+    
+    
+            var circle_marker_576d256df91fed34c80cf3d02a9d71e2 = L.circleMarker(
+                [21.0170633, 105.8318618],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_616fe1df75fc8b00bbdb44d3dd50bd0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d82bf1c9a0625da96f9df202ab4ed275 = $(`<div id="html_d82bf1c9a0625da96f9df202ab4ed275" style="width: 100.0%; height: 100.0%;">Nhà thuốc Bảo Phúc II</div>`)[0];
+                popup_616fe1df75fc8b00bbdb44d3dd50bd0d.setContent(html_d82bf1c9a0625da96f9df202ab4ed275);
+            
+        
+
+        circle_marker_576d256df91fed34c80cf3d02a9d71e2.bindPopup(popup_616fe1df75fc8b00bbdb44d3dd50bd0d)
+        ;
+
+        
+    
+    
+            var circle_marker_c771da50a2f274f7181955db7a02b0f6 = L.circleMarker(
+                [21.01467, 105.8342538],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_06b322f3c3604e992403dada17dad1a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_479c9ebde432e62f1901ed11eb9d7299 = $(`<div id="html_479c9ebde432e62f1901ed11eb9d7299" style="width: 100.0%; height: 100.0%;">Nhà thuốc Hải Anh</div>`)[0];
+                popup_06b322f3c3604e992403dada17dad1a2.setContent(html_479c9ebde432e62f1901ed11eb9d7299);
+            
+        
+
+        circle_marker_c771da50a2f274f7181955db7a02b0f6.bindPopup(popup_06b322f3c3604e992403dada17dad1a2)
+        ;
+
+        
+    
+    
+            var circle_marker_7d7a562101ad3febd6001e319c2c4306 = L.circleMarker(
+                [21.0149411, 105.8508795],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_ee5d62d6edc4ee1bd2602d89adede1dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0e22777cf922cc4f87e473ad52c7192 = $(`<div id="html_a0e22777cf922cc4f87e473ad52c7192" style="width: 100.0%; height: 100.0%;">Nhà thuốc Phương Chính</div>`)[0];
+                popup_ee5d62d6edc4ee1bd2602d89adede1dd.setContent(html_a0e22777cf922cc4f87e473ad52c7192);
+            
+        
+
+        circle_marker_7d7a562101ad3febd6001e319c2c4306.bindPopup(popup_ee5d62d6edc4ee1bd2602d89adede1dd)
+        ;
+
+        
+    
+    
+            var circle_marker_4d354f0d4b4100ea0475510b69a3684f = L.circleMarker(
+                [21.0139652, 105.8508884],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_aec282fa32c0c86d8b5196c2b4fa52c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_193c5bd29c5a24bae1839f81f576425b = $(`<div id="html_193c5bd29c5a24bae1839f81f576425b" style="width: 100.0%; height: 100.0%;">Nhà thuốc Hồng Đăng 5</div>`)[0];
+                popup_aec282fa32c0c86d8b5196c2b4fa52c1.setContent(html_193c5bd29c5a24bae1839f81f576425b);
+            
+        
+
+        circle_marker_4d354f0d4b4100ea0475510b69a3684f.bindPopup(popup_aec282fa32c0c86d8b5196c2b4fa52c1)
+        ;
+
+        
+    
+    
+            var circle_marker_156d0aa3ff11b0bea9a4e83d184c3e4e = L.circleMarker(
+                [21.0135845, 105.8497577],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_48715612f6786d7599d2cdba0c09cd04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ac12d700b54ed67758ec4a7e0e8bafb = $(`<div id="html_5ac12d700b54ed67758ec4a7e0e8bafb" style="width: 100.0%; height: 100.0%;">Nhà thuốc Hà Thu</div>`)[0];
+                popup_48715612f6786d7599d2cdba0c09cd04.setContent(html_5ac12d700b54ed67758ec4a7e0e8bafb);
+            
+        
+
+        circle_marker_156d0aa3ff11b0bea9a4e83d184c3e4e.bindPopup(popup_48715612f6786d7599d2cdba0c09cd04)
+        ;
+
+        
+    
+    
+            var circle_marker_a6b0e8aa56956121a64db613c13bbcd2 = L.circleMarker(
+                [21.0455098, 105.7844435],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_ff911a13f7d084e46e7dc8d8be84108e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0f945168657b14f2ab8cc674a8a53e4 = $(`<div id="html_d0f945168657b14f2ab8cc674a8a53e4" style="width: 100.0%; height: 100.0%;">Nhà thuốc Hưng Gia</div>`)[0];
+                popup_ff911a13f7d084e46e7dc8d8be84108e.setContent(html_d0f945168657b14f2ab8cc674a8a53e4);
+            
+        
+
+        circle_marker_a6b0e8aa56956121a64db613c13bbcd2.bindPopup(popup_ff911a13f7d084e46e7dc8d8be84108e)
+        ;
+
+        
+    
+    
+            var circle_marker_0eb8a0cfe0368e694a93f65187f94734 = L.circleMarker(
+                [21.0450689, 105.7845613],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_52bb2aefd9bcba74ce1c1cc0bd68974a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e671383bc6de8d80256b2c842ddaf76b = $(`<div id="html_e671383bc6de8d80256b2c842ddaf76b" style="width: 100.0%; height: 100.0%;">Nhà thuốc Thành Duy</div>`)[0];
+                popup_52bb2aefd9bcba74ce1c1cc0bd68974a.setContent(html_e671383bc6de8d80256b2c842ddaf76b);
+            
+        
+
+        circle_marker_0eb8a0cfe0368e694a93f65187f94734.bindPopup(popup_52bb2aefd9bcba74ce1c1cc0bd68974a)
+        ;
+
+        
+    
+    
+            var circle_marker_48f4ed9cb9356bc8f73d88d1e16a961c = L.circleMarker(
+                [21.0427024, 105.7860905],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_d4e8ddb4ebe1cd1b79a6d2e0ca9cb9e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3fa2514ec116115541c6702745f05ef = $(`<div id="html_f3fa2514ec116115541c6702745f05ef" style="width: 100.0%; height: 100.0%;">Pharmacity</div>`)[0];
+                popup_d4e8ddb4ebe1cd1b79a6d2e0ca9cb9e2.setContent(html_f3fa2514ec116115541c6702745f05ef);
+            
+        
+
+        circle_marker_48f4ed9cb9356bc8f73d88d1e16a961c.bindPopup(popup_d4e8ddb4ebe1cd1b79a6d2e0ca9cb9e2)
+        ;
+
+        
+    
+    
+            var circle_marker_3a0d68164eb6f68adca068e36f74f921 = L.circleMarker(
+                [21.0433255, 105.7854321],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_621bdf2f046236ac554d2d00fa04d285 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5018b900d299e648f3cfd226fc5f3e3 = $(`<div id="html_a5018b900d299e648f3cfd226fc5f3e3" style="width: 100.0%; height: 100.0%;">DUO Care</div>`)[0];
+                popup_621bdf2f046236ac554d2d00fa04d285.setContent(html_a5018b900d299e648f3cfd226fc5f3e3);
+            
+        
+
+        circle_marker_3a0d68164eb6f68adca068e36f74f921.bindPopup(popup_621bdf2f046236ac554d2d00fa04d285)
+        ;
+
+        
+    
+    
+            var circle_marker_e3e73a90e68bef0bd32186fe519c3e1f = L.circleMarker(
+                [21.043525, 105.7861166],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_cf45a01072ec8554ab39c7085492445a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7a541fbdbfca3f241d8331fcc1838aa = $(`<div id="html_c7a541fbdbfca3f241d8331fcc1838aa" style="width: 100.0%; height: 100.0%;">Nhà thuốc Triệu Tân</div>`)[0];
+                popup_cf45a01072ec8554ab39c7085492445a.setContent(html_c7a541fbdbfca3f241d8331fcc1838aa);
+            
+        
+
+        circle_marker_e3e73a90e68bef0bd32186fe519c3e1f.bindPopup(popup_cf45a01072ec8554ab39c7085492445a)
+        ;
+
+        
+    
+    
+            var circle_marker_be87ccb38283903a75e739df31ea7a93 = L.circleMarker(
+                [21.0016599, 105.7507217],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_e51a461517f3a8ea96a9547b25fc3018 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a50afe718836397058cca0ce9ee18e7 = $(`<div id="html_3a50afe718836397058cca0ce9ee18e7" style="width: 100.0%; height: 100.0%;">Nhà thuốc Long Châu</div>`)[0];
+                popup_e51a461517f3a8ea96a9547b25fc3018.setContent(html_3a50afe718836397058cca0ce9ee18e7);
+            
+        
+
+        circle_marker_be87ccb38283903a75e739df31ea7a93.bindPopup(popup_e51a461517f3a8ea96a9547b25fc3018)
+        ;
+
+        
+    
+    
+            var circle_marker_6adaded31dfed9ac9ce8d0dbea078df4 = L.circleMarker(
+                [21.0451298, 105.8683676],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_77ca4c52eff90faaa7825cd002251749 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_955650b3172bdfa535fc50a2482a1282 = $(`<div id="html_955650b3172bdfa535fc50a2482a1282" style="width: 100.0%; height: 100.0%;">Nhà thuốc Thiện</div>`)[0];
+                popup_77ca4c52eff90faaa7825cd002251749.setContent(html_955650b3172bdfa535fc50a2482a1282);
+            
+        
+
+        circle_marker_6adaded31dfed9ac9ce8d0dbea078df4.bindPopup(popup_77ca4c52eff90faaa7825cd002251749)
+        ;
+
+        
+    
+    
+            var circle_marker_d4b070203cab02c137a802e73cfdde1c = L.circleMarker(
+                [21.0414688, 105.7869775],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_09c8094028d5585844da0df57c93b2a7);
+        
+    
+        var popup_e0b66440c4b1c9a2b96766ad24feaed7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be0863720edbde2882427e200c837800 = $(`<div id="html_be0863720edbde2882427e200c837800" style="width: 100.0%; height: 100.0%;">Bách Vương Thảo</div>`)[0];
+                popup_e0b66440c4b1c9a2b96766ad24feaed7.setContent(html_be0863720edbde2882427e200c837800);
+            
+        
+
+        circle_marker_d4b070203cab02c137a802e73cfdde1c.bindPopup(popup_e0b66440c4b1c9a2b96766ad24feaed7)
+        ;
+
+        
+    
+</script>
+</html>
